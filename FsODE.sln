@@ -24,9 +24,28 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{B6B3B9B6-A6A2-43EA-9430-8A301CA3D94C}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		.config\dotnet-tools.json = .config\dotnet-tools.json
 		LICENSE = LICENSE
 		README.md = README.md
 		RELEASE_NOTES.md = RELEASE_NOTES.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{3782110F-B58B-46B4-959A-972151B59453}"
+	ProjectSection(SolutionItems) = preProject
+		docs\index.fsx = docs\index.fsx
+		docs\_template.fsx = docs\_template.fsx
+		docs\_template.html = docs\_template.html
+		docs\_template.ipynb = docs\_template.ipynb
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{411E7880-3731-4A76-AA2C-17B87343689D}"
+	ProjectSection(SolutionItems) = preProject
+		docs\content\fsdocs-custom.css = docs\content\fsdocs-custom.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "reference", "reference", "{49172319-FAD2-4DCA-B759-89940BB1F310}"
+	ProjectSection(SolutionItems) = preProject
+		docs\reference\_template.html = docs\reference\_template.html
 	EndProjectSection
 EndProject
 Global
@@ -63,6 +82,8 @@ Global
 		{9312C73E-858F-4D6A-95DF-13DFEBE7B0D6} = {7B8A4C5D-01BF-482C-883C-F06E57B19461}
 		{66BA1A4C-79C6-4A5F-B944-37D24D321410} = {CA7FBA5D-4484-4342-8917-5DBB47EEB033}
 		{5778DCBA-533A-403A-9BAA-62CFA2737ED8} = {CA7FBA5D-4484-4342-8917-5DBB47EEB033}
+		{411E7880-3731-4A76-AA2C-17B87343689D} = {3782110F-B58B-46B4-959A-972151B59453}
+		{49172319-FAD2-4DCA-B759-89940BB1F310} = {3782110F-B58B-46B4-959A-972151B59453}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3185FFF-5651-4B0F-8464-A600A9CE07F4}
