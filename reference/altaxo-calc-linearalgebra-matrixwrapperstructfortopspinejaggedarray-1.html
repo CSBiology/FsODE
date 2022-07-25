@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MatrixWrapperStructForTopSpineJaggedArray<'T> (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    MatrixWrapperStructForTopSpineJaggedArray<'T> Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-linearalgebra.html">
+        Altaxo.Calc.LinearAlgebra
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code><a href="https://docs.microsoft.com/dotnet/api/system.valuetype">ValueType</a></code>
+    </dt>
+    <dt>
+      All Interfaces: 
+      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;'T&gt;</span></code>
+      , 
+      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;'T&gt;</span></code>
+    </dt>
+    <dt>
+      Kind: Struct
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Very thin wrapper structure around a jagged array just to provided number of rows and columns along with the array itself.
+            The spine array is oriented vertically, i.e. the rows protruding to the right from the spine array.
+            Access to the underlying array is done by array[row][column].
+            
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2265', 2265)" onmouseover="showTip(event, '2265', 2265)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>MatrixWrapperStructForTopSpineJaggedArray<span><span>(<span>array,&#32;rows,&#32;cols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2265">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MatrixWrapperStructForTopSpineJaggedArray<span><span>(<span>array,&#32;rows,&#32;cols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        array
+                      </b>
+                      :
+                      <code><span><span>'T[]</span>[]</span></code>
+                       - 
+                      The array to wrap.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        rows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        cols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.#ctor``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Initializes a new instance of the <a href="/FsODE/reference/altaxo-calc-linearalgebra-matrixwrapperstructforleftspinejaggedarray-1.html">MatrixWrapperStructForLeftSpineJaggedArray</a> struct by wrapping the provided
+            array.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  array
+                </span>
+                :
+                <code><span><span>'T[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array to wrap.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  cols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2266', 2266)" onmouseover="showTip(event, '2266', 2266)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>MatrixWrapperStructForTopSpineJaggedArray<span><span>(<span>rows,&#32;cols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2266">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MatrixWrapperStructForTopSpineJaggedArray<span><span>(<span>rows,&#32;cols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        rows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of rows.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        cols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of columns.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.#ctor``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Initializes a new instance of the <a href="/FsODE/reference/altaxo-calc-linearalgebra-matrixwrapperstructforleftspinejaggedarray-1.html">MatrixWrapperStructForLeftSpineJaggedArray</a> struct and creates
+            the jagged matrix array. This array is a jagged array structure where the spine array is located at the top of the matrix,
+            and the columns 'are hanging down' from this spine array. Access to elements of the underlying array is done by array[col][row], i.e. with col and row exchanged.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of rows.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  cols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of columns.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">
+                    ArgumentOutOfRangeException
+                  </a>
+                </td>
+                <td>
+                  
+            rows - Number of rows has to be >=0
+            or
+            cols - Number of cols has to be >=0
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2267', 2267)" onmouseover="showTip(event, '2267', 2267)">
+                <p>
+                  <a id="Array">
+                    <a href="#Array">
+                      <code><span>this.Array</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2267">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Array</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.Array``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.Array\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the underlying array. Access to elements is done using Array[column][row], i.e. with exchanged column and row.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2268', 2268)" onmouseover="showTip(event, '2268', 2268)">
+                <p>
+                  <a id="ColumnCount">
+                    <a href="#ColumnCount">
+                      <code><span>this.ColumnCount</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2268">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ColumnCount</span></code>
+                  <br/>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.ColumnCount``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.ColumnCount\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the number of columns of the matrix.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2269', 2269)" onmouseover="showTip(event, '2269', 2269)">
+                <p>
+                  <a id="Item">
+                    <a href="#Item">
+                      <code><span>this.[<span><span>arg1,&#32;arg2</span></span>]</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2269">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.[<span><span>arg1,&#32;arg2</span></span>]</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.Item``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.Item\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2270', 2270)" onmouseover="showTip(event, '2270', 2270)">
+                <p>
+                  <a id="RowCount">
+                    <a href="#RowCount">
+                      <code><span>this.RowCount</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2270">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.RowCount</span></code>
+                  <br/>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.RowCount``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.LinearAlgebra.MatrixWrapperStructForTopSpineJaggedArray`1.RowCount\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the number of rows of the matrix.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

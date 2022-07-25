@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PeakFinderCWT (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    PeakFinderCWT Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching.html">
+        Altaxo.Science.Spectroscopy.PeakSearching
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Peak finder using continuous wavelet transformation.
+            
+      </p>
+    </div>
+    <p class="fsdocs-remarks">
+      <p class='fsdocs-para'>References:</p><p class='fsdocs-para'>[1] P.Du, W.A. Kibbe, S.M.Lin, "Improved peak detection in mass spectrum by incorporating continuous wavelet transform-based pattern matching", Bioinformatics (2006) 22 (17): pp. 2059-2065, doi: 10.1093/bioinformatics/btl355</p>
+    </p>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5752', 5752)" onmouseover="showTip(event, '5752', 5752)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>PeakFinderCWT<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5752">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5753', 5753)" onmouseover="showTip(event, '5753', 5753)">
+                <p>
+                  <a id="ContinuousWaveletTransformation">
+                    <a href="#ContinuousWaveletTransformation">
+                      <code><span>PeakFinderCWT.ContinuousWaveletTransformation<span><span>(<span>data,&#32;wavelet,&#32;widths</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5753">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT.ContinuousWaveletTransformation<span><span>(<span>data,&#32;wavelet,&#32;widths</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        data
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The data to transform.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        wavelet
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>float,&#32;float,&#32;float</span>&gt;</span></code>
+                       - 
+                      The wavelet function. First parameter is the x value of the function, second parameter is the width.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        widths
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;float&gt;</span></code>
+                       - 
+                      Enumeration of widths to evaluate. The values should be increasing.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[,]</span></code>
+                  </span>
+                  A matrix in which each row represents the waveform transformation at a certain width.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.ContinuousWaveletTransformation`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.ContinuousWaveletTransformation\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Executes a continuous wavelet transform over the data <span class="fsdocs-param-name">data</span>.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  data
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The data to transform.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  wavelet
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>float,&#32;float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The wavelet function. First parameter is the x value of the function, second parameter is the width.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  widths
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Enumeration of widths to evaluate. The values should be increasing.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[,]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A matrix in which each row represents the waveform transformation at a certain width.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5754', 5754)" onmouseover="showTip(event, '5754', 5754)">
+                <p>
+                  <a id="Execute">
+                    <a href="#Execute">
+                      <code><span>PeakFinderCWT.Execute<span><span>(<span>vector,&#32;widths,&#32;?wavelet,&#32;?max_distances,&#32;?gap_thresh</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5754">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT.Execute<span><span>(<span>vector,&#32;widths,&#32;?wavelet,&#32;?max_distances,&#32;?gap_thresh</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        vector
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      1-D array in which to find the peaks.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        widths
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;float&gt;</span></code>
+                       - 
+                      Enumeration of widths to use for calculating
+            the CWT matrix. In general, this range should cover the expected width of peaks of interest.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?wavelet
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>float,&#32;float,&#32;float</span>&gt;</span></code>
+                       - 
+                      Should take two parameters and return a 1-D array to convolve
+            with `vector`. The first parameter determines the number of points
+            of the returned wavelet array, the second parameter is the scale
+            (`width`) of the wavelet.Should be normalized and symmetric.
+             Default is the ricker wavelet.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?max_distances
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>int,&#32;int</span>&gt;</span></code>
+                       - 
+                      At each row, a ridge line is only connected if the relative max at
+            row[n] is within ``max_distances[n]`` from the relative max at
+            ``row[n + 1]``.  Default value is ``widths/4``.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?gap_thresh
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      If a relative maximum is not found within `max_distances`,
+            there will be a gap.A ridge line is discontinued if there are more
+            than `gap_thresh` points without connecting a new relative maximum.
+            Default is the first value of the widths array i.e.widths[0].
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-ridgeline.html">RidgeLine</a>&gt;</span>&#32;*&#32;<span>float[,]</span></span></code>
+                  </span>
+                  A tuple: all ridge lines that were found, and the matrix of Cwt coefficients. The list of ridge lines is not sorted.
+            Use a filter function (e.g. <a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfindercwt.html#FilterRidgeLines">PeakFinderCWT.FilterRidgeLines</a>) in order to filter out the not essential lines.
+            
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.Execute`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.Execute\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Find peaks in a 1-D array with wavelet transformation.
+            The general approach is to smooth `vector` by convolving it with
+            wavelet(width) for each width in widths. Relative maxima which
+            appear at enough length scales, and with sufficiently high SNR, are
+            accepted.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  vector
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  1-D array in which to find the peaks.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  widths
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Enumeration of widths to use for calculating
+            the CWT matrix. In general, this range should cover the expected width of peaks of interest.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?wavelet
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>float,&#32;float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Should take two parameters and return a 1-D array to convolve
+            with `vector`. The first parameter determines the number of points
+            of the returned wavelet array, the second parameter is the scale
+            (`width`) of the wavelet.Should be normalized and symmetric.
+             Default is the ricker wavelet.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?max_distances
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>int,&#32;int</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  At each row, a ridge line is only connected if the relative max at
+            row[n] is within ``max_distances[n]`` from the relative max at
+            ``row[n + 1]``.  Default value is ``widths/4``.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?gap_thresh
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If a relative maximum is not found within `max_distances`,
+            there will be a gap.A ridge line is discontinued if there are more
+            than `gap_thresh` points without connecting a new relative maximum.
+            Default is the first value of the widths array i.e.widths[0].
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-ridgeline.html">RidgeLine</a>&gt;</span>&#32;*&#32;<span>float[,]</span></span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A tuple: all ridge lines that were found, and the matrix of Cwt coefficients. The list of ridge lines is not sorted.
+            Use a filter function (e.g. <a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfindercwt.html#FilterRidgeLines">PeakFinderCWT.FilterRidgeLines</a>) in order to filter out the not essential lines.
+            
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5755', 5755)" onmouseover="showTip(event, '5755', 5755)">
+                <p>
+                  <a id="FilterRidgeLines">
+                    <a href="#FilterRidgeLines">
+                      <code><span>PeakFinderCWT.FilterRidgeLines<span><span>(<span>cwt,&#32;ridge_lines,&#32;?window_sizen,&#32;?min_lengthn,&#32;?min_snr,&#32;?noise_perc</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5755">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT.FilterRidgeLines<span><span>(<span>cwt,&#32;ridge_lines,&#32;?window_sizen,&#32;?min_lengthn,&#32;?min_snr,&#32;?noise_perc</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        cwt
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      Continuous wavelet transform from which the <span class="fsdocs-param-name">ridge_lines</span> were defined.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ridge_lines
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-ridgeline.html">RidgeLine</a>&gt;</span></code>
+                       - 
+                      The ridge lines. Each line consist of a list of tuples (row, column).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?window_sizen
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Size of window to use to calculate noise floor.  Default is cwt.NumberOfColumns/20.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?min_lengthn
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Minimum length a ridge line needs to be acceptable.  Default is cwt.NumberOfRows / 4.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?min_snr
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Minimum SNR ratio. Default 1. The signal is the value of
+            the cwt matrix at the shortest length scale(``cwt[0, loc]``), the
+            noise is the `noise_perc`th percentile of datapoints contained within a
+            window of `window_size` around ``cwt[0, loc]``.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?noise_perc
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      When calculating the noise floor, percentile of data points (0..1) examined below which to consider noise. Calculated using scoreatpercentile. Default value: 0.1
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-ridgeline.html">RidgeLine</a>&gt;</span></code>
+                  </span>
+                  Only those ridge lines that match the criteria.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.FilterRidgeLines`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.FilterRidgeLines\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Filter ridge lines according to prescribed criteria. Intended to be used for finding relative maxima.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  cwt
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Continuous wavelet transform from which the <span class="fsdocs-param-name">ridge_lines</span> were defined.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ridge_lines
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-ridgeline.html">RidgeLine</a>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The ridge lines. Each line consist of a list of tuples (row, column).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?window_sizen
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Size of window to use to calculate noise floor.  Default is cwt.NumberOfColumns/20.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?min_lengthn
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Minimum length a ridge line needs to be acceptable.  Default is cwt.NumberOfRows / 4.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?min_snr
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Minimum SNR ratio. Default 1. The signal is the value of
+            the cwt matrix at the shortest length scale(``cwt[0, loc]``), the
+            noise is the `noise_perc`th percentile of datapoints contained within a
+            window of `window_size` around ``cwt[0, loc]``.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?noise_perc
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  When calculating the noise floor, percentile of data points (0..1) examined below which to consider noise. Calculated using scoreatpercentile. Default value: 0.1
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-ridgeline.html">RidgeLine</a>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Only those ridge lines that match the criteria.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5756', 5756)" onmouseover="showTip(event, '5756', 5756)">
+                <p>
+                  <a id="GetNoiseLevel">
+                    <a href="#GetNoiseLevel">
+                      <code><span>PeakFinderCWT.GetNoiseLevel<span><span>(<span>cwt,&#32;?window_size,&#32;?noise_perc</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5756">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT.GetNoiseLevel<span><span>(<span>cwt,&#32;?window_size,&#32;?noise_perc</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        cwt
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      The matrix with the continuous wavelet transformation. Only the first row (stage 0) of that matrix is used for evaluating the noise.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?window_size
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Size of the sliding window to evaluate the noise.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?noise_perc
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The percentile (but given in value from 0..1) at which the noise level is evaluated.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  Array with a noise level for each point of the spectrum.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.GetNoiseLevel`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.GetNoiseLevel\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the noise level along the x-axis.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  cwt
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix with the continuous wavelet transformation. Only the first row (stage 0) of that matrix is used for evaluating the noise.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?window_size
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Size of the sliding window to evaluate the noise.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?noise_perc
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The percentile (but given in value from 0..1) at which the noise level is evaluated.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Array with a noise level for each point of the spectrum.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5757', 5757)" onmouseover="showTip(event, '5757', 5757)">
+                <p>
+                  <a id="GetRelativeExtrema">
+                    <a href="#GetRelativeExtrema">
+                      <code><span>PeakFinderCWT.GetRelativeExtrema<span><span>(<span>data,&#32;comparator,&#32;?order</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5757">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT.GetRelativeExtrema<span><span>(<span>data,&#32;comparator,&#32;?order</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        data
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The data array.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        comparator
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>float,&#32;float,&#32;bool</span>&gt;</span></code>
+                       - 
+                      The comparator. To find maxima, use the greater operator (<code>(x,y)=&gt;x&gt;y</code>)
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?order
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The order. Must at least 1. The order are the number of points to the left and right of the point under consideration, that must fullfill the comparator condition.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>bool[]</span></code>
+                  </span>
+                  An array in which points where a local extrema was found are marked with true.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.GetRelativeExtrema`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.GetRelativeExtrema\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets a boolean array, in which local extrema in a spectrum are marked as true.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  data
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The data array.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  comparator
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>float,&#32;float,&#32;bool</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The comparator. To find maxima, use the greater operator (<code>(x,y)=&gt;x&gt;y</code>)
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?order
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The order. Must at least 1. The order are the number of points to the left and right of the point under consideration, that must fullfill the comparator condition.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>bool[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An array in which points where a local extrema was found are marked with true.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5758', 5758)" onmouseover="showTip(event, '5758', 5758)">
+                <p>
+                  <a id="GetRelativeExtrema">
+                    <a href="#GetRelativeExtrema">
+                      <code><span>PeakFinderCWT.GetRelativeExtrema<span><span>(<span>data,&#32;comparator,&#32;?axis,&#32;?order</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5758">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT.GetRelativeExtrema<span><span>(<span>data,&#32;comparator,&#32;?axis,&#32;?order</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        data
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      The data matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        comparator
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>float,&#32;float,&#32;bool</span>&gt;</span></code>
+                       - 
+                      The comparator function.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?axis
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The axis which is iterated over. 0: for each column, the maxima of the row values will be evaluated.
+            1: for each row, the maxima of the column values will be evaluated.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?order
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of points to compare to the left and right of the considered point Must be >=1.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>bool[,]</span></code>
+                  </span>
+                  
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.GetRelativeExtrema`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.GetRelativeExtrema\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets a boolean matrix of the same dimensions as the provided <span class="fsdocs-param-name">data</span> matrix,
+            in which the points at which a relative extrema is found, are set to true.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  data
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The data matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  comparator
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>float,&#32;float,&#32;bool</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The comparator function.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?axis
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The axis which is iterated over. 0: for each column, the maxima of the row values will be evaluated.
+            1: for each row, the maxima of the column values will be evaluated.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?order
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of points to compare to the left and right of the considered point Must be >=1.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>bool[,]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.notimplementedexception">
+                    NotImplementedException
+                  </a>
+                </td>
+                <td>
+                  
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5759', 5759)" onmouseover="showTip(event, '5759', 5759)">
+                <p>
+                  <a id="IdentifyRidgeLines">
+                    <a href="#IdentifyRidgeLines">
+                      <code><span>PeakFinderCWT.IdentifyRidgeLines<span><span>(<span>matr,&#32;max_distances,&#32;maximalGap</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5759">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT.IdentifyRidgeLines<span><span>(<span>matr,&#32;max_distances,&#32;maximalGap</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        matr
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      The continuous wavelet transformation (Cwt) matrix. Each row in the matrix represents the transformation for one width.
+            It is assumed that the width increases with increasing row number.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        max_distances
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>int,&#32;int</span>&gt;</span></code>
+                       - 
+                      A function, using the row number as argument, and returning the maximal distance (in points) that is allowed
+            between the current x value of the ridge line and the x-position of a maximum identified in the Cwt matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        maximalGap
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The maximal number of rows that is allowed to bridge between the end of a ridge line and a maximum in the Cwt matrix.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-ridgeline.html">RidgeLine</a>&gt;</span></code>
+                  </span>
+                  List of ridge lines. Each ridge line is represented by a list of tuples (row number, column number, and Cwt coefficient).
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.IdentifyRidgeLines`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.IdentifyRidgeLines\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Identifies the ridge lines in a continous wavelet transformation matrix
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  matr
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The continuous wavelet transformation (Cwt) matrix. Each row in the matrix represents the transformation for one width.
+            It is assumed that the width increases with increasing row number.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  max_distances
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>int,&#32;int</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A function, using the row number as argument, and returning the maximal distance (in points) that is allowed
+            between the current x value of the ridge line and the x-position of a maximum identified in the Cwt matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  maximalGap
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The maximal number of rows that is allowed to bridge between the end of a ridge line and a maximum in the Cwt matrix.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-ridgeline.html">RidgeLine</a>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  List of ridge lines. Each ridge line is represented by a list of tuples (row number, column number, and Cwt coefficient).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5760', 5760)" onmouseover="showTip(event, '5760', 5760)">
+                <p>
+                  <a id="Ricker">
+                    <a href="#Ricker">
+                      <code><span>PeakFinderCWT.Ricker<span><span>(<span>x,&#32;w</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5760">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT.Ricker<span><span>(<span>x,&#32;w</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The argument x.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        w
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The width of the wavelet.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The function value for the argument <span class="fsdocs-param-name">x</span>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.Ricker`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.Ricker\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Ricker wavelet function, also known as the "Mexican hat wavelet".
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              <p class='fsdocs-para'>It models the function:</p><pre>
+            A* (1 - (x/a)**2) * exp(-0.5*(x/a)**2),
+            where A = 2/(sqrt(3*a)*(pi**0.25)).</pre>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The argument x.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  w
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The width of the wavelet.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The function value for the argument <span class="fsdocs-param-name">x</span>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5761', 5761)" onmouseover="showTip(event, '5761', 5761)">
+                <p>
+                  <a id="Ricker2ndDerivative">
+                    <a href="#Ricker2ndDerivative">
+                      <code><span>PeakFinderCWT.Ricker2ndDerivative<span><span>(<span>x,&#32;w</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5761">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT.Ricker2ndDerivative<span><span>(<span>x,&#32;w</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The argument x.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        w
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The width of the wavelet.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The function value for the argument <span class="fsdocs-param-name">x</span>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.Ricker2ndDerivative`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.Ricker2ndDerivative\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Normalized 2nd derivative of the Ricker wavelet function.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              <p class='fsdocs-para'>It models the function:</p><pre>
+            A* (3 - 6*(x/a)**2 + (x/a)**4) * exp(-0.5*(x/a)**2),
+            where A = 4/(sqrt(105*a)*(pi**0.25)).</pre>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The argument x.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  w
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The width of the wavelet.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The function value for the argument <span class="fsdocs-param-name">x</span>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5762', 5762)" onmouseover="showTip(event, '5762', 5762)">
+                <p>
+                  <a id="ScoreAtPercentile">
+                    <a href="#ScoreAtPercentile">
+                      <code><span>PeakFinderCWT.ScoreAtPercentile<span><span>(<span>arr,&#32;percentile</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5762">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinderCWT.ScoreAtPercentile<span><span>(<span>arr,&#32;percentile</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arr
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        percentile
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.ScoreAtPercentile`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinderCWT.ScoreAtPercentile\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arr
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  percentile
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

@@ -1,0 +1,3346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MixtureOfFluids (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    MixtureOfFluids Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-science-thermodynamics-fluids.html">
+        Altaxo.Science.Thermodynamics.Fluids
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstate.html">HelmholtzEquationOfState</a></code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Represents a mixture of fluids.
+            
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8148', 8148)" onmouseover="showTip(event, '8148', 8148)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>MixtureOfFluids<span><span>(<span>fluid1,&#32;moleFraction1,&#32;fluid2,&#32;moleFraction2,&#32;?checkForSumEqualsOne</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8148">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids<span><span>(<span>fluid1,&#32;moleFraction1,&#32;fluid2,&#32;moleFraction2,&#32;?checkForSumEqualsOne</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        fluid1
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction1
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid2
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction2
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?checkForSumEqualsOne
+                      </b>
+                      :
+                      <code>bool</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid1
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction1
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid2
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction2
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?checkForSumEqualsOne
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8149', 8149)" onmouseover="showTip(event, '8149', 8149)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>MixtureOfFluids<span><span>(<span>fluid1,&#32;moleFraction1,&#32;fluid2,&#32;moleFraction2,&#32;fluid3,&#32;moleFraction3,&#32;?checkForSumEqualsOne</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8149">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids<span><span>(<span>fluid1,&#32;moleFraction1,&#32;fluid2,&#32;moleFraction2,&#32;fluid3,&#32;moleFraction3,&#32;?checkForSumEqualsOne</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        fluid1
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction1
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid2
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction2
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid3
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction3
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?checkForSumEqualsOne
+                      </b>
+                      :
+                      <code>bool</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid1
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction1
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid2
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction2
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid3
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction3
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?checkForSumEqualsOne
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8150', 8150)" onmouseover="showTip(event, '8150', 8150)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>MixtureOfFluids<span><span>(<span>fluid1,&#32;moleFraction1,&#32;fluid2,&#32;moleFraction2,&#32;fluid3,&#32;moleFraction3,&#32;fluid4,&#32;moleFraction4,&#32;?checkForSumEqualsOne</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8150">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids<span><span>(<span>fluid1,&#32;moleFraction1,&#32;fluid2,&#32;moleFraction2,&#32;fluid3,&#32;moleFraction3,&#32;fluid4,&#32;moleFraction4,&#32;?checkForSumEqualsOne</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        fluid1
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction1
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid2
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction2
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid3
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction3
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid4
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction4
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?checkForSumEqualsOne
+                      </b>
+                      :
+                      <code>bool</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid1
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction1
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid2
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction2
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid3
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction3
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid4
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction4
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?checkForSumEqualsOne
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8151', 8151)" onmouseover="showTip(event, '8151', 8151)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>MixtureOfFluids<span><span>(<span>fluid1,&#32;moleFraction1,&#32;fluid2,&#32;moleFraction2,&#32;fluid3,&#32;moleFraction3,&#32;fluid4,&#32;moleFraction4,&#32;fluid5,&#32;moleFraction5,&#32;?checkForSumEqualsOne</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8151">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids<span><span>(<span>fluid1,&#32;moleFraction1,&#32;fluid2,&#32;moleFraction2,&#32;fluid3,&#32;moleFraction3,&#32;fluid4,&#32;moleFraction4,&#32;fluid5,&#32;moleFraction5,&#32;?checkForSumEqualsOne</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        fluid1
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction1
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid2
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction2
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid3
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction3
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid4
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction4
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid5
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        moleFraction5
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?checkForSumEqualsOne
+                      </b>
+                      :
+                      <code>bool</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid1
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction1
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid2
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction2
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid3
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction3
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid4
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction4
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid5
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFraction5
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?checkForSumEqualsOne
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8152', 8152)" onmouseover="showTip(event, '8152', 8152)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>MixtureOfFluids<span><span>(<span>fluidsAndMoleFractions,&#32;?checkForSumEqualToOne</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8152">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids<span><span>(<span>fluidsAndMoleFractions,&#32;?checkForSumEqualToOne</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        fluidsAndMoleFractions
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<span><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&#32;*&#32;float</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?checkForSumEqualToOne
+                      </b>
+                      :
+                      <code>bool</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluidsAndMoleFractions
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<span><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&#32;*&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?checkForSumEqualToOne
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8153', 8153)" onmouseover="showTip(event, '8153', 8153)">
+                <p>
+                  <a id="MolecularWeight">
+                    <a href="#MolecularWeight">
+                      <code><span>this.MolecularWeight</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8153">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.MolecularWeight</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.MolecularWeight`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.MolecularWeight\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8154', 8154)" onmouseover="showTip(event, '8154', 8154)">
+                <p>
+                  <a id="Phi0_OfReducedVariables">
+                    <a href="#Phi0_OfReducedVariables">
+                      <code><span>this.Phi0_OfReducedVariables</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8154">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Phi0_OfReducedVariables</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        delta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tau
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.Phi0_OfReducedVariables`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.Phi0_OfReducedVariables\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  delta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tau
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8155', 8155)" onmouseover="showTip(event, '8155', 8155)">
+                <p>
+                  <a id="Phi0_tau_OfReducedVariables">
+                    <a href="#Phi0_tau_OfReducedVariables">
+                      <code><span>this.Phi0_tau_OfReducedVariables</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8155">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Phi0_tau_OfReducedVariables</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        delta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tau
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.Phi0_tau_OfReducedVariables`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.Phi0_tau_OfReducedVariables\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  delta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tau
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8156', 8156)" onmouseover="showTip(event, '8156', 8156)">
+                <p>
+                  <a id="Phi0_tautau_OfReducedVariables">
+                    <a href="#Phi0_tautau_OfReducedVariables">
+                      <code><span>this.Phi0_tautau_OfReducedVariables</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8156">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Phi0_tautau_OfReducedVariables</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        delta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tau
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.Phi0_tautau_OfReducedVariables`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.Phi0_tautau_OfReducedVariables\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  delta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tau
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8157', 8157)" onmouseover="showTip(event, '8157', 8157)">
+                <p>
+                  <a id="PhiR_OfReducedVariables">
+                    <a href="#PhiR_OfReducedVariables">
+                      <code><span>this.PhiR_OfReducedVariables</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8157">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PhiR_OfReducedVariables</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        delta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tau
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_OfReducedVariables`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_OfReducedVariables\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  delta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tau
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8158', 8158)" onmouseover="showTip(event, '8158', 8158)">
+                <p>
+                  <a id="PhiR_delta_OfReducedVariables">
+                    <a href="#PhiR_delta_OfReducedVariables">
+                      <code><span>this.PhiR_delta_OfReducedVariables</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8158">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PhiR_delta_OfReducedVariables</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        delta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tau
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_delta_OfReducedVariables`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_delta_OfReducedVariables\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  delta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tau
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8159', 8159)" onmouseover="showTip(event, '8159', 8159)">
+                <p>
+                  <a id="PhiR_deltadelta_OfReducedVariables">
+                    <a href="#PhiR_deltadelta_OfReducedVariables">
+                      <code><span>this.PhiR_deltadelta_OfReducedVariables</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8159">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PhiR_deltadelta_OfReducedVariables</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        delta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tau
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_deltadelta_OfReducedVariables`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_deltadelta_OfReducedVariables\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  delta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tau
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8160', 8160)" onmouseover="showTip(event, '8160', 8160)">
+                <p>
+                  <a id="PhiR_deltatau_OfReducedVariables">
+                    <a href="#PhiR_deltatau_OfReducedVariables">
+                      <code><span>this.PhiR_deltatau_OfReducedVariables</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8160">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PhiR_deltatau_OfReducedVariables</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        delta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tau
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_deltatau_OfReducedVariables`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_deltatau_OfReducedVariables\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  delta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tau
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8161', 8161)" onmouseover="showTip(event, '8161', 8161)">
+                <p>
+                  <a id="PhiR_tau_OfReducedVariables">
+                    <a href="#PhiR_tau_OfReducedVariables">
+                      <code><span>this.PhiR_tau_OfReducedVariables</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8161">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PhiR_tau_OfReducedVariables</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        delta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tau
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_tau_OfReducedVariables`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_tau_OfReducedVariables\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  delta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tau
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8162', 8162)" onmouseover="showTip(event, '8162', 8162)">
+                <p>
+                  <a id="PhiR_tautau_OfReducedVariables">
+                    <a href="#PhiR_tautau_OfReducedVariables">
+                      <code><span>this.PhiR_tautau_OfReducedVariables</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8162">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PhiR_tautau_OfReducedVariables</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        delta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tau
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_tautau_OfReducedVariables`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.PhiR_tautau_OfReducedVariables\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  delta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tau
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8163', 8163)" onmouseover="showTip(event, '8163', 8163)">
+                <p>
+                  <a id="ReducingMoleDensity">
+                    <a href="#ReducingMoleDensity">
+                      <code><span>this.ReducingMoleDensity</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8163">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ReducingMoleDensity</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.ReducingMoleDensity`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.ReducingMoleDensity\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8164', 8164)" onmouseover="showTip(event, '8164', 8164)">
+                <p>
+                  <a id="ReducingTemperature">
+                    <a href="#ReducingTemperature">
+                      <code><span>this.ReducingTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8164">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ReducingTemperature</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.ReducingTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.ReducingTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8165', 8165)" onmouseover="showTip(event, '8165', 8165)">
+                <p>
+                  <a id="WithMassFractions">
+                    <a href="#WithMassFractions">
+                      <code><span>this.WithMassFractions</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8165">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.WithMassFractions</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        massFractions
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The mass fractions of the components.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-mixtureoffluids.html">MixtureOfFluids</a></code>
+                  </span>
+                  A mixture with the same components, but different mass fractions. The sum of mass fractions has to be equal to 1.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.WithMassFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.WithMassFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the same mixture of fluids, but with other mass fractions.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  massFractions
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The mass fractions of the components.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-mixtureoffluids.html">MixtureOfFluids</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A mixture with the same components, but different mass fractions. The sum of mass fractions has to be equal to 1.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8166', 8166)" onmouseover="showTip(event, '8166', 8166)">
+                <p>
+                  <a id="WithMoleFractions">
+                    <a href="#WithMoleFractions">
+                      <code><span>this.WithMoleFractions</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8166">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.WithMoleFractions</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        moleFractions
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The mole fractions of the components.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-mixtureoffluids.html">MixtureOfFluids</a></code>
+                  </span>
+                  A mixture with the same components, but different mole fractions. The sum of mole fractions has to be equal to 1.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.WithMoleFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.WithMoleFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the same mixture of fluids, but with other mole fractions.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFractions
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The mole fractions of the components.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-mixtureoffluids.html">MixtureOfFluids</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A mixture with the same components, but different mole fractions. The sum of mole fractions has to be equal to 1.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8167', 8167)" onmouseover="showTip(event, '8167', 8167)">
+                <p>
+                  <a id="WithMoleFractions">
+                    <a href="#WithMoleFractions">
+                      <code><span>this.WithMoleFractions</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8167">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.WithMoleFractions</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        moleFractions
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;float&gt;</span></code>
+                       - 
+                      The mole fractions of the components.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?checkForSumEqualToOne
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      If set to <code>true</code>, it is checked that the sum of mole fractions equals to 1. If this is not the case, a <a href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> is thrown.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-mixtureoffluids.html">MixtureOfFluids</a></code>
+                  </span>
+                  
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.WithMoleFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.WithMoleFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the same mixture of fluids, but with other mole fractions.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  moleFractions
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The mole fractions of the components.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?checkForSumEqualToOne
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If set to <code>true</code>, it is checked that the sum of mole fractions equals to 1. If this is not the case, a <a href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> is thrown.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-mixtureoffluids.html">MixtureOfFluids</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8168', 8168)" onmouseover="showTip(event, '8168', 8168)">
+                <p>
+                  <a id="WorkingUniversalGasConstant">
+                    <a href="#WorkingUniversalGasConstant">
+                      <code><span>this.WorkingUniversalGasConstant</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8168">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.WorkingUniversalGasConstant</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.WorkingUniversalGasConstant`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.WorkingUniversalGasConstant\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8169', 8169)" onmouseover="showTip(event, '8169', 8169)">
+                <p>
+                  <a id="FromCASRegistryNumbersAndMassFractions">
+                    <a href="#FromCASRegistryNumbersAndMassFractions">
+                      <code><span>MixtureOfFluids.FromCASRegistryNumbersAndMassFractions<span><span>(<span>casNumbersAndMassFractions</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8169">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.FromCASRegistryNumbersAndMassFractions<span><span>(<span>casNumbersAndMassFractions</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        casNumbersAndMassFractions
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>string&#32;*&#32;float</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-mixtureoffluids.html">MixtureOfFluids</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.FromCASRegistryNumbersAndMassFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.FromCASRegistryNumbersAndMassFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  casNumbersAndMassFractions
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>string&#32;*&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-mixtureoffluids.html">MixtureOfFluids</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8170', 8170)" onmouseover="showTip(event, '8170', 8170)">
+                <p>
+                  <a id="FromCASRegistryNumbersAndMoleFractions">
+                    <a href="#FromCASRegistryNumbersAndMoleFractions">
+                      <code><span>MixtureOfFluids.FromCASRegistryNumbersAndMoleFractions<span><span>(<span>casNumbersAndMoleFractions</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8170">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.FromCASRegistryNumbersAndMoleFractions<span><span>(<span>casNumbersAndMoleFractions</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        casNumbersAndMoleFractions
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>string&#32;*&#32;float</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-mixtureoffluids.html">MixtureOfFluids</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.FromCASRegistryNumbersAndMoleFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.FromCASRegistryNumbersAndMoleFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  casNumbersAndMoleFractions
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>string&#32;*&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-mixtureoffluids.html">MixtureOfFluids</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8171', 8171)" onmouseover="showTip(event, '8171', 8171)">
+                <p>
+                  <a id="GetMassFractionsFromFluidsAndMoleFractions">
+                    <a href="#GetMassFractionsFromFluidsAndMoleFractions">
+                      <code><span>MixtureOfFluids.GetMassFractionsFromFluidsAndMoleFractions<span><span>(<span>list</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8171">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.GetMassFractionsFromFluidsAndMoleFractions<span><span>(<span>list</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        list
+                      </b>
+                      :
+                      <code><span><span>(<span><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&#32;*&#32;float</span>)</span>[]</span></code>
+                       - 
+                      The list of fluids and mole fractions of the fluids.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  An array with the mass fractions of the fluids.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMassFractionsFromFluidsAndMoleFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMassFractionsFromFluidsAndMoleFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the mass fractions from the fluids and the mole fractions of the fluids.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  list
+                </span>
+                :
+                <code><span><span>(<span><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&#32;*&#32;float</span>)</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of fluids and mole fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An array with the mass fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8172', 8172)" onmouseover="showTip(event, '8172', 8172)">
+                <p>
+                  <a id="GetMassFractionsFromFluidsAndMoleFractions">
+                    <a href="#GetMassFractionsFromFluidsAndMoleFractions">
+                      <code><span>MixtureOfFluids.GetMassFractionsFromFluidsAndMoleFractions<span><span>(<span>list</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8172">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.GetMassFractionsFromFluidsAndMoleFractions<span><span>(<span>list</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        list
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&#32;*&#32;float</span>&gt;</span></code>
+                       - 
+                      The list of fluids and mole fractions of the fluids.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  An array with the mass fractions of the fluids.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMassFractionsFromFluidsAndMoleFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMassFractionsFromFluidsAndMoleFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the mass fractions from the fluids and the mole fractions of the fluids.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  list
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&#32;*&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of fluids and mole fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An array with the mass fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8173', 8173)" onmouseover="showTip(event, '8173', 8173)">
+                <p>
+                  <a id="GetMassFractionsFromMolecularWeightsAndMoleFractions">
+                    <a href="#GetMassFractionsFromMolecularWeightsAndMoleFractions">
+                      <code><span>MixtureOfFluids.GetMassFractionsFromMolecularWeightsAndMoleFractions<span><span>(<span>list</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8173">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.GetMassFractionsFromMolecularWeightsAndMoleFractions<span><span>(<span>list</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        list
+                      </b>
+                      :
+                      <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+                       - 
+                      The list of molecular weights and mole fractions of the fluids.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  An array with the mass fractions of the fluids.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMassFractionsFromMolecularWeightsAndMoleFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMassFractionsFromMolecularWeightsAndMoleFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the mass fractions from the molecular weights and mole fractions of the fluids.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  list
+                </span>
+                :
+                <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of molecular weights and mole fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An array with the mass fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8174', 8174)" onmouseover="showTip(event, '8174', 8174)">
+                <p>
+                  <a id="GetMassFractionsFromMolecularWeightsAndMoleFractions">
+                    <a href="#GetMassFractionsFromMolecularWeightsAndMoleFractions">
+                      <code><span>MixtureOfFluids.GetMassFractionsFromMolecularWeightsAndMoleFractions<span><span>(<span>list</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8174">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.GetMassFractionsFromMolecularWeightsAndMoleFractions<span><span>(<span>list</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        list
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>float&#32;*&#32;float</span>&gt;</span></code>
+                       - 
+                      The list of molecular weights and mole fractions of the fluids.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  An array with the mass fractions of the fluids.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMassFractionsFromMolecularWeightsAndMoleFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMassFractionsFromMolecularWeightsAndMoleFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the mass fractions from the molecular weights and mole fractions of the fluids.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  list
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>float&#32;*&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of molecular weights and mole fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An array with the mass fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8175', 8175)" onmouseover="showTip(event, '8175', 8175)">
+                <p>
+                  <a id="GetMoleFractionsFromFluidsAndMassFractions">
+                    <a href="#GetMoleFractionsFromFluidsAndMassFractions">
+                      <code><span>MixtureOfFluids.GetMoleFractionsFromFluidsAndMassFractions<span><span>(<span>list</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8175">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.GetMoleFractionsFromFluidsAndMassFractions<span><span>(<span>list</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        list
+                      </b>
+                      :
+                      <code><span><span>(<span><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&#32;*&#32;float</span>)</span>[]</span></code>
+                       - 
+                      The list of fluids and mass fractions of the fluids.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  An array with the mole fractions of the fluids.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMoleFractionsFromFluidsAndMassFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMoleFractionsFromFluidsAndMassFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the mole fractions from the fluids and the mass fractions of the fluids.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  list
+                </span>
+                :
+                <code><span><span>(<span><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&#32;*&#32;float</span>)</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of fluids and mass fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An array with the mole fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8176', 8176)" onmouseover="showTip(event, '8176', 8176)">
+                <p>
+                  <a id="GetMoleFractionsFromFluidsAndMassFractions">
+                    <a href="#GetMoleFractionsFromFluidsAndMassFractions">
+                      <code><span>MixtureOfFluids.GetMoleFractionsFromFluidsAndMassFractions<span><span>(<span>list</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8176">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.GetMoleFractionsFromFluidsAndMassFractions<span><span>(<span>list</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        list
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&#32;*&#32;float</span>&gt;</span></code>
+                       - 
+                      The list of fluids and mass fractions of the fluids.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  An array with the mole fractions of the fluids.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMoleFractionsFromFluidsAndMassFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMoleFractionsFromFluidsAndMassFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the mole fractions from the fluids and the mass fractions of the fluids.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  list
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&#32;*&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of fluids and mass fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An array with the mole fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8177', 8177)" onmouseover="showTip(event, '8177', 8177)">
+                <p>
+                  <a id="GetMoleFractionsFromMolecularWeightsAndMassFractions">
+                    <a href="#GetMoleFractionsFromMolecularWeightsAndMassFractions">
+                      <code><span>MixtureOfFluids.GetMoleFractionsFromMolecularWeightsAndMassFractions<span><span>(<span>list</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8177">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.GetMoleFractionsFromMolecularWeightsAndMassFractions<span><span>(<span>list</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        list
+                      </b>
+                      :
+                      <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+                       - 
+                      The list of molecular weights and mass fractions of the fluids.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  An array with the mole fractions of the fluids.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMoleFractionsFromMolecularWeightsAndMassFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMoleFractionsFromMolecularWeightsAndMassFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the mole fractions from the molecular weights and mass fractions of the fluids.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  list
+                </span>
+                :
+                <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of molecular weights and mass fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An array with the mole fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8178', 8178)" onmouseover="showTip(event, '8178', 8178)">
+                <p>
+                  <a id="GetMoleFractionsFromMolecularWeightsAndMassFractions">
+                    <a href="#GetMoleFractionsFromMolecularWeightsAndMassFractions">
+                      <code><span>MixtureOfFluids.GetMoleFractionsFromMolecularWeightsAndMassFractions<span><span>(<span>list</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8178">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.GetMoleFractionsFromMolecularWeightsAndMassFractions<span><span>(<span>list</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        list
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>float&#32;*&#32;float</span>&gt;</span></code>
+                       - 
+                      The list of molecular weights and mass fractions of the fluids.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  An array with the mole fractions of the fluids.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMoleFractionsFromMolecularWeightsAndMassFractions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.GetMoleFractionsFromMolecularWeightsAndMassFractions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the mole fractions from the molecular weights and mass fractions of the fluids.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  list
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>float&#32;*&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of molecular weights and mass fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An array with the mole fractions of the fluids.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8179', 8179)" onmouseover="showTip(event, '8179', 8179)">
+                <p>
+                  <a id="KnownBinaryMixtures">
+                    <a href="#KnownBinaryMixtures">
+                      <code><span>MixtureOfFluids.KnownBinaryMixtures</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8179">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.KnownBinaryMixtures</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>string&#32;*&#32;string&#32;*&#32;<a href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>&#32;*&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-binarymixturedefinitionbase.html">BinaryMixtureDefinitionBase</a>&gt;</span></span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.KnownBinaryMixtures`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.KnownBinaryMixtures\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the known binary mixture definitions.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>string&#32;*&#32;string&#32;*&#32;<a href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>&#32;*&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-binarymixturedefinitionbase.html">BinaryMixtureDefinitionBase</a>&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8180', 8180)" onmouseover="showTip(event, '8180', 8180)">
+                <p>
+                  <a id="KnownFluids">
+                    <a href="#KnownFluids">
+                      <code><span>MixtureOfFluids.KnownFluids</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8180">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.KnownFluids</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>string&#32;*&#32;<a href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>&#32;*&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&gt;</span></span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.KnownFluids`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.KnownFluids\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the known fluids.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span>string&#32;*&#32;<a href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>&#32;*&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8181', 8181)" onmouseover="showTip(event, '8181', 8181)">
+                <p>
+                  <a id="TryGetFluidFromCasRegistryNumber">
+                    <a href="#TryGetFluidFromCasRegistryNumber">
+                      <code><span>MixtureOfFluids.TryGetFluidFromCasRegistryNumber<span><span>(<span>casRegistryNumber,&#32;fluid</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8181">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MixtureOfFluids.TryGetFluidFromCasRegistryNumber<span><span>(<span>casRegistryNumber,&#32;fluid</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        casRegistryNumber
+                      </b>
+                      :
+                      <code>string</code>
+                       - 
+                      The CAS registry number of the fluid.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fluid
+                      </b>
+                      :
+                      <code><span>byref&lt;<a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&gt;</span></code>
+                       - 
+                      If the return value is true, an instance of the fluid; otherwise null.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  True if an instance of a fluid with the given CAS registry number could be found; otherwise false.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.TryGetFluidFromCasRegistryNumber`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.MixtureOfFluids.TryGetFluidFromCasRegistryNumber\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Tries  to the get fluid from its CAS registry number.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  casRegistryNumber
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The CAS registry number of the fluid.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fluid
+                </span>
+                :
+                <code><span>byref&lt;<a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluidsbyspanetal.html">HelmholtzEquationOfStateOfPureFluidsBySpanEtAl</a>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If the return value is true, an instance of the fluid; otherwise null.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  True if an instance of a fluid with the given CAS registry number could be found; otherwise false.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

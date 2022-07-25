@@ -1,0 +1,2980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LinearFitBySvd (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    LinearFitBySvd Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-regression.html">
+        Altaxo.Calc.Regression
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Performs a linear fit to a given function base using singular value decomposition.
+            
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4632', 4632)" onmouseover="showTip(event, '4632', 4632)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>LinearFitBySvd<span><span>(<span>xarr,&#32;yarr,&#32;stddev,&#32;numberOfData,&#32;numberOfParameter,&#32;evaluateFunctionBase,&#32;threshold</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4632">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>LinearFitBySvd<span><span>(<span>xarr,&#32;yarr,&#32;stddev,&#32;numberOfData,&#32;numberOfParameter,&#32;evaluateFunctionBase,&#32;threshold</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        xarr
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The array of x values of the data set.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        yarr
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The array of y values of the data set.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        stddev
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The array of y standard deviations of the data set. Can be null if the standard deviation is unkown.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfData
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of data points (may be smaller than the array sizes of the data arrays).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfParameter
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of parameters to fit == size of the function base.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        evaluateFunctionBase
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-regression-functionbaseevaluator.html">FunctionBaseEvaluator</a></code>
+                       - 
+                      The function base used to fit.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        threshold
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      A treshold value (usually 1E-5) used to chop the unimportant singular values away.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Fits a data set linear to a given function base.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xarr
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of x values of the data set.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  yarr
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of y values of the data set.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  stddev
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of y standard deviations of the data set. Can be null if the standard deviation is unkown.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfData
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of data points (may be smaller than the array sizes of the data arrays).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfParameter
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of parameters to fit == size of the function base.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  evaluateFunctionBase
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-regression-functionbaseevaluator.html">FunctionBaseEvaluator</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The function base used to fit.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  threshold
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A treshold value (usually 1E-5) used to chop the unimportant singular values away.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4633', 4633)" onmouseover="showTip(event, '4633', 4633)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>LinearFitBySvd<span><span>(<span>xarr,&#32;yarr,&#32;stddev,&#32;numberOfData,&#32;numberOfParameter,&#32;evaluateFunctionBase,&#32;threshold</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4633">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>LinearFitBySvd<span><span>(<span>xarr,&#32;yarr,&#32;stddev,&#32;numberOfData,&#32;numberOfParameter,&#32;evaluateFunctionBase,&#32;threshold</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        xarr
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The array of x values of the data set.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        yarr
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The array of y values of the data set.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        stddev
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The array of y standard deviations of the data set. Can be null if the standard deviation is unkown.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfData
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of data points (may be smaller than the array sizes of the data arrays).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfParameter
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of parameters to fit == size of the function base.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        evaluateFunctionBase
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-regression-functionbaseevaluator.html">FunctionBaseEvaluator</a></code>
+                       - 
+                      The function base used to fit.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        threshold
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      A treshold value (usually 1E-5) used to chop the unimportant singular values away.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Fits a data set linear to a given function base.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xarr
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of x values of the data set.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  yarr
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of y values of the data set.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  stddev
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of y standard deviations of the data set. Can be null if the standard deviation is unkown.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfData
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of data points (may be smaller than the array sizes of the data arrays).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfParameter
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of parameters to fit == size of the function base.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  evaluateFunctionBase
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-regression-functionbaseevaluator.html">FunctionBaseEvaluator</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The function base used to fit.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  threshold
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A treshold value (usually 1E-5) used to chop the unimportant singular values away.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4634', 4634)" onmouseover="showTip(event, '4634', 4634)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>LinearFitBySvd<span><span>(<span>xbase,&#32;yarr,&#32;stddev,&#32;numberOfData,&#32;numberOfParameter,&#32;threshold</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4634">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>LinearFitBySvd<span><span>(<span>xbase,&#32;yarr,&#32;stddev,&#32;numberOfData,&#32;numberOfParameter,&#32;threshold</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        xbase
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      The matrix of x values of the data set. Dimensions: numberOfData x numberOfParameters. The matrix is changed during calculation!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        yarr
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The array of y values of the data set.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        stddev
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The array of y standard deviations of the data set. Can be null if the standard deviation is unkown.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfData
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of data points (may be smaller than the array sizes of the data arrays).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfParameter
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of parameters to fit == size of the function base.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        threshold
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      A treshold value (usually 1E-5) used to chop the unimportant singular values away.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Fits a data set linear to a given x base.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xbase
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix of x values of the data set. Dimensions: numberOfData x numberOfParameters. The matrix is changed during calculation!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  yarr
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of y values of the data set.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  stddev
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of y standard deviations of the data set. Can be null if the standard deviation is unkown.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfData
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of data points (may be smaller than the array sizes of the data arrays).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfParameter
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of parameters to fit == size of the function base.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  threshold
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A treshold value (usually 1E-5) used to chop the unimportant singular values away.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4635', 4635)" onmouseover="showTip(event, '4635', 4635)">
+                <p>
+                  <a id="AdjustedRSquared">
+                    <a href="#AdjustedRSquared">
+                      <code><span>this.AdjustedRSquared</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4635">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.AdjustedRSquared</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.AdjustedRSquared`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.AdjustedRSquared\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gives the adjusted coefficient of determination.
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              Ref. "Introduction to linear regression analysis", Wiley, p.90.
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4636', 4636)" onmouseover="showTip(event, '4636', 4636)">
+                <p>
+                  <a id="Calculate">
+                    <a href="#Calculate">
+                      <code><span>this.Calculate</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4636">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Calculate</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        xbase
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      The matrix of x values of the data set. Dimensions: numberOfData x numberOfParameters. The matrix is changed during calculation!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        yarr
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The array of y values of the data set.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        stddev
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The array of y standard deviations of the data set. Can be null if the standard deviation is unkown.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfData
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of data points (may be smaller than the array sizes of the data arrays).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfParameter
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of parameters to fit == size of the function base.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        threshold
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      A treshold value (usually 1E-5) used to chop the unimportant singular values away.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-regression-linearfitbysvd.html">LinearFitBySvd</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.Calculate`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.Calculate\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Fits a data set linear to a given x base.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xbase
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix of x values of the data set. Dimensions: numberOfData x numberOfParameters. The matrix is changed during calculation!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  yarr
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of y values of the data set.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  stddev
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of y standard deviations of the data set. Can be null if the standard deviation is unkown.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfData
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of data points (may be smaller than the array sizes of the data arrays).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfParameter
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of parameters to fit == size of the function base.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  threshold
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A treshold value (usually 1E-5) used to chop the unimportant singular values away.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-regression-linearfitbysvd.html">LinearFitBySvd</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4637', 4637)" onmouseover="showTip(event, '4637', 4637)">
+                <p>
+                  <a id="ConditionNumber">
+                    <a href="#ConditionNumber">
+                      <code><span>this.ConditionNumber</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4637">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ConditionNumber</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.ConditionNumber`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.ConditionNumber\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the condition number. The decadic logarithm of the condition number is roughly the loss of precision (in digits) during the calculation.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4638', 4638)" onmouseover="showTip(event, '4638', 4638)">
+                <p>
+                  <a id="Covariances">
+                    <a href="#Covariances">
+                      <code><span>this.Covariances</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4638">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Covariances</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>float[]</span>[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.Covariances`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.Covariances\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Get the variance-covariance-matrix for the fit.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4639', 4639)" onmouseover="showTip(event, '4639', 4639)">
+                <p>
+                  <a id="EstimatedVariance">
+                    <a href="#EstimatedVariance">
+                      <code><span>this.EstimatedVariance</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4639">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.EstimatedVariance</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.EstimatedVariance`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.EstimatedVariance\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Get the estimated residual mean square, also called SigmaSquare..
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              The estimated mean square is defined as SumChiSquare(n-p), where n is the number of data
+            points and p is the number of (free) parameters.
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4640', 4640)" onmouseover="showTip(event, '4640', 4640)">
+                <p>
+                  <a id="ExternallyStudentizedResidual">
+                    <a href="#ExternallyStudentizedResidual">
+                      <code><span>this.ExternallyStudentizedResidual</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4640">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ExternallyStudentizedResidual</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The index to the residual.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The ith externally studentized residual.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.ExternallyStudentizedResidual`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.ExternallyStudentizedResidual\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gives the ith studentized residual, with the ith observation removed from the model.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            As with the studentized residual, the expected variance of this residual is 1. Since the ith
+            observation is excluded from the model, the externally studentized residual is better suited
+            for outlier detection than the (normal) studentized residual.
+            <p class='fsdocs-para'>Ref: Introduction to linear regression analysis, 3rd ed., Wiley, p.136</p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index to the residual.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The ith externally studentized residual.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4641', 4641)" onmouseover="showTip(event, '4641', 4641)">
+                <p>
+                  <a id="NumberOfData">
+                    <a href="#NumberOfData">
+                      <code><span>this.NumberOfData</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4641">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.NumberOfData</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.NumberOfData`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.NumberOfData\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the number of data value.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4642', 4642)" onmouseover="showTip(event, '4642', 4642)">
+                <p>
+                  <a id="NumberOfParameter">
+                    <a href="#NumberOfParameter">
+                      <code><span>this.NumberOfParameter</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4642">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.NumberOfParameter</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.NumberOfParameter`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.NumberOfParameter\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the number of parameter (=Order+1) of the fit.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4643', 4643)" onmouseover="showTip(event, '4643', 4643)">
+                <p>
+                  <a id="PRESSResidual">
+                    <a href="#PRESSResidual">
+                      <code><span>this.PRESSResidual</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4643">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PRESSResidual</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The index of the PRESS residual.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The ith PRESS residual.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.PRESSResidual`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.PRESSResidual\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gives the ith PRESS residual.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              The PRESS residual is the prediction error of the ith value, if the ith value itself
+            is not used in the prediction model.
+            <p class='fsdocs-para'>Ref: Introduction to linear regression analysis, 3rd ed., Wiley, p.135</p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index of the PRESS residual.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The ith PRESS residual.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4644', 4644)" onmouseover="showTip(event, '4644', 4644)">
+                <p>
+                  <a id="Parameter">
+                    <a href="#Parameter">
+                      <code><span>this.Parameter</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4644">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Parameter</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.Parameter`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.Parameter\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Get the resulting parameters, so that the model y = SUM(parameter[i]*functionbase[i])
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4645', 4645)" onmouseover="showTip(event, '4645', 4645)">
+                <p>
+                  <a id="PredictedValues">
+                    <a href="#PredictedValues">
+                      <code><span>this.PredictedValues</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4645">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PredictedValues</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.PredictedValues`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.PredictedValues\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the predicted dependent values
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4646', 4646)" onmouseover="showTip(event, '4646', 4646)">
+                <p>
+                  <a id="PredictionVariance">
+                    <a href="#PredictionVariance">
+                      <code><span>this.PredictionVariance</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4646">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PredictionVariance</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The index to the ith observation.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The variance of the ith prediction value.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.PredictionVariance`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.PredictionVariance\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gives the variance of the prediction of the ith y-value.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index to the ith observation.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The variance of the ith prediction value.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4647', 4647)" onmouseover="showTip(event, '4647', 4647)">
+                <p>
+                  <a id="RSquared">
+                    <a href="#RSquared">
+                      <code><span>this.RSquared</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4647">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.RSquared</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.RSquared`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.RSquared\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gives the coefficient of determination, also called R^2, squared correlation coefficient. It is a measure, how  much
+            of the variability of the y data is accounted for by the regression model.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4648', 4648)" onmouseover="showTip(event, '4648', 4648)">
+                <p>
+                  <a id="RegressionCorrectedSumOfSquares">
+                    <a href="#RegressionCorrectedSumOfSquares">
+                      <code><span>this.RegressionCorrectedSumOfSquares</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4648">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.RegressionCorrectedSumOfSquares</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.RegressionCorrectedSumOfSquares`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.RegressionCorrectedSumOfSquares\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the regression sum of squares, i.e. SUM(yi`-ymean), where yi` is the predicted ith y value and y mean is the mean value of all y values.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4649', 4649)" onmouseover="showTip(event, '4649', 4649)">
+                <p>
+                  <a id="ResidualSumOfSquares">
+                    <a href="#ResidualSumOfSquares">
+                      <code><span>this.ResidualSumOfSquares</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4649">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ResidualSumOfSquares</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.ResidualSumOfSquares`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.ResidualSumOfSquares\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the sum of ChiSquare for the fit. This is SUM(yi-yi`)^2, where yi is the ith y value and yi` is the ith predicted y.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4650', 4650)" onmouseover="showTip(event, '4650', 4650)">
+                <p>
+                  <a id="ResidualValues">
+                    <a href="#ResidualValues">
+                      <code><span>this.ResidualValues</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4650">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ResidualValues</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.ResidualValues`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.ResidualValues\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the array of residual values defined as the difference y[i]-ypredicted[i].
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4651', 4651)" onmouseover="showTip(event, '4651', 4651)">
+                <p>
+                  <a id="Sigma">
+                    <a href="#Sigma">
+                      <code><span>this.Sigma</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4651">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Sigma</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.Sigma`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.Sigma\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Get the standard error of regression, defined as <code>Sqrt(SigmaSquare)</code>.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4652', 4652)" onmouseover="showTip(event, '4652', 4652)">
+                <p>
+                  <a id="StandardErrorOfParameter">
+                    <a href="#StandardErrorOfParameter">
+                      <code><span>this.StandardErrorOfParameter</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4652">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.StandardErrorOfParameter</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Index of the parameter.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The estimated standard error of parameter <code>i</code>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.StandardErrorOfParameter`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.StandardErrorOfParameter\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the estimated standard error of parameter <code>i</code>.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Index of the parameter.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The estimated standard error of parameter <code>i</code>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4653', 4653)" onmouseover="showTip(event, '4653', 4653)">
+                <p>
+                  <a id="StudentizedResidual">
+                    <a href="#StudentizedResidual">
+                      <code><span>this.StudentizedResidual</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4653">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.StudentizedResidual</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The index of the residual.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The ith studentized residual.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.StudentizedResidual`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.StudentizedResidual\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gives the ith studentized residual.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              The studentized residual has constant variance of 1, regardless of the location of xi.
+            <p class='fsdocs-para'>Ref: Introduction to linear regression analysis, 3rd ed., Wiley, p.134</p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index of the residual.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The ith studentized residual.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4654', 4654)" onmouseover="showTip(event, '4654', 4654)">
+                <p>
+                  <a id="TofParameter">
+                    <a href="#TofParameter">
+                      <code><span>this.TofParameter</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4654">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TofParameter</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.TofParameter`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.TofParameter\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4655', 4655)" onmouseover="showTip(event, '4655', 4655)">
+                <p>
+                  <a id="TotalCorrectedSumOfSquares">
+                    <a href="#TotalCorrectedSumOfSquares">
+                      <code><span>this.TotalCorrectedSumOfSquares</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4655">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TotalCorrectedSumOfSquares</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Regression.LinearFitBySvd.TotalCorrectedSumOfSquares`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Regression.LinearFitBySvd.TotalCorrectedSumOfSquares\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gives the corrected sum of squares of y, i.e. SUM(yi-ymean), where yi is the ith y value and ymean is the mean of all y values.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4656', 4656)" onmouseover="showTip(event, '4656', 4656)">
+                <p>
+                  <a id="CorrectedSumOfSquares">
+                    <a href="#CorrectedSumOfSquares">
+                      <code><span>LinearFitBySvd.CorrectedSumOfSquares<span><span>(<span>x,&#32;mean,&#32;start,&#32;length</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4656">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>LinearFitBySvd.CorrectedSumOfSquares<span><span>(<span>x,&#32;mean,&#32;start,&#32;length</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      Array of values.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        mean
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Mean value of the values.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        start
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Starting index.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        length
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of elements used for calculation.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.CorrectedSumOfSquares`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.CorrectedSumOfSquares\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Calculates the corrected sum of squares of <code>length</code> elements of array x starting from index <code>start</code>. The corrected sum
+            of squares is defined as sum of squares of the elements minus their mean value.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Array of values.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mean
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Mean value of the values.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  start
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Starting index.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  length
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of elements used for calculation.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4657', 4657)" onmouseover="showTip(event, '4657', 4657)">
+                <p>
+                  <a id="FitPolymomial">
+                    <a href="#FitPolymomial">
+                      <code><span>LinearFitBySvd.FitPolymomial<span><span>(<span>order,&#32;xValues,&#32;yValues,&#32;start,&#32;count,&#32;doRemoveNaNValues</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4657">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>LinearFitBySvd.FitPolymomial<span><span>(<span>order,&#32;xValues,&#32;yValues,&#32;start,&#32;count,&#32;doRemoveNaNValues</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        order
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The order of the fit (1:linear, 2:quadratic, etc.)
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        xValues
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The column of x-values. Only those values are used, that are not NaN
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        yValues
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The column of y-values.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        start
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Index of first data point to use.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        count
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of data points to use.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        doRemoveNaNValues
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      If true, value pairs containing NaN are removed before calculation of the fit.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-regression-linearfitbysvd.html">LinearFitBySvd</a></code>
+                  </span>
+                  The fit.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.FitPolymomial`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.FitPolymomial\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Fits data provided as xcolumn and ycolumn with a polynomial base. Here special measures are taken (scaling of the x-variable) in order
+            to keep the precision high.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  order
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The order of the fit (1:linear, 2:quadratic, etc.)
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xValues
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The column of x-values. Only those values are used, that are not NaN
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  yValues
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The column of y-values.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  start
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Index of first data point to use.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  count
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of data points to use.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  doRemoveNaNValues
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If true, value pairs containing NaN are removed before calculation of the fit.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-regression-linearfitbysvd.html">LinearFitBySvd</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The fit.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4658', 4658)" onmouseover="showTip(event, '4658', 4658)">
+                <p>
+                  <a id="FitPolymomialDestructive">
+                    <a href="#FitPolymomialDestructive">
+                      <code><span>LinearFitBySvd.FitPolymomialDestructive<span><span>(<span>order,&#32;xValues,&#32;yValues,&#32;errorValues,&#32;count</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4658">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>LinearFitBySvd.FitPolymomialDestructive<span><span>(<span>order,&#32;xValues,&#32;yValues,&#32;errorValues,&#32;count</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        order
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The order of the fit (1:linear, 2:quadratic, etc.)
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        xValues
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The array of x-values. The values of the array are destroyed (altered) during the evaluation!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        yValues
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The array of y-values.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        errorValues
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The column of errorValues. If null, errorValues are set to 1 for each element.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        count
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of values to use (array[0] ... array[count-1].
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-regression-linearfitbysvd.html">LinearFitBySvd</a></code>
+                  </span>
+                  The fit.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.FitPolymomialDestructive`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.FitPolymomialDestructive\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Fits data provided as xcolumn and ycolumn with a polynomial base. Here special measures are taken (scaling of the x-variable) in order
+            to keep the precision high.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  order
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The order of the fit (1:linear, 2:quadratic, etc.)
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xValues
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of x-values. The values of the array are destroyed (altered) during the evaluation!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  yValues
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of y-values.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  errorValues
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The column of errorValues. If null, errorValues are set to 1 for each element.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  count
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of values to use (array[0] ... array[count-1].
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-regression-linearfitbysvd.html">LinearFitBySvd</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The fit.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4659', 4659)" onmouseover="showTip(event, '4659', 4659)">
+                <p>
+                  <a id="GetPolynomialFunctionBase">
+                    <a href="#GetPolynomialFunctionBase">
+                      <code><span>LinearFitBySvd.GetPolynomialFunctionBase<span><span>(<span>order</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4659">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>LinearFitBySvd.GetPolynomialFunctionBase<span><span>(<span>order</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        order
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Order of the polynomial (0: only intercept, 1: linear, 2: quadratic ...
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-regression-functionbaseevaluator.html">FunctionBaseEvaluator</a></code>
+                  </span>
+                  The function base to use with this fit.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.GetPolynomialFunctionBase`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.GetPolynomialFunctionBase\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets a default polynomial function base with intercept, i.e. f(y)=a+b*x+c*x*x ...
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  order
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Order of the polynomial (0: only intercept, 1: linear, 2: quadratic ...
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-regression-functionbaseevaluator.html">FunctionBaseEvaluator</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The function base to use with this fit.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4660', 4660)" onmouseover="showTip(event, '4660', 4660)">
+                <p>
+                  <a id="Mean">
+                    <a href="#Mean">
+                      <code><span>LinearFitBySvd.Mean<span><span>(<span>x,&#32;start,&#32;length</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4660">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>LinearFitBySvd.Mean<span><span>(<span>x,&#32;start,&#32;length</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The array of values.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        start
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      First element.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        length
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of elements used for calculation.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Regression.LinearFitBySvd.Mean`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Regression.LinearFitBySvd.Mean\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Calculates the mean value of <code>length</code> elements in array x starting from index <code>start</code>.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array of values.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  start
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First element.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  length
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of elements used for calculation.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

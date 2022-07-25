@@ -1,0 +1,2579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>QagpIntegration (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    QagpIntegration Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-integration.html">
+        Altaxo.Calc.Integration
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code><a href="/FsODE/reference/altaxo-calc-integration-integrationbase.html">IntegrationBase</a></code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Adaptive integration with known singular points.
+            
+      </p>
+    </div>
+    <p class="fsdocs-remarks">
+      
+            This class applies the adaptive integration algorithm QAGS taking account of the
+            user-supplied locations of singular points. The array pts of length npts should contain
+            the endpoints of the integration ranges defined by the integration region and locations
+            of the singularities. For example, to integrate over the region (a, b) with break-points
+            at x1, x2, x3 (where a < x1 < x2 < x3 < b) the following pts array should be used:
+            <pre>
+            pts[0] = a
+            pts[1] = x1
+            pts[2] = x2
+            pts[3] = x3
+            pts[4] = b</pre>
+            with npts = 5.
+            If you know the locations of the singular points in the integration region then this
+            routine will be faster than QAGS.
+            <p class='fsdocs-para'>Ref.: Gnu Scientific library reference manual ()</p>
+    </p>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1021', 1021)" onmouseover="showTip(event, '1021', 1021)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>QagpIntegration<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1021">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>QagpIntegration<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Creates an instance of this integration class with a default integration rule and default debug flag setting.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1022', 1022)" onmouseover="showTip(event, '1022', 1022)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>QagpIntegration<span><span>(<span>debug</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1022">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>QagpIntegration<span><span>(<span>debug</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        debug
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      Setting of the debug flag for this instance. If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Creates an instance of this integration class with a default integration rule and specified debug flag setting.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  debug
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Setting of the debug flag for this instance. If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1023', 1023)" onmouseover="showTip(event, '1023', 1023)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>QagpIntegration<span><span>(<span>integrationRule,&#32;debug</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1023">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>QagpIntegration<span><span>(<span>integrationRule,&#32;debug</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        integrationRule
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+                       - 
+                      Integration rule used for integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        debug
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      Setting of the debug flag for this instance. If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Creates an instance of this integration class with specified integration rule and specified debug flag setting.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  integrationRule
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Integration rule used for integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  debug
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Setting of the debug flag for this instance. If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1024', 1024)" onmouseover="showTip(event, '1024', 1024)">
+                <p>
+                  <a id="Integrate">
+                    <a href="#Integrate">
+                      <code><span>this.Integrate</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1024">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Integrate</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+                       - 
+                      Function to integrate.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pts
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        npts
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsabs
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsrel
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        limit
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Maximum number of subintervals used for integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        integrationRule
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+                       - 
+                      Integration rule used for integration (only for this function call).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        debug
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      Setting of the debug flag (only for this function call). If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        result
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the integration result.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abserr
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the absolute error of integration.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+                  </span>
+                  Null if successfull, otherwise the appropriate error code.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.Integrate`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.Integrate\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Adaptive integration with known singular points.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to integrate.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pts
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  npts
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsabs
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsrel
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  limit
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Maximum number of subintervals used for integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  integrationRule
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Integration rule used for integration (only for this function call).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  debug
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Setting of the debug flag (only for this function call). If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  result
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the integration result.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abserr
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the absolute error of integration.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Null if successfull, otherwise the appropriate error code.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1025', 1025)" onmouseover="showTip(event, '1025', 1025)">
+                <p>
+                  <a id="Integrate">
+                    <a href="#Integrate">
+                      <code><span>this.Integrate</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1025">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Integrate</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+                       - 
+                      Function to integrate.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pts
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        npts
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsabs
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsrel
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        limit
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Maximum number of subintervals used for integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        result
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the integration result.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abserr
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the absolute error of integration.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+                  </span>
+                  Null if successfull, otherwise the appropriate error code.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.Integrate`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.Integrate\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Adaptive integration with known singular points using the integration rule and debug setting given in the constructor.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to integrate.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pts
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  npts
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsabs
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsrel
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  limit
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Maximum number of subintervals used for integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  result
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the integration result.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abserr
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the absolute error of integration.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Null if successfull, otherwise the appropriate error code.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1026', 1026)" onmouseover="showTip(event, '1026', 1026)">
+                <p>
+                  <a id="Integrate">
+                    <a href="#Integrate">
+                      <code><span>this.Integrate</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1026">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Integrate</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+                       - 
+                      Function to integrate.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pts
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsabs
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsrel
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        limit
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Maximum number of subintervals used for integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        integrationRule
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+                       - 
+                      Integration rule used for integration (only for this function call).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        debug
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      Setting of the debug flag (only for this function call). If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        result
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the integration result.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abserr
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the absolute error of integration.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+                  </span>
+                  Null if successfull, otherwise the appropriate error code.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.Integrate`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.Integrate\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Adaptive integration with known singular points.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to integrate.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pts
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsabs
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsrel
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  limit
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Maximum number of subintervals used for integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  integrationRule
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Integration rule used for integration (only for this function call).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  debug
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Setting of the debug flag (only for this function call). If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  result
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the integration result.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abserr
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the absolute error of integration.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Null if successfull, otherwise the appropriate error code.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1027', 1027)" onmouseover="showTip(event, '1027', 1027)">
+                <p>
+                  <a id="Integrate">
+                    <a href="#Integrate">
+                      <code><span>this.Integrate</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1027">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Integrate</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+                       - 
+                      Function to integrate.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pts
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsabs
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsrel
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        limit
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Maximum number of subintervals used for integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        result
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the integration result.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abserr
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the absolute error of integration.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+                  </span>
+                  Null if successfull, otherwise the appropriate error code.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.Integrate`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.Integrate\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Adaptive integration with known singular points using the integration rule and debug setting given in the constructor.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to integrate.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pts
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsabs
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsrel
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  limit
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Maximum number of subintervals used for integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  result
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the integration result.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abserr
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the absolute error of integration.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Null if successfull, otherwise the appropriate error code.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1028', 1028)" onmouseover="showTip(event, '1028', 1028)">
+                <p>
+                  <a id="DefaultIntegrationRule">
+                    <a href="#DefaultIntegrationRule">
+                      <code><span>QagpIntegration.DefaultIntegrationRule</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1028">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>QagpIntegration.DefaultIntegrationRule</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Integration.QagpIntegration.DefaultIntegrationRule`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Integration.QagpIntegration.DefaultIntegrationRule\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the default integration rule used for this class.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1029', 1029)" onmouseover="showTip(event, '1029', 1029)">
+                <p>
+                  <a id="Integration">
+                    <a href="#Integration">
+                      <code><span>QagpIntegration.Integration<span><span>(<span>f,&#32;pts,&#32;npts,&#32;epsabs,&#32;epsrel,&#32;limit,&#32;integrationRule,&#32;debug,&#32;result,&#32;abserr,&#32;tempStorage</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1029">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>QagpIntegration.Integration<span><span>(<span>f,&#32;pts,&#32;npts,&#32;epsabs,&#32;epsrel,&#32;limit,&#32;integrationRule,&#32;debug,&#32;result,&#32;abserr,&#32;tempStorage</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+                       - 
+                      Function to integrate.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pts
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        npts
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsabs
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsrel
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        limit
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Maximum number of subintervals used for integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        integrationRule
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+                       - 
+                      Integration rule used for integration (only for this function call).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        debug
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      Setting of the debug flag (only for this function call). If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        result
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the integration result.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abserr
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the absolute error of integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tempStorage
+                      </b>
+                      :
+                      <code><span>byref&lt;obj&gt;</span></code>
+                       - 
+                      Provides a temporary storage object that you can reuse for repeating function calls.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+                  </span>
+                  Null if successfull, otherwise the appropriate error code.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.Integration`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.Integration\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Adaptive integration with known singular points.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to integrate.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pts
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  npts
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsabs
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsrel
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  limit
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Maximum number of subintervals used for integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  integrationRule
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Integration rule used for integration (only for this function call).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  debug
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Setting of the debug flag (only for this function call). If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  result
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the integration result.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abserr
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the absolute error of integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tempStorage
+                </span>
+                :
+                <code><span>byref&lt;obj&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Provides a temporary storage object that you can reuse for repeating function calls.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Null if successfull, otherwise the appropriate error code.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1030', 1030)" onmouseover="showTip(event, '1030', 1030)">
+                <p>
+                  <a id="Integration">
+                    <a href="#Integration">
+                      <code><span>QagpIntegration.Integration<span><span>(<span>f,&#32;pts,&#32;npts,&#32;epsabs,&#32;epsrel,&#32;limit,&#32;result,&#32;abserr,&#32;tempStorage</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1030">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>QagpIntegration.Integration<span><span>(<span>f,&#32;pts,&#32;npts,&#32;epsabs,&#32;epsrel,&#32;limit,&#32;result,&#32;abserr,&#32;tempStorage</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+                       - 
+                      Function to integrate.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pts
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        npts
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsabs
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsrel
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        limit
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Maximum number of subintervals used for integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        result
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the integration result.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abserr
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the absolute error of integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tempStorage
+                      </b>
+                      :
+                      <code><span>byref&lt;obj&gt;</span></code>
+                       - 
+                      Provides a temporary storage object that you can reuse for repeating function calls.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+                  </span>
+                  Null if successfull, otherwise the appropriate error code.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.Integration`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.Integration\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Adaptive integration with known singular points using default settings for integration rule and debugging.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to integrate.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pts
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  npts
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsabs
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsrel
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  limit
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Maximum number of subintervals used for integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  result
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the integration result.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abserr
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the absolute error of integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tempStorage
+                </span>
+                :
+                <code><span>byref&lt;obj&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Provides a temporary storage object that you can reuse for repeating function calls.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Null if successfull, otherwise the appropriate error code.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1031', 1031)" onmouseover="showTip(event, '1031', 1031)">
+                <p>
+                  <a id="Integration">
+                    <a href="#Integration">
+                      <code><span>QagpIntegration.Integration<span><span>(<span>f,&#32;pts,&#32;npts,&#32;epsabs,&#32;epsrel,&#32;limit,&#32;integrationRule,&#32;debug,&#32;result,&#32;abserr</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1031">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>QagpIntegration.Integration<span><span>(<span>f,&#32;pts,&#32;npts,&#32;epsabs,&#32;epsrel,&#32;limit,&#32;integrationRule,&#32;debug,&#32;result,&#32;abserr</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+                       - 
+                      Function to integrate.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pts
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        npts
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsabs
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsrel
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        limit
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Maximum number of subintervals used for integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        integrationRule
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+                       - 
+                      Integration rule used for integration (only for this function call).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        debug
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      Setting of the debug flag (only for this function call). If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        result
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the integration result.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abserr
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the absolute error of integration.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+                  </span>
+                  Null if successfull, otherwise the appropriate error code.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.Integration`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.Integration\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Adaptive integration with known singular points.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to integrate.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pts
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  npts
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsabs
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsrel
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  limit
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Maximum number of subintervals used for integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  integrationRule
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-integration-gsl_integration_rule.html">gsl_integration_rule</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Integration rule used for integration (only for this function call).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  debug
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Setting of the debug flag (only for this function call). If the integration fails or the specified accuracy
+            is not reached, an exception is thrown if the debug flag is set to true. If set to false, the return value of the integration
+            function will be set to the appropriate error code (an exception will be thrown then only for serious errors).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  result
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the integration result.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abserr
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the absolute error of integration.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Null if successfull, otherwise the appropriate error code.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1032', 1032)" onmouseover="showTip(event, '1032', 1032)">
+                <p>
+                  <a id="Integration">
+                    <a href="#Integration">
+                      <code><span>QagpIntegration.Integration<span><span>(<span>f,&#32;pts,&#32;npts,&#32;epsabs,&#32;epsrel,&#32;limit,&#32;result,&#32;abserr</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1032">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>QagpIntegration.Integration<span><span>(<span>f,&#32;pts,&#32;npts,&#32;epsabs,&#32;epsrel,&#32;limit,&#32;result,&#32;abserr</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+                       - 
+                      Function to integrate.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pts
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        npts
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsabs
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        epsrel
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        limit
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Maximum number of subintervals used for integration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        result
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the integration result.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abserr
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the absolute error of integration.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+                  </span>
+                  Null if successfull, otherwise the appropriate error code.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Integration.QagpIntegration.Integration`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Integration.QagpIntegration.Integration\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Adaptive integration with known singular points using default settings for integration rule and debugging.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to integrate.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pts
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Range of integration including the known singular points, see remarks here: <a href="/FsODE/reference/altaxo-calc-integration-qagpintegration.html">QagpIntegration</a>
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  npts
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of valid points in the array pts. Must be less or equal the size of the array pts.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsabs
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected absolute error of integration. Should be set to zero (0) if you specify a relative error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  epsrel
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the expected relative error of integration. Should be set to zero (0) if you specify an absolute error.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  limit
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Maximum number of subintervals used for integration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  result
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the integration result.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abserr
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the absolute error of integration.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-gsl_error.html">GSL_ERROR</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Null if successfull, otherwise the appropriate error code.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

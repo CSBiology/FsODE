@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GaussianEliminationSolver (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    GaussianEliminationSolver Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-linearalgebra.html">
+        Altaxo.Calc.LinearAlgebra
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+    <dt>
+      All Interfaces: 
+      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ilinearequationsolver-1.html">ILinearEquationSolver</a>&lt;float&gt;</span></code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        Provides implementation of Gaussian elimination with partial pivoting
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1959', 1959)" onmouseover="showTip(event, '1959', 1959)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>GaussianEliminationSolver<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1959">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GaussianEliminationSolver<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1960', 1960)" onmouseover="showTip(event, '1960', 1960)">
+                <p>
+                  <a id="Solve">
+                    <a href="#Solve">
+                      <code><span>this.Solve</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1960">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Solve</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      Elements of matrix 'A'. This array is modified during solution!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      Right part 'b'. This array is also modified during solution!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+                       - 
+                      Vector to store the result, i.e. the solution to the problem a x = b.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.Solve`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.Solve\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Solves system of linear equations Ax = b using Gaussian elimination with partial pivoting.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Elements of matrix 'A'. This array is modified during solution!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part 'b'. This array is also modified during solution!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Vector to store the result, i.e. the solution to the problem a x = b.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1961', 1961)" onmouseover="showTip(event, '1961', 1961)">
+                <p>
+                  <a id="Solve">
+                    <a href="#Solve">
+                      <code><span>this.Solve</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1961">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Solve</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      Elements of matrix 'A'.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      Right part 'b'
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        vectorCreation
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>int,&#32;'VectorT</span>&gt;</span></code>
+                       - 
+                      Function to create the resulting vector. Argument is the length of the vector.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'VectorT</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                  Type parameters: 
+                  &#39;VectorT
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.Solve``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.Solve``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Solves system of linear equations Ax = b using Gaussian elimination with partial pivoting.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Elements of matrix 'A'.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part 'b'
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  vectorCreation
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>int,&#32;'VectorT</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to create the resulting vector. Argument is the length of the vector.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>'VectorT</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1962', 1962)" onmouseover="showTip(event, '1962', 1962)">
+                <p>
+                  <a id="SolveDestructive">
+                    <a href="#SolveDestructive">
+                      <code><span>this.SolveDestructive</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1962">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SolveDestructive</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      Elements of matrix 'A'. This array is modified!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Right part 'b'. This array is also modified!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Vector to store the result, i.e. the solution to the problem a x = b.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Solves system of linear equations Ax = b using Gaussian elimination with partial pivoting.
+            Attention! Both matrix A and vector b are destroyed (changed).
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Elements of matrix 'A'. This array is modified!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part 'b'. This array is also modified!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Vector to store the result, i.e. the solution to the problem a x = b.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1963', 1963)" onmouseover="showTip(event, '1963', 1963)">
+                <p>
+                  <a id="SolveDestructive">
+                    <a href="#SolveDestructive">
+                      <code><span>this.SolveDestructive</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1963">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SolveDestructive</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-matrixwrapperstructforleftspinejaggedarray-1.html">MatrixWrapperStructForLeftSpineJaggedArray</a>&lt;float&gt;</span></code>
+                       - 
+                      Elements of matrix 'A'. This array is modified!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Right part 'b'. This array is also modified!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Vector to store the result, i.e. the solution to the problem a x = b.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Solves system of linear equations Ax = b using Gaussian elimination with partial pivoting.
+            Attention! Both matrix A and vector b are destroyed (changed).
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-matrixwrapperstructforleftspinejaggedarray-1.html">MatrixWrapperStructForLeftSpineJaggedArray</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Elements of matrix 'A'. This array is modified!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part 'b'. This array is also modified!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Vector to store the result, i.e. the solution to the problem a x = b.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1964', 1964)" onmouseover="showTip(event, '1964', 1964)">
+                <p>
+                  <a id="SolveDestructive">
+                    <a href="#SolveDestructive">
+                      <code><span>this.SolveDestructive</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1964">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SolveDestructive</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      Elements of matrix 'A'. The matrix is modified in this call!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+                       - 
+                      Right part 'b'. The vector is modified in this call!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+                       - 
+                      Vector to store the result, i.e. the solution to the problem A*x = b.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Solves system of linear equations Ax = b using Gaussian elimination with partial pivoting.
+            Attention! Both matrix a and vector b are destroyed (changed).
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Elements of matrix 'A'. The matrix is modified in this call!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part 'b'. The vector is modified in this call!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Vector to store the result, i.e. the solution to the problem A*x = b.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1965', 1965)" onmouseover="showTip(event, '1965', 1965)">
+                <p>
+                  <a id="SolveDestructive">
+                    <a href="#SolveDestructive">
+                      <code><span>this.SolveDestructive</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1965">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SolveDestructive</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      Elements of matrix 'A'. This matrix is modified during solution!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+                       - 
+                      Right part 'b'. This vector is also modified during solution!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        vectorCreation
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>int,&#32;'VectorT</span>&gt;</span></code>
+                       - 
+                      Function to create the resulting vector. Argument is the length of the vector.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'VectorT</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                  Type parameters: 
+                  &#39;VectorT
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Solves system of linear equations Ax = b using Gaussian elimination with partial pivoting.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Elements of matrix 'A'. This matrix is modified during solution!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part 'b'. This vector is also modified during solution!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  vectorCreation
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>int,&#32;'VectorT</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to create the resulting vector. Argument is the length of the vector.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>'VectorT</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1966', 1966)" onmouseover="showTip(event, '1966', 1966)">
+                <p>
+                  <a id="SolveDestructive">
+                    <a href="#SolveDestructive">
+                      <code><span>this.SolveDestructive</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1966">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SolveDestructive</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-sparsedoublematrix.html">SparseDoubleMatrix</a></code>
+                       - 
+                      Sparse matrix, 'A'. This matrix is modified during solution!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Right part, 'b', is modified during solution.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  Vector x with the result.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Solves system of linear equations Ax = b using Gaussian elimination with partial pivoting
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-sparsedoublematrix.html">SparseDoubleMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Sparse matrix, 'A'. This matrix is modified during solution!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part, 'b', is modified during solution.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Vector x with the result.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1967', 1967)" onmouseover="showTip(event, '1967', 1967)">
+                <p>
+                  <a id="SolveDestructive">
+                    <a href="#SolveDestructive">
+                      <code><span>this.SolveDestructive</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1967">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SolveDestructive</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-sparsedoublematrix.html">SparseDoubleMatrix</a></code>
+                       - 
+                      Sparse matrix, 'A'. This matrix is modified during solution!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Right part, 'b', is modified during solution.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Vector to store the solution.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructive\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Solves system of linear equations Ax = b using Gaussian elimination with partial pivoting
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-sparsedoublematrix.html">SparseDoubleMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Sparse matrix, 'A'. This matrix is modified during solution!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part, 'b', is modified during solution.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Vector to store the solution.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1968', 1968)" onmouseover="showTip(event, '1968', 1968)">
+                <p>
+                  <a id="SolveDestructiveBanded">
+                    <a href="#SolveDestructiveBanded">
+                      <code><span>this.SolveDestructiveBanded</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1968">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SolveDestructiveBanded</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-matrixwrapperstructforleftspinejaggedarray-1.html">MatrixWrapperStructForLeftSpineJaggedArray</a>&lt;float&gt;</span></code>
+                       - 
+                      Elements of matrix 'A'. The matrix is modified!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        lowerBandwidth
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Lower band width of the matrix. It is not checked whether the matrix contains non-zero elements outside of the band!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        upperBandwidth
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Upper band width of the matrix. It is not checked whether the matrix contains non-zero elements outside of the band!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Right part 'b'. This array is also modified!
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Vector to store the result, i.e. the solution to the problem a x = b.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructiveBanded`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveDestructiveBanded\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Solves a system of linear equations Ax = b with a band matrix A, using Gaussian elimination with partial pivoting.
+            Attention! Both matrix A and vector b are destroyed (changed).
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-matrixwrapperstructforleftspinejaggedarray-1.html">MatrixWrapperStructForLeftSpineJaggedArray</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Elements of matrix 'A'. The matrix is modified!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  lowerBandwidth
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Lower band width of the matrix. It is not checked whether the matrix contains non-zero elements outside of the band!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  upperBandwidth
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Upper band width of the matrix. It is not checked whether the matrix contains non-zero elements outside of the band!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part 'b'. This array is also modified!
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Vector to store the result, i.e. the solution to the problem a x = b.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1969', 1969)" onmouseover="showTip(event, '1969', 1969)">
+                <p>
+                  <a id="SolvePentaDiagonal">
+                    <a href="#SolvePentaDiagonal">
+                      <code><span>GaussianEliminationSolver.SolvePentaDiagonal<span><span>(<span>A,&#32;a,&#32;x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1969">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GaussianEliminationSolver.SolvePentaDiagonal<span><span>(<span>A,&#32;a,&#32;x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      Pentadiagonal matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Right part of the solution (remains unmodified).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Vector to store the result, i.e. the solution to the problem A x = a.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolvePentaDiagonal`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolvePentaDiagonal\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Solves a system where the matrix a is pentadiagonal, i.e. has two lower and two upper bands.
+            The method is non-destructive, i.e. both matrix m and vector a are not changed.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              <p class='fsdocs-para'>References:</p><p class='fsdocs-para'>[1] Engeln-Müllges, Numerik-Algorithmen, 10th ed., page 177</p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Pentadiagonal matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part of the solution (remains unmodified).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Vector to store the result, i.e. the solution to the problem A x = a.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1970', 1970)" onmouseover="showTip(event, '1970', 1970)">
+                <p>
+                  <a id="SolvePentaDiagonal">
+                    <a href="#SolvePentaDiagonal">
+                      <code><span>GaussianEliminationSolver.SolvePentaDiagonal<span><span>(<span>A,&#32;a,&#32;x,&#32;tempStorage</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1970">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GaussianEliminationSolver.SolvePentaDiagonal<span><span>(<span>A,&#32;a,&#32;x,&#32;tempStorage</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      Pentadiagonal matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Right part of the solution (remains unmodified).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Vector to store the result, i.e. the solution to the problem A x = a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tempStorage
+                      </b>
+                      :
+                      <code><span>byref&lt;obj&gt;</span></code>
+                       - 
+                      Object that accomodates temporary storage. Can be reused in repeated calls.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolvePentaDiagonal`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolvePentaDiagonal\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Solves a system where the matrix a is five diagonal, i.e. has two lower and two upper bands.
+            The method is non-destructive, i.e. both matrix m and vector a are not changed.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              <p class='fsdocs-para'>References:</p><p class='fsdocs-para'>[1] Engeln-Müllges, Numerik-Algorithmen, 10th ed., page 177</p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Pentadiagonal matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part of the solution (remains unmodified).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Vector to store the result, i.e. the solution to the problem A x = a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tempStorage
+                </span>
+                :
+                <code><span>byref&lt;obj&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Object that accomodates temporary storage. Can be reused in repeated calls.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1971', 1971)" onmouseover="showTip(event, '1971', 1971)">
+                <p>
+                  <a id="SolveTriDiagonal">
+                    <a href="#SolveTriDiagonal">
+                      <code><span>GaussianEliminationSolver.SolveTriDiagonal<span><span>(<span>A,&#32;a,&#32;x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1971">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GaussianEliminationSolver.SolveTriDiagonal<span><span>(<span>A,&#32;a,&#32;x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      Tridiagonal matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Right part of the solution (remains unmodified).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Vector to store the result, i.e. the solution to the problem A x = a.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveTriDiagonal`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveTriDiagonal\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Solves a system where the matrix a is tri diagonal, i.e. has one lower and one upper band.
+            The method is non-destructive, i.e. both matrix m and vector a are not changed.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              <p class='fsdocs-para'>References:</p><p class='fsdocs-para'>[1] Engeln-Müllges, Numerik-Algorithmen, 10th ed., page 165</p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Tridiagonal matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part of the solution (remains unmodified).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Vector to store the result, i.e. the solution to the problem A x = a.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1972', 1972)" onmouseover="showTip(event, '1972', 1972)">
+                <p>
+                  <a id="SolveTriDiagonal">
+                    <a href="#SolveTriDiagonal">
+                      <code><span>GaussianEliminationSolver.SolveTriDiagonal<span><span>(<span>A,&#32;a,&#32;x,&#32;tempStorage</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1972">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GaussianEliminationSolver.SolveTriDiagonal<span><span>(<span>A,&#32;a,&#32;x,&#32;tempStorage</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        A
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      Tridiagonal matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Right part of the solution (remains unmodified).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Vector to store the result, i.e. the solution to the problem A x = a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tempStorage
+                      </b>
+                      :
+                      <code><span>byref&lt;obj&gt;</span></code>
+                       - 
+                      Object that accomodates temporary storage. Can be reused in repeated calls.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveTriDiagonal`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.GaussianEliminationSolver.SolveTriDiagonal\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Solves a system where the matrix a is tri diagonal, i.e. has one lower and one upper band.
+            The method is non-destructive, i.e. both matrix m and vector a are not changed.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              <p class='fsdocs-para'>References:</p><p class='fsdocs-para'>[1] Engeln-Müllges, Numerik-Algorithmen, 10th ed., page 165</p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  A
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Tridiagonal matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Right part of the solution (remains unmodified).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Vector to store the result, i.e. the solution to the problem A x = a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tempStorage
+                </span>
+                :
+                <code><span>byref&lt;obj&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Object that accomodates temporary storage. Can be reused in repeated calls.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

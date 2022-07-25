@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HelmholtzEquationOfStateOfPureFluids (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    HelmholtzEquationOfStateOfPureFluids Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-science-thermodynamics-fluids.html">
+        Altaxo.Science.Thermodynamics.Fluids
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code><a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstate.html">HelmholtzEquationOfState</a></code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Equation of state based on the dimensionless Helmholtz energy, for pure fluids.
+            
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7538', 7538)" onmouseover="showTip(event, '7538', 7538)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>HelmholtzEquationOfStateOfPureFluids<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7538">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>HelmholtzEquationOfStateOfPureFluids<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7539', 7539)" onmouseover="showTip(event, '7539', 7539)">
+                <p>
+                  <a id="AcentricFactor">
+                    <a href="#AcentricFactor">
+                      <code><span>this.AcentricFactor</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7539">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.AcentricFactor</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.AcentricFactor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.AcentricFactor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the acentric factor.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7540', 7540)" onmouseover="showTip(event, '7540', 7540)">
+                <p>
+                  <a id="CriticalPointMassDensity">
+                    <a href="#CriticalPointMassDensity">
+                      <code><span>this.CriticalPointMassDensity</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7540">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.CriticalPointMassDensity</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.CriticalPointMassDensity`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.CriticalPointMassDensity\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the mass density at the critical point in kg/m³.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7541', 7541)" onmouseover="showTip(event, '7541', 7541)">
+                <p>
+                  <a id="CriticalPointMoleDensity">
+                    <a href="#CriticalPointMoleDensity">
+                      <code><span>this.CriticalPointMoleDensity</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7541">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.CriticalPointMoleDensity</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.CriticalPointMoleDensity`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.CriticalPointMoleDensity\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the mole density at the critical point in mol/m³.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7542', 7542)" onmouseover="showTip(event, '7542', 7542)">
+                <p>
+                  <a id="CriticalPointPressure">
+                    <a href="#CriticalPointPressure">
+                      <code><span>this.CriticalPointPressure</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7542">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.CriticalPointPressure</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.CriticalPointPressure`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.CriticalPointPressure\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the pressure at the critical point in Pa.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7543', 7543)" onmouseover="showTip(event, '7543', 7543)">
+                <p>
+                  <a id="CriticalPointTemperature">
+                    <a href="#CriticalPointTemperature">
+                      <code><span>this.CriticalPointTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7543">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.CriticalPointTemperature</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.CriticalPointTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.CriticalPointTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the temperature at the critical point in Kelvin.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7544', 7544)" onmouseover="showTip(event, '7544', 7544)">
+                <p>
+                  <a id="NormalBoilingPointTemperature">
+                    <a href="#NormalBoilingPointTemperature">
+                      <code><span>this.NormalBoilingPointTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7544">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.NormalBoilingPointTemperature</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;float&gt;</span></code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.NormalBoilingPointTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.NormalBoilingPointTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the boiling temperature at normal pressure (101325 Pa) in K (if existent). If not existent, the return value is null.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7545', 7545)" onmouseover="showTip(event, '7545', 7545)">
+                <p>
+                  <a id="NormalSublimationPointTemperature">
+                    <a href="#NormalSublimationPointTemperature">
+                      <code><span>this.NormalSublimationPointTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7545">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.NormalSublimationPointTemperature</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;float&gt;</span></code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.NormalSublimationPointTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.NormalSublimationPointTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the sublimation temperature at normal pressure (101325 Pa) in K (if existent). If not existent, the return value is null.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7546', 7546)" onmouseover="showTip(event, '7546', 7546)">
+                <p>
+                  <a id="ReducingMoleDensity">
+                    <a href="#ReducingMoleDensity">
+                      <code><span>this.ReducingMoleDensity</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7546">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ReducingMoleDensity</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.ReducingMoleDensity`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.ReducingMoleDensity\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7547', 7547)" onmouseover="showTip(event, '7547', 7547)">
+                <p>
+                  <a id="ReducingTemperature">
+                    <a href="#ReducingTemperature">
+                      <code><span>this.ReducingTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7547">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ReducingTemperature</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.ReducingTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.ReducingTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7548', 7548)" onmouseover="showTip(event, '7548', 7548)">
+                <p>
+                  <a id="SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature">
+                    <a href="#SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature">
+                      <code><span>this.SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7548">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        temperature
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The temperature in Kelvin. Must be greater than or equal the triple point temperature and less than or equal to the critical point temperature.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?relativeAccuracy
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The relative accuracy of the calculation.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float&#32;*&#32;float&#32;*&#32;float</span></code>
+                  </span>
+                  A tuple consisting of the liquid mole density (mol/m³), the vapor mole density (mol/m³), and the pressure in Pa.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the saturated liquid mole density, the saturated vapor mole density, and the pressure for a given temperature.
+            This is done by iteration, using multivariate Newton-Raphson.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  temperature
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The temperature in Kelvin. Must be greater than or equal the triple point temperature and less than or equal to the critical point temperature.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?relativeAccuracy
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The relative accuracy of the calculation.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float&#32;*&#32;float&#32;*&#32;float</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A tuple consisting of the liquid mole density (mol/m³), the vapor mole density (mol/m³), and the pressure in Pa.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.notimplementedexception">
+                    NotImplementedException
+                  </a>
+                </td>
+                <td>
+                  
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7549', 7549)" onmouseover="showTip(event, '7549', 7549)">
+                <p>
+                  <a id="SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature">
+                    <a href="#SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature">
+                      <code><span>this.SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7549">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        temperature
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The temperature in Kelvin. Must be greater than or equal the triple point temperature and less than or equal to the critical point temperature.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        liquidMoleDensity
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Starting value for the liquid mole density (mol/m³) for the iteration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        vaporMoleDensity
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Starting value for the vapor mole density (mol/m³) for the iteration.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?relativeAccuracy
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The relative accuracy of the calculation.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float&#32;*&#32;float&#32;*&#32;float</span></code>
+                  </span>
+                  A tuple consisting of the liquid mole density (mol/m³), the vapor mole density (mol/m³), and the pressure in Pa.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedLiquidAndVaporMoleDensitiesAndPressure_FromTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the saturated liquid mole density, the saturated vapor mole density, and the pressure for a given temperature.
+            This is done by iteration, using multivariate Newton-Raphson.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  temperature
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The temperature in Kelvin. Must be greater than or equal the triple point temperature and less than or equal to the critical point temperature.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  liquidMoleDensity
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Starting value for the liquid mole density (mol/m³) for the iteration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  vaporMoleDensity
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Starting value for the vapor mole density (mol/m³) for the iteration.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?relativeAccuracy
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The relative accuracy of the calculation.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float&#32;*&#32;float&#32;*&#32;float</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A tuple consisting of the liquid mole density (mol/m³), the vapor mole density (mol/m³), and the pressure in Pa.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.notimplementedexception">
+                    NotImplementedException
+                  </a>
+                </td>
+                <td>
+                  
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7550', 7550)" onmouseover="showTip(event, '7550', 7550)">
+                <p>
+                  <a id="SaturatedLiquidAndVaporMoleDensitiesAndTemperature_FromPressure">
+                    <a href="#SaturatedLiquidAndVaporMoleDensitiesAndTemperature_FromPressure">
+                      <code><span>this.SaturatedLiquidAndVaporMoleDensitiesAndTemperature_FromPressure</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7550">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SaturatedLiquidAndVaporMoleDensitiesAndTemperature_FromPressure</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        pressure
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The pressure in Pa. Must be greater than or equal the triple point pressure and less than or equal to the critical point pressure.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?relativeAccuracy
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The relative accuracy of the calculation.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float&#32;*&#32;float&#32;*&#32;float</span></code>
+                  </span>
+                  
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedLiquidAndVaporMoleDensitiesAndTemperature_FromPressure`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedLiquidAndVaporMoleDensitiesAndTemperature_FromPressure\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the saturated liquid mole density, the saturated vapor mole density, and the temperature for a given pressure.
+            This is done by iteration, using multivariate Newton-Raphson.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pressure
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The pressure in Pa. Must be greater than or equal the triple point pressure and less than or equal to the critical point pressure.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?relativeAccuracy
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The relative accuracy of the calculation.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float&#32;*&#32;float&#32;*&#32;float</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.notimplementedexception">
+                    NotImplementedException
+                  </a>
+                </td>
+                <td>
+                  
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7551', 7551)" onmouseover="showTip(event, '7551', 7551)">
+                <p>
+                  <a id="SaturatedLiquidMoleDensityEstimate_FromTemperature">
+                    <a href="#SaturatedLiquidMoleDensityEstimate_FromTemperature">
+                      <code><span>this.SaturatedLiquidMoleDensityEstimate_FromTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7551">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SaturatedLiquidMoleDensityEstimate_FromTemperature</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        temperature
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The temperature in Kelvin.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  An estimate for the saturated liquid mole density in mol/m³ at the given temperature.
+            If the temperature is outside [TriplePointTemperature, CriticalPointTemperature], double.NaN is returned.
+            
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedLiquidMoleDensityEstimate_FromTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedLiquidMoleDensityEstimate_FromTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets an estimate for the saturated liquid mole density in dependence on the temperature.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  temperature
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The temperature in Kelvin.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An estimate for the saturated liquid mole density in mol/m³ at the given temperature.
+            If the temperature is outside [TriplePointTemperature, CriticalPointTemperature], double.NaN is returned.
+            
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7552', 7552)" onmouseover="showTip(event, '7552', 7552)">
+                <p>
+                  <a id="SaturatedVaporMoleDensityEstimate_FromTemperature">
+                    <a href="#SaturatedVaporMoleDensityEstimate_FromTemperature">
+                      <code><span>this.SaturatedVaporMoleDensityEstimate_FromTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7552">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SaturatedVaporMoleDensityEstimate_FromTemperature</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        temperature
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The temperature in K.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  An estimate for the saturated vapor mole density in mol/m³ at the given temperature.
+            If the temperature is outside [TriplePointTemperature, CriticalPointTemperature], double.NaN is returned.
+            
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedVaporMoleDensityEstimate_FromTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedVaporMoleDensityEstimate_FromTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets an estimate for the saturated vapor mole density in dependence on the temperature.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  temperature
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The temperature in K.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An estimate for the saturated vapor mole density in mol/m³ at the given temperature.
+            If the temperature is outside [TriplePointTemperature, CriticalPointTemperature], double.NaN is returned.
+            
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7553', 7553)" onmouseover="showTip(event, '7553', 7553)">
+                <p>
+                  <a id="SaturatedVaporPressureEstimateAndDerivativeWrtTemperature_FromTemperature">
+                    <a href="#SaturatedVaporPressureEstimateAndDerivativeWrtTemperature_FromTemperature">
+                      <code><span>this.SaturatedVaporPressureEstimateAndDerivativeWrtTemperature_FromTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7553">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SaturatedVaporPressureEstimateAndDerivativeWrtTemperature_FromTemperature</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        temperature
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The temperature in Kelvin.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float&#32;*&#32;float</span></code>
+                  </span>
+                  An estimate for the saturated vapor pressure in Pa and the derivative w.r.t. temperature in Pa/K at the given temperature.
+            If the temperature is outside [TriplePointTemperature, CriticalPointTemperature], (double.NaN, double.NaN) is returned.
+            
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedVaporPressureEstimateAndDerivativeWrtTemperature_FromTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedVaporPressureEstimateAndDerivativeWrtTemperature_FromTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets an estimate for the saturated vapor pressure in dependence on the temperature as well as for the derivative of the saturated vapor pressure with respect to the temperature.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  temperature
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The temperature in Kelvin.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float&#32;*&#32;float</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An estimate for the saturated vapor pressure in Pa and the derivative w.r.t. temperature in Pa/K at the given temperature.
+            If the temperature is outside [TriplePointTemperature, CriticalPointTemperature], (double.NaN, double.NaN) is returned.
+            
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7554', 7554)" onmouseover="showTip(event, '7554', 7554)">
+                <p>
+                  <a id="SaturatedVaporPressureEstimate_FromTemperature">
+                    <a href="#SaturatedVaporPressureEstimate_FromTemperature">
+                      <code><span>this.SaturatedVaporPressureEstimate_FromTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7554">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SaturatedVaporPressureEstimate_FromTemperature</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        temperature
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The temperature in K.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  An estimate for the saturated vapor pressure in Pa at the given temperature.
+            If the temperature is outside [TriplePointTemperature, CriticalPointTemperature], double.NaN is returned.
+            
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedVaporPressureEstimate_FromTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedVaporPressureEstimate_FromTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets an estimate for the saturated vapor pressure in dependence on the temperature.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  temperature
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The temperature in K.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An estimate for the saturated vapor pressure in Pa at the given temperature.
+            If the temperature is outside [TriplePointTemperature, CriticalPointTemperature], double.NaN is returned.
+            
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7555', 7555)" onmouseover="showTip(event, '7555', 7555)">
+                <p>
+                  <a id="SaturatedVaporTemperature_FromPressure">
+                    <a href="#SaturatedVaporTemperature_FromPressure">
+                      <code><span>this.SaturatedVaporTemperature_FromPressure</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7555">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SaturatedVaporTemperature_FromPressure</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        pressure
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The pressure in Pa.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?relativeAccuracy
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The relative accuracy (of the pressure, that is calculated back from the iterated temperature).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The temperature in Kelvin of the liquid/vapor interface at the given pressure in Pa. See <a href="https://docs.microsoft.com/dotnet/api/system.double.nan">Double.NaN</a> is returned for pressures below the <a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluids.html#TriplePointPressure">HelmholtzEquationOfStateOfPureFluids.TriplePointPressure</a> or above the <a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluids.html#CriticalPointPressure">HelmholtzEquationOfStateOfPureFluids.CriticalPointPressure</a>.
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedVaporTemperature_FromPressure`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.SaturatedVaporTemperature_FromPressure\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Get the temperature at the liquid/vapor interface for a given pressure by iteration (Newton-Raphson).
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pressure
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The pressure in Pa.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?relativeAccuracy
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The relative accuracy (of the pressure, that is calculated back from the iterated temperature).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The temperature in Kelvin of the liquid/vapor interface at the given pressure in Pa. See <a href="https://docs.microsoft.com/dotnet/api/system.double.nan">Double.NaN</a> is returned for pressures below the <a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluids.html#TriplePointPressure">HelmholtzEquationOfStateOfPureFluids.TriplePointPressure</a> or above the <a href="/FsODE/reference/altaxo-science-thermodynamics-fluids-helmholtzequationofstateofpurefluids.html#CriticalPointPressure">HelmholtzEquationOfStateOfPureFluids.CriticalPointPressure</a>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7556', 7556)" onmouseover="showTip(event, '7556', 7556)">
+                <p>
+                  <a id="TriplePointPressure">
+                    <a href="#TriplePointPressure">
+                      <code><span>this.TriplePointPressure</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7556">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TriplePointPressure</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointPressure`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointPressure\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the triple point pressure in Pa.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7557', 7557)" onmouseover="showTip(event, '7557', 7557)">
+                <p>
+                  <a id="TriplePointSaturatedLiquidMassDensity">
+                    <a href="#TriplePointSaturatedLiquidMassDensity">
+                      <code><span>this.TriplePointSaturatedLiquidMassDensity</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7557">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TriplePointSaturatedLiquidMassDensity</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointSaturatedLiquidMassDensity`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointSaturatedLiquidMassDensity\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the saturated liquid density at the triple point in kg/m³.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7558', 7558)" onmouseover="showTip(event, '7558', 7558)">
+                <p>
+                  <a id="TriplePointSaturatedLiquidMoleDensity">
+                    <a href="#TriplePointSaturatedLiquidMoleDensity">
+                      <code><span>this.TriplePointSaturatedLiquidMoleDensity</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7558">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TriplePointSaturatedLiquidMoleDensity</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointSaturatedLiquidMoleDensity`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointSaturatedLiquidMoleDensity\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the saturated liquid density at the triple point in mol/m³.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7559', 7559)" onmouseover="showTip(event, '7559', 7559)">
+                <p>
+                  <a id="TriplePointSaturatedVaporMassDensity">
+                    <a href="#TriplePointSaturatedVaporMassDensity">
+                      <code><span>this.TriplePointSaturatedVaporMassDensity</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7559">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TriplePointSaturatedVaporMassDensity</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointSaturatedVaporMassDensity`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointSaturatedVaporMassDensity\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the saturated vapor density at the triple point in kg/m³.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7560', 7560)" onmouseover="showTip(event, '7560', 7560)">
+                <p>
+                  <a id="TriplePointSaturatedVaporMoleDensity">
+                    <a href="#TriplePointSaturatedVaporMoleDensity">
+                      <code><span>this.TriplePointSaturatedVaporMoleDensity</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7560">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TriplePointSaturatedVaporMoleDensity</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointSaturatedVaporMoleDensity`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointSaturatedVaporMoleDensity\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the saturated vapor density at the triple point in mol/m³.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7561', 7561)" onmouseover="showTip(event, '7561', 7561)">
+                <p>
+                  <a id="TriplePointTemperature">
+                    <a href="#TriplePointTemperature">
+                      <code><span>this.TriplePointTemperature</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7561">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TriplePointTemperature</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointTemperature`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.TriplePointTemperature\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the triple point temperature in K.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7562', 7562)" onmouseover="showTip(event, '7562', 7562)">
+                <p>
+                  <a id="GetRelativeErrorBetween">
+                    <a href="#GetRelativeErrorBetween">
+                      <code><span>HelmholtzEquationOfStateOfPureFluids.GetRelativeErrorBetween<span><span>(<span>x,&#32;y</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7562">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>HelmholtzEquationOfStateOfPureFluids.GetRelativeErrorBetween<span><span>(<span>x,&#32;y</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        y
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.GetRelativeErrorBetween`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Thermodynamics.Fluids.HelmholtzEquationOfStateOfPureFluids.GetRelativeErrorBetween\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  y
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

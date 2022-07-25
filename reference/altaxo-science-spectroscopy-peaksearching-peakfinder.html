@@ -1,0 +1,4266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PeakFinder (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    PeakFinder Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching.html">
+        Altaxo.Science.Spectroscopy.PeakSearching
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Peak finder based on the Python SciPy package.
+            
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5700', 5700)" onmouseover="showTip(event, '5700', 5700)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>PeakFinder<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5700">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>PeakFinder<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5701', 5701)" onmouseover="showTip(event, '5701', 5701)">
+                <p>
+                  <a id="Execute">
+                    <a href="#Execute">
+                      <code><span>this.Execute</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5701">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Execute</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int[]</span></code>
+                  </span>
+                  Indices of peaks in `x` that satisfy all given conditions. See also the other properties of this class
+            for access to more results. Note that most of the properties are only set, if the corresponding parameter is specified in this call.
+            
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Execute`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Execute\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Find peaks inside a signal based on peak properties.
+            This function takes a 1-D array and finds all local maxima by
+            simple comparison of neighboring values. Optionally, a subset of these
+            peaks can be selected by specifying conditions for a peak's properties. For this call,
+            the properties of this <a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a> instance will be used (that were before set with the Set.. methods).
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Indices of peaks in `x` that satisfy all given conditions. See also the other properties of this class
+            for access to more results. Note that most of the properties are only set, if the corresponding parameter is specified in this call.
+            
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">
+                    ArgumentOutOfRangeException
+                  </a>
+                </td>
+                <td>
+                  distance` must be greater than or equal to 1 - distance
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5702', 5702)" onmouseover="showTip(event, '5702', 5702)">
+                <p>
+                  <a id="Execute">
+                    <a href="#Execute">
+                      <code><span>this.Execute</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5702">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Execute</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      A signal with peaks.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?height
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Required height of peaks. Either a number or null. The value is
+             always interpreted as the minimal required height.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?threshold
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Required threshold of peaks, the vertical distance to its neighboring
+            samples. Either a number or null. The value element is always
+            interpreted as the minimal 
+            required threshold.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?distance
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Required minimal horizontal distance (>= 1) in samples between
+            neighbouring peaks. Smaller peaks are removed first until the condition
+            is fulfilled for all remaining peaks.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?prominence
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Required prominence of peaks. Either a number or null. The 
+            value is always interpreted as the minimal required prominence.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?width
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Required width of peaks in samples. Either a number or null. The value
+            is always interpreted as the minimal required width.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?wlen
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Used for calculation of the peaks prominences, thus it is only used if
+            one of the arguments <span class="fsdocs-param-name">prominence</span> or <span class="fsdocs-param-name">width</span> is given. See argument
+            <span class="fsdocs-param-name">wlen</span> in `peak_prominences` for a full description of its effects.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?rel_height
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Used for calculation of the peaks width, thus it is only used if <span class="fsdocs-param-name">width</span>
+            is given. Default value is 0.5. See argument  `rel_height` in <a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html#_peak_widths">PeakFinder._peak_widths</a> for a full
+            description of its effects.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?plateau_size
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Required size of the flat top of peaks in samples. Either a number or null.
+            The value is always interpreted as the minimal required plateau size.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int[]</span></code>
+                  </span>
+                  Indices of peaks in `x` that satisfy all given conditions. See also the other properties of this class
+            for access to more results. Note that most of the properties are only set, if the corresponding parameter is specified in this call.
+            
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Execute`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Execute\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Find peaks inside a signal based on peak properties.
+            This function takes a 1-D array and finds all local maxima by
+            simple comparison of neighboring values.Optionally, a subset of these
+            peaks can be selected by specifying conditions for a peak's properties.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A signal with peaks.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?height
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required height of peaks. Either a number or null. The value is
+             always interpreted as the minimal required height.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?threshold
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required threshold of peaks, the vertical distance to its neighboring
+            samples. Either a number or null. The value element is always
+            interpreted as the minimal 
+            required threshold.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?distance
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required minimal horizontal distance (>= 1) in samples between
+            neighbouring peaks. Smaller peaks are removed first until the condition
+            is fulfilled for all remaining peaks.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?prominence
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required prominence of peaks. Either a number or null. The 
+            value is always interpreted as the minimal required prominence.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?width
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required width of peaks in samples. Either a number or null. The value
+            is always interpreted as the minimal required width.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?wlen
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Used for calculation of the peaks prominences, thus it is only used if
+            one of the arguments <span class="fsdocs-param-name">prominence</span> or <span class="fsdocs-param-name">width</span> is given. See argument
+            <span class="fsdocs-param-name">wlen</span> in `peak_prominences` for a full description of its effects.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?rel_height
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Used for calculation of the peaks width, thus it is only used if <span class="fsdocs-param-name">width</span>
+            is given. Default value is 0.5. See argument  `rel_height` in <a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html#_peak_widths">PeakFinder._peak_widths</a> for a full
+            description of its effects.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?plateau_size
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required size of the flat top of peaks in samples. Either a number or null.
+            The value is always interpreted as the minimal required plateau size.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Indices of peaks in `x` that satisfy all given conditions. See also the other properties of this class
+            for access to more results. Note that most of the properties are only set, if the corresponding parameter is specified in this call.
+            
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">
+                    ArgumentOutOfRangeException
+                  </a>
+                </td>
+                <td>
+                  distance` must be greater than or equal to 1 - distance
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5703', 5703)" onmouseover="showTip(event, '5703', 5703)">
+                <p>
+                  <a id="Execute">
+                    <a href="#Execute">
+                      <code><span>this.Execute</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5703">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Execute</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      A signal with peaks.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?height
+                      </b>
+                      :
+                      <code>obj</code>
+                       - 
+                      Required height of peaks. Either a number, null, an array matching
+             or a 2-element sequence of the former.The first element is
+             always interpreted as the minimal and the second, if supplied, as the
+             maximal required height.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?threshold
+                      </b>
+                      :
+                      <code>obj</code>
+                       - 
+                      Required threshold of peaks, the vertical distance to its neighboring
+            samples.Either a number, null, an array matching <span class="fsdocs-param-name">x</span> or a
+            2-element sequence of the former.The first element is always
+            interpreted as the minimal and the second, if supplied, as the maximal
+            required threshold.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?distance
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Required minimal horizontal distance (>= 1) in samples between
+            neighbouring peaks. Smaller peaks are removed first until the condition
+            is fulfilled for all remaining peaks.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?prominence
+                      </b>
+                      :
+                      <code>obj</code>
+                       - 
+                      Required prominence of peaks. Either a number, null, an array
+            matching <span class="fsdocs-param-name">x</span> or a 2-element sequence of the former.The first
+            element is always interpreted as the minimal and the second, if
+            supplied, as the maximal required prominence.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?width
+                      </b>
+                      :
+                      <code>obj</code>
+                       - 
+                      Required width of peaks in samples. Either a number, null, an array
+            matching <span class="fsdocs-param-name">x</span> or a 2-element sequence of the former.The first
+            element is always interpreted as the minimal and the second, if
+            supplied, as the maximal required width.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?wlen
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Used for calculation of the peaks prominences, thus it is only used if
+            one of the arguments `prominence` or <span class="fsdocs-param-name">width</span> is given.See argument
+            <span class="fsdocs-param-name">wlen</span> in `peak_prominences` for a full description of its effects.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?rel_height
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Used for calculation of the peaks width, thus it is only used if `width`
+            is given. Default value is 0.5. See argument  `rel_height` in <a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html#_peak_widths">PeakFinder._peak_widths</a> for a full
+            description of its effects.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?plateau_size
+                      </b>
+                      :
+                      <code>obj</code>
+                       - 
+                      Required size of the flat top of peaks in samples. Either a number,
+            null, an array matching <span class="fsdocs-param-name">x</span> or a 2-element sequence of the former.
+             The first element is always interpreted as the minimal and the second,
+            if supplied as the maximal required plateau size.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int[]</span></code>
+                  </span>
+                  Indices of peaks in `x` that satisfy all given conditions. See also the other properties of this class
+            for access to more results. Note that most of the properties are only set, if the corresponding parameter is specified in this call.
+            
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Execute`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Execute\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Find peaks inside a signal based on peak properties.
+            This function takes a 1-D array and finds all local maxima by
+            simple comparison of neighboring values.Optionally, a subset of these
+            peaks can be selected by specifying conditions for a peak's properties.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A signal with peaks.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?height
+                </span>
+                :
+                <code>obj</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required height of peaks. Either a number, null, an array matching
+             or a 2-element sequence of the former.The first element is
+             always interpreted as the minimal and the second, if supplied, as the
+             maximal required height.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?threshold
+                </span>
+                :
+                <code>obj</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required threshold of peaks, the vertical distance to its neighboring
+            samples.Either a number, null, an array matching <span class="fsdocs-param-name">x</span> or a
+            2-element sequence of the former.The first element is always
+            interpreted as the minimal and the second, if supplied, as the maximal
+            required threshold.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?distance
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required minimal horizontal distance (>= 1) in samples between
+            neighbouring peaks. Smaller peaks are removed first until the condition
+            is fulfilled for all remaining peaks.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?prominence
+                </span>
+                :
+                <code>obj</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required prominence of peaks. Either a number, null, an array
+            matching <span class="fsdocs-param-name">x</span> or a 2-element sequence of the former.The first
+            element is always interpreted as the minimal and the second, if
+            supplied, as the maximal required prominence.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?width
+                </span>
+                :
+                <code>obj</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required width of peaks in samples. Either a number, null, an array
+            matching <span class="fsdocs-param-name">x</span> or a 2-element sequence of the former.The first
+            element is always interpreted as the minimal and the second, if
+            supplied, as the maximal required width.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?wlen
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Used for calculation of the peaks prominences, thus it is only used if
+            one of the arguments `prominence` or <span class="fsdocs-param-name">width</span> is given.See argument
+            <span class="fsdocs-param-name">wlen</span> in `peak_prominences` for a full description of its effects.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?rel_height
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Used for calculation of the peaks width, thus it is only used if `width`
+            is given. Default value is 0.5. See argument  `rel_height` in <a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html#_peak_widths">PeakFinder._peak_widths</a> for a full
+            description of its effects.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?plateau_size
+                </span>
+                :
+                <code>obj</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Required size of the flat top of peaks in samples. Either a number,
+            null, an array matching <span class="fsdocs-param-name">x</span> or a 2-element sequence of the former.
+             The first element is always interpreted as the minimal and the second,
+            if supplied as the maximal required plateau size.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Indices of peaks in `x` that satisfy all given conditions. See also the other properties of this class
+            for access to more results. Note that most of the properties are only set, if the corresponding parameter is specified in this call.
+            
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">
+                    ArgumentOutOfRangeException
+                  </a>
+                </td>
+                <td>
+                  distance` must be greater than or equal to 1 - distance
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5704', 5704)" onmouseover="showTip(event, '5704', 5704)">
+                <p>
+                  <a id="LeftBases">
+                    <a href="#LeftBases">
+                      <code><span>this.LeftBases</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5704">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.LeftBases</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.LeftBases`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.LeftBases\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The position of the lowest valley point to the left of each peak. This array is only set if the parameter 'Prominence' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5705', 5705)" onmouseover="showTip(event, '5705', 5705)">
+                <p>
+                  <a id="LeftEdges">
+                    <a href="#LeftEdges">
+                      <code><span>this.LeftEdges</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5705">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.LeftEdges</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.LeftEdges`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.LeftEdges\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Position of the first point to the left of each peak, whose value is different from the peak's value.
+            This array is only set if the parameter 'PlateauSize' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5706', 5706)" onmouseover="showTip(event, '5706', 5706)">
+                <p>
+                  <a id="LeftIps">
+                    <a href="#LeftIps">
+                      <code><span>this.LeftIps</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5706">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.LeftIps</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.LeftIps`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.LeftIps\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The left intersection points of each peak. This array is only set if the parameter 'Width' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5707', 5707)" onmouseover="showTip(event, '5707', 5707)">
+                <p>
+                  <a id="LeftThresholds">
+                    <a href="#LeftThresholds">
+                      <code><span>this.LeftThresholds</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5707">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.LeftThresholds</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.LeftThresholds`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.LeftThresholds\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The left thresholds of each peak. This array is only set if the parameter 'Threshold' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5708', 5708)" onmouseover="showTip(event, '5708', 5708)">
+                <p>
+                  <a id="PeakHeights">
+                    <a href="#PeakHeights">
+                      <code><span>this.PeakHeights</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5708">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PeakHeights</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.PeakHeights`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.PeakHeights\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The peak height of each peak. This array is only set if the parameter Height was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5709', 5709)" onmouseover="showTip(event, '5709', 5709)">
+                <p>
+                  <a id="PeakPositions">
+                    <a href="#PeakPositions">
+                      <code><span>this.PeakPositions</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5709">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PeakPositions</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.PeakPositions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.PeakPositions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The peak positions (indices of the y-array). This array is always set after a call to Execute.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5710', 5710)" onmouseover="showTip(event, '5710', 5710)">
+                <p>
+                  <a id="PlateauSizes">
+                    <a href="#PlateauSizes">
+                      <code><span>this.PlateauSizes</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5710">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PlateauSizes</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.PlateauSizes`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.PlateauSizes\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The plateau sizes of each peak. This array is only set if the parameter PlateauSize was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5711', 5711)" onmouseover="showTip(event, '5711', 5711)">
+                <p>
+                  <a id="Prominences">
+                    <a href="#Prominences">
+                      <code><span>this.Prominences</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5711">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Prominences</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Prominences`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Prominences\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The prominence values of each peak. This array is only set if the parameter 'Prominence' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5712', 5712)" onmouseover="showTip(event, '5712', 5712)">
+                <p>
+                  <a id="ResetDistance">
+                    <a href="#ResetDistance">
+                      <code><span>this.ResetDistance</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5712">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ResetDistance</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetDistance`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetDistance\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Resets the distance parameter, so that there is no requirement to the distance of the peaks anymore.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5713', 5713)" onmouseover="showTip(event, '5713', 5713)">
+                <p>
+                  <a id="ResetHeight">
+                    <a href="#ResetHeight">
+                      <code><span>this.ResetHeight</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5713">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ResetHeight</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetHeight`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetHeight\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Resets the height parameter, so that there is no requirement to the height of the peaks anymore.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5714', 5714)" onmouseover="showTip(event, '5714', 5714)">
+                <p>
+                  <a id="ResetPlateauSize">
+                    <a href="#ResetPlateauSize">
+                      <code><span>this.ResetPlateauSize</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5714">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ResetPlateauSize</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetPlateauSize`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetPlateauSize\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Resets the plateau size parameter, so that there is no requirement to the plateau size of the peaks anymore.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5715', 5715)" onmouseover="showTip(event, '5715', 5715)">
+                <p>
+                  <a id="ResetProminence">
+                    <a href="#ResetProminence">
+                      <code><span>this.ResetProminence</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5715">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ResetProminence</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetProminence`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetProminence\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Resets the prominence parameter, so that there is no requirement to the prominence values of the peaks anymore.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5716', 5716)" onmouseover="showTip(event, '5716', 5716)">
+                <p>
+                  <a id="ResetRelativeHeight">
+                    <a href="#ResetRelativeHeight">
+                      <code><span>this.ResetRelativeHeight</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5716">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ResetRelativeHeight</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetRelativeHeight`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetRelativeHeight\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Resets the relative height parameter to its default value of 0.5.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5717', 5717)" onmouseover="showTip(event, '5717', 5717)">
+                <p>
+                  <a id="ResetThreshold">
+                    <a href="#ResetThreshold">
+                      <code><span>this.ResetThreshold</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5717">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ResetThreshold</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetThreshold`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetThreshold\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Resets the threshold parameter, so that there is no requirement to the threshold value of the peaks anymore.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5718', 5718)" onmouseover="showTip(event, '5718', 5718)">
+                <p>
+                  <a id="ResetWLen">
+                    <a href="#ResetWLen">
+                      <code><span>this.ResetWLen</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5718">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ResetWLen</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetWLen`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetWLen\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Resets the width of the search window for the neighbouring values around a peak to the full spectral range.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5719', 5719)" onmouseover="showTip(event, '5719', 5719)">
+                <p>
+                  <a id="ResetWidth">
+                    <a href="#ResetWidth">
+                      <code><span>this.ResetWidth</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5719">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ResetWidth</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetWidth`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.ResetWidth\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Resets the width parameter, so that there is no requirement to the width of the peaks anymore.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5720', 5720)" onmouseover="showTip(event, '5720', 5720)">
+                <p>
+                  <a id="RightBases">
+                    <a href="#RightBases">
+                      <code><span>this.RightBases</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5720">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.RightBases</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.RightBases`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.RightBases\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The position of the lowest valley point to the right of each peak. This array is only set if the parameter 'Prominence' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5721', 5721)" onmouseover="showTip(event, '5721', 5721)">
+                <p>
+                  <a id="RightEdges">
+                    <a href="#RightEdges">
+                      <code><span>this.RightEdges</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5721">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.RightEdges</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.RightEdges`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.RightEdges\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Position of the first point to the right of each peak, whose value is different from the peak's value.
+            This array is only set if the parameter 'PlateauSize' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5722', 5722)" onmouseover="showTip(event, '5722', 5722)">
+                <p>
+                  <a id="RightIps">
+                    <a href="#RightIps">
+                      <code><span>this.RightIps</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5722">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.RightIps</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.RightIps`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.RightIps\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The right intersection points of each peak. This array is only set if the parameter 'Width' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5723', 5723)" onmouseover="showTip(event, '5723', 5723)">
+                <p>
+                  <a id="RightThresholds">
+                    <a href="#RightThresholds">
+                      <code><span>this.RightThresholds</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5723">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.RightThresholds</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.RightThresholds`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.RightThresholds\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The right thresholds of each peak. This array is only set if the parameter 'Threshold' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5724', 5724)" onmouseover="showTip(event, '5724', 5724)">
+                <p>
+                  <a id="SetDistance">
+                    <a href="#SetDistance">
+                      <code><span>this.SetDistance</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5724">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetDistance</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The minimal horizontal distance required between neighbouring peaks (in points).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetDistance`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetDistance\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal horizontal distance (>= 1) between neighbouring peaks, required for all peaks.
+            Smaller peaks are removed first until the condition is fulfilled for all remaining peaks.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal horizontal distance required between neighbouring peaks (in points).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5725', 5725)" onmouseover="showTip(event, '5725', 5725)">
+                <p>
+                  <a id="SetHeight">
+                    <a href="#SetHeight">
+                      <code><span>this.SetHeight</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5725">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetHeight</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The minimal height.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetHeight`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetHeight\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal height required for all peaks.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal height.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5726', 5726)" onmouseover="showTip(event, '5726', 5726)">
+                <p>
+                  <a id="SetHeight">
+                    <a href="#SetHeight">
+                      <code><span>this.SetHeight</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5726">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetHeight</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>float&#32;*&#32;float</span></code>
+                       - 
+                      The minimal and maximal height for all peaks.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetHeight`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetHeight\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal and maximal height required for all peaks.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span>float&#32;*&#32;float</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal and maximal height for all peaks.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5727', 5727)" onmouseover="showTip(event, '5727', 5727)">
+                <p>
+                  <a id="SetHeight">
+                    <a href="#SetHeight">
+                      <code><span>this.SetHeight</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5727">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetHeight</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The minimal height for each peak.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetHeight`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetHeight\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal height required for each peak.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal height for each peak.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5728', 5728)" onmouseover="showTip(event, '5728', 5728)">
+                <p>
+                  <a id="SetHeight">
+                    <a href="#SetHeight">
+                      <code><span>this.SetHeight</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5728">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetHeight</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+                       - 
+                      The minimal and maximal height for each peak.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetHeight`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetHeight\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal and maximal height required for each peak.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal and maximal height for each peak.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5729', 5729)" onmouseover="showTip(event, '5729', 5729)">
+                <p>
+                  <a id="SetPlateauSize">
+                    <a href="#SetPlateauSize">
+                      <code><span>this.SetPlateauSize</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5729">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetPlateauSize</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The minimal plateau size value required for all peaks.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetPlateauSize`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetPlateauSize\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal plateau size value required for all peaks.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal plateau size value required for all peaks.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5730', 5730)" onmouseover="showTip(event, '5730', 5730)">
+                <p>
+                  <a id="SetPlateauSize">
+                    <a href="#SetPlateauSize">
+                      <code><span>this.SetPlateauSize</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5730">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetPlateauSize</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>float&#32;*&#32;float</span></code>
+                       - 
+                      The minimal plateau size value required for all peaks.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetPlateauSize`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetPlateauSize\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal and maximal plateau size value required for all peaks.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span>float&#32;*&#32;float</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal plateau size value required for all peaks.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5731', 5731)" onmouseover="showTip(event, '5731', 5731)">
+                <p>
+                  <a id="SetPlateauSize">
+                    <a href="#SetPlateauSize">
+                      <code><span>this.SetPlateauSize</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5731">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetPlateauSize</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The minimal plateau size value for required each peak.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetPlateauSize`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetPlateauSize\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal plateau size value required for each peak.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal plateau size value for required each peak.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5732', 5732)" onmouseover="showTip(event, '5732', 5732)">
+                <p>
+                  <a id="SetPlateauSize">
+                    <a href="#SetPlateauSize">
+                      <code><span>this.SetPlateauSize</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5732">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetPlateauSize</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+                       - 
+                      The minimal and maximal plateau size value required for each peak.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetPlateauSize`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetPlateauSize\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal and maximal plateau size value required for each peak.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal and maximal plateau size value required for each peak.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5733', 5733)" onmouseover="showTip(event, '5733', 5733)">
+                <p>
+                  <a id="SetProminence">
+                    <a href="#SetProminence">
+                      <code><span>this.SetProminence</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5733">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetProminence</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The minimal prominence value required for all peaks.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetProminence`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetProminence\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal prominence value required for all peaks.
+            Prominence is defined as the smaller of the two difference values between the peak height and the height of the neighbouring valleys.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal prominence value required for all peaks.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5734', 5734)" onmouseover="showTip(event, '5734', 5734)">
+                <p>
+                  <a id="SetProminence">
+                    <a href="#SetProminence">
+                      <code><span>this.SetProminence</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5734">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetProminence</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>float&#32;*&#32;float</span></code>
+                       - 
+                      The minimal and maximal prominence values required for all peaks.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetProminence`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetProminence\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal and maximal prominence values required for all peaks.
+            Prominence is defined as the smaller of the two difference values between the peak height and the height of the neighbouring valleys.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span>float&#32;*&#32;float</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal and maximal prominence values required for all peaks.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5735', 5735)" onmouseover="showTip(event, '5735', 5735)">
+                <p>
+                  <a id="SetProminence">
+                    <a href="#SetProminence">
+                      <code><span>this.SetProminence</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5735">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetProminence</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The minimal prominence values required for each peak.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetProminence`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetProminence\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimum prominence values required for each peak.
+            Prominence is defined as the smaller of the two difference values between the peak height and the height of the neighbouring valleys.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal prominence values required for each peak.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5736', 5736)" onmouseover="showTip(event, '5736', 5736)">
+                <p>
+                  <a id="SetProminence">
+                    <a href="#SetProminence">
+                      <code><span>this.SetProminence</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5736">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetProminence</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+                       - 
+                      The minimal and maximal prominence values required for each peak..
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetProminence`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetProminence\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal and maximal prominence values required for each peak.
+            Prominence is defined as the smaller of the two difference values between the peak height and the height of the neighbouring valleys.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal and maximal prominence values required for each peak..
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5737', 5737)" onmouseover="showTip(event, '5737', 5737)">
+                <p>
+                  <a id="SetRelativeHeight">
+                    <a href="#SetRelativeHeight">
+                      <code><span>this.SetRelativeHeight</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5737">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetRelativeHeight</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The relative height value.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetRelativeHeight`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetRelativeHeight\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the relative height value that is used to determine the width of the peaks.
+            The width of a peak is determined at the y-value, which is (prominence x relative height) below the peak's y-value.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The relative height value.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5738', 5738)" onmouseover="showTip(event, '5738', 5738)">
+                <p>
+                  <a id="SetThreshold">
+                    <a href="#SetThreshold">
+                      <code><span>this.SetThreshold</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5738">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetThreshold</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The minimal threshold value required for all peaks.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetThreshold`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetThreshold\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal threshold value required for all peaks.
+            Threshold is defined as minimum difference value between the peak height and its immediate neightbouring points.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal threshold value required for all peaks.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5739', 5739)" onmouseover="showTip(event, '5739', 5739)">
+                <p>
+                  <a id="SetThreshold">
+                    <a href="#SetThreshold">
+                      <code><span>this.SetThreshold</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5739">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetThreshold</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>float&#32;*&#32;float</span></code>
+                       - 
+                      The minimal and maximal threshold value required for all peaks.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetThreshold`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetThreshold\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal and maximal threshold value required for all peaks.
+            Threshold is defined as minimum difference value between the peak height and its immediate neightbouring points.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span>float&#32;*&#32;float</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal and maximal threshold value required for all peaks.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5740', 5740)" onmouseover="showTip(event, '5740', 5740)">
+                <p>
+                  <a id="SetThreshold">
+                    <a href="#SetThreshold">
+                      <code><span>this.SetThreshold</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5740">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetThreshold</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The minimal threshold value required for each peak.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetThreshold`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetThreshold\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal threshold value required for each peak.
+            Threshold is defined as minimum difference value between the peak height and its immediate neightbouring points.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal threshold value required for each peak.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5741', 5741)" onmouseover="showTip(event, '5741', 5741)">
+                <p>
+                  <a id="SetThreshold">
+                    <a href="#SetThreshold">
+                      <code><span>this.SetThreshold</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5741">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetThreshold</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+                       - 
+                      The minimal and maximal threshold values required for each peak.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetThreshold`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetThreshold\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal and maximal threshold value required for each peak.
+            Threshold is defined as minimum difference value between the peak height and its immediate neightbouring points.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal and maximal threshold values required for each peak.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5742', 5742)" onmouseover="showTip(event, '5742', 5742)">
+                <p>
+                  <a id="SetWLen">
+                    <a href="#SetWLen">
+                      <code><span>this.SetWLen</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5742">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetWLen</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      width of the search window for the neighbouring values around a peak (in points).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetWLen`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetWLen\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the width of the search window for the neighbouring values around a peak (in points).
+            Used for calculation of the peaks prominences, thus it is only used if
+            one of the parameters 'prominence' or 'width' is given. 
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  width of the search window for the neighbouring values around a peak (in points).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5743', 5743)" onmouseover="showTip(event, '5743', 5743)">
+                <p>
+                  <a id="SetWidth">
+                    <a href="#SetWidth">
+                      <code><span>this.SetWidth</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5743">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetWidth</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The minimal width value required for all peaks.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetWidth`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetWidth\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal width value required for all peaks.
+            The width of a peak is determined at the y-value, which is (prominence x relative height) less than the peak's y-value.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal width value required for all peaks.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5744', 5744)" onmouseover="showTip(event, '5744', 5744)">
+                <p>
+                  <a id="SetWidth">
+                    <a href="#SetWidth">
+                      <code><span>this.SetWidth</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5744">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetWidth</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>float&#32;*&#32;float</span></code>
+                       - 
+                      The minimal and maximal width value required for all peaks.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetWidth`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetWidth\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal and maximal width value required for all peaks.
+            The width of a peak is determined at the y-value, which is (prominence x relative height) less than the peak's y-value.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span>float&#32;*&#32;float</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal and maximal width value required for all peaks.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5745', 5745)" onmouseover="showTip(event, '5745', 5745)">
+                <p>
+                  <a id="SetWidth">
+                    <a href="#SetWidth">
+                      <code><span>this.SetWidth</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5745">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetWidth</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The minimal width value required for each peak.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetWidth`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetWidth\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal width value required for each peak.
+            The width of a peak is determined at the y-value, which is (prominence x relative height) less than the peak's y-value.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal width value required for each peak.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5746', 5746)" onmouseover="showTip(event, '5746', 5746)">
+                <p>
+                  <a id="SetWidth">
+                    <a href="#SetWidth">
+                      <code><span>this.SetWidth</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5746">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetWidth</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+                       - 
+                      The minimal and maximal width values required for each peak.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+                  </span>
+                  This instance.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetWidth`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.SetWidth\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Sets the minimal and maximal width values required for each peak.
+            The width of a peak is determined at the y-value, which is (prominence x relative height) less than the peak's y-value.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The minimal and maximal width values required for each peak.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-science-spectroscopy-peaksearching-peakfinder.html">PeakFinder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  This instance.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5747', 5747)" onmouseover="showTip(event, '5747', 5747)">
+                <p>
+                  <a id="Warnings">
+                    <a href="#Warnings">
+                      <code><span>this.Warnings</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5747">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Warnings</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>string</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Warnings`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Warnings\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The warnings during the execution of the peak finder algorithm.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5748', 5748)" onmouseover="showTip(event, '5748', 5748)">
+                <p>
+                  <a id="WidthHeights">
+                    <a href="#WidthHeights">
+                      <code><span>this.WidthHeights</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5748">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.WidthHeights</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.WidthHeights`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.WidthHeights\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The height at which the width of each peak was determined. This array is only set if the parameter 'Width' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5749', 5749)" onmouseover="showTip(event, '5749', 5749)">
+                <p>
+                  <a id="Widths">
+                    <a href="#Widths">
+                      <code><span>this.Widths</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5749">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Widths</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Widths`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder.Widths\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            The width of each peak. This array is only set if the parameter 'Width' was specified.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5750', 5750)" onmouseover="showTip(event, '5750', 5750)">
+                <p>
+                  <a id="_local_maxima_1d">
+                    <a href="#_local_maxima_1d">
+                      <code><span>this._local_maxima_1d</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5750">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this._local_maxima_1d</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The array (e.g., a spectrum).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>int[]</span>&#32;*&#32;<span>int[]</span>&#32;*&#32;<span>int[]</span></span></code>
+                  </span>
+                  Tuple of midpoints (indices of midpoints of local maxima), LeftEdges: Indices of edges to the left of local maxima, and RightEdges: Indices of edges to the right of local maxima.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder._local_maxima_1d`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder._local_maxima_1d\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Find local maxima in a 1D array.
+            This function finds all local maxima in a 1D array and returns the indices
+            for their edges and midpoints(rounded down for even plateau sizes).
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+             A maxima is defined as one or more samples of equal value that are
+            surrounded on both sides by at least one smaller sample.
+            
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The array (e.g., a spectrum).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><span>int[]</span>&#32;*&#32;<span>int[]</span>&#32;*&#32;<span>int[]</span></span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Tuple of midpoints (indices of midpoints of local maxima), LeftEdges: Indices of edges to the left of local maxima, and RightEdges: Indices of edges to the right of local maxima.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5751', 5751)" onmouseover="showTip(event, '5751', 5751)">
+                <p>
+                  <a id="_peak_prominences">
+                    <a href="#_peak_prominences">
+                      <code><span>this._peak_prominences</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5751">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this._peak_prominences</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The signal, e.g. a spectrum with peaks.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        peaks
+                      </b>
+                      :
+                      <code><span>int[]</span></code>
+                       - 
+                      The indices of the peak positions in <span class="fsdocs-param-name">x</span>.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        wlen
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      A window length in samples (see `peak_prominences`) which is rounded up
+            to the nearest odd integer.If smaller than 2 the entire signal `x` is
+            used.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>float[]</span>&#32;*&#32;<span>int[]</span>&#32;*&#32;<span>int[]</span>&#32;*&#32;string</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder._peak_prominences`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Science.Spectroscopy.PeakSearching.PeakFinder._peak_prominences\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Calculate the prominence of each peak in a signal.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The signal, e.g. a spectrum with peaks.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  peaks
+                </span>
+                :
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The indices of the peak positions in <span class="fsdocs-param-name">x</span>.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  wlen
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A window length in samples (see `peak_prominences`) which is rounded up
+            to the nearest odd integer.If smaller than 2 the entire signal `x` is
+            used.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><span>float[]</span>&#32;*&#32;<span>int[]</span>&#32;*&#32;<span>int[]</span>&#32;*&#32;string</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

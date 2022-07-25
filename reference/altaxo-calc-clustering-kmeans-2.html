@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KMeans<'TData, 'TDataSum> (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    KMeans<'TData, 'TDataSum> Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-clustering.html">
+        Altaxo.Calc.Clustering
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Clusters data using the KMeans algorithm.
+            
+      </p>
+    </div>
+    <p class="fsdocs-remarks">
+      
+            References:
+            KMeans algorithm: 
+            KMeans++ initialization: 
+    </p>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '682', 682)" onmouseover="showTip(event, '682', 682)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>KMeans<span><span>(<span>createDefaultFunction,&#32;distanceFunction,&#32;isDistanceFunctionReturningSquareOfDistance,&#32;sumUpFunction,&#32;divideFunction</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="682">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>KMeans<span><span>(<span>createDefaultFunction,&#32;distanceFunction,&#32;isDistanceFunctionReturningSquareOfDistance,&#32;sumUpFunction,&#32;divideFunction</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        createDefaultFunction
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;'TDataSum&gt;</span></code>
+                       - 
+                      Creates the default data. Sum up the default data and other data should result in the same value of the other data.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        distanceFunction
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'TDataSum,&#32;'TData,&#32;float</span>&gt;</span></code>
+                       - 
+                      
+             A function that evaluates the distance between the mean value of the cluster and a data point.
+             The return value is either the Euclidean distance, or the square of the distance. In the latter case
+             the next argument must be set to true.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        isDistanceFunctionReturningSquareOfDistance
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      True if the <span class="fsdocs-param-name">distanceFunction</span> returns the square of the distance.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sumUpFunction
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'TDataSum,&#32;'TData,&#32;'TDataSum</span>&gt;</span></code>
+                       - 
+                      A function that adds the first and the second argument and returns the result.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        divideFunction
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'TDataSum,&#32;int,&#32;'TDataSum</span>&gt;</span></code>
+                       - 
+                      
+             A function that divides the first argument by the second argument. Calling this function
+             signals that the sum up is finished. Because of this extra functionality, the divide function is called even if
+             the divisor is 1.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.Clustering.KMeans`2.#ctor``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Clustering.KMeans`2.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+             Initalize a new instance of <a href="/FsODE/reference/altaxo-calc-clustering-kmeans-2.html">KMeans</a>.
+             
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              The function <span class="fsdocs-param-name">sumUpFunction</span> and <span class="fsdocs-param-name">divideFunction</span>
+             have to work in such a way that
+             <pre>divideFunction(sumUpFunction(default, x), 1) == x</pre>.
+             
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  createDefaultFunction
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;'TDataSum&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Creates the default data. Sum up the default data and other data should result in the same value of the other data.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  distanceFunction
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'TDataSum,&#32;'TData,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             A function that evaluates the distance between the mean value of the cluster and a data point.
+             The return value is either the Euclidean distance, or the square of the distance. In the latter case
+             the next argument must be set to true.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  isDistanceFunctionReturningSquareOfDistance
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  True if the <span class="fsdocs-param-name">distanceFunction</span> returns the square of the distance.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sumUpFunction
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'TDataSum,&#32;'TData,&#32;'TDataSum</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A function that adds the first and the second argument and returns the result.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  divideFunction
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'TDataSum,&#32;int,&#32;'TDataSum</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             A function that divides the first argument by the second argument. Calling this function
+             signals that the sum up is finished. Because of this extra functionality, the divide function is called even if
+             the divisor is 1.
+                </p>
+              </dd>
+            </dl>
+            <h5 class="fsdocs-example-header">
+              Example
+            </h5>
+            <p class="fsdocs-example" id="example">
+              <p class='fsdocs-para'>
+             For taking the linear mean, the <span class="fsdocs-param-name">sumUpFunction</span> can be defined as
+             <pre>sumUpFunction = (sum, x) =&gt; sum + x</pre>,
+             and the divideFunction as
+             <pre>divideFunction = (nom, denom) =&gt; nom/denom.</pre></p><p class='fsdocs-para'>
+             For taking the logarithmic mean, the <span class="fsdocs-param-name">sumUpFunction</span> can be defined as
+             <pre>sumUpFunction = (sum, x) =&gt; sum + Math.Log(x)</pre>,
+             and the <span class="fsdocs-param-name">divideFunction</span> as
+             <pre>divideFunction = (nom, denom) =&gt; Math.Exp(nom/denom)</pre>.
+             The latter example works because the divideFunction is called in every case after summing up, even if the denominator is 1.
+             </p>
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '683', 683)" onmouseover="showTip(event, '683', 683)">
+                <p>
+                  <a id="ClusterCounts">
+                    <a href="#ClusterCounts">
+                      <code><span>this.ClusterCounts</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="683">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ClusterCounts</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;int&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.Clustering.KMeans`2.ClusterCounts``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Clustering.KMeans`2.ClusterCounts\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets a list which contains the number of values in each of the clusters (length is numberOfClusters).
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '684', 684)" onmouseover="showTip(event, '684', 684)">
+                <p>
+                  <a id="ClusterIndices">
+                    <a href="#ClusterIndices">
+                      <code><span>this.ClusterIndices</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="684">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ClusterIndices</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;int&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.Clustering.KMeans`2.ClusterIndices``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Clustering.KMeans`2.ClusterIndices\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets a list with the same length as the number of data points, in which each element is
+            the index of the cluster this data point is assigned to.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '685', 685)" onmouseover="showTip(event, '685', 685)">
+                <p>
+                  <a id="ClusterMeans">
+                    <a href="#ClusterMeans">
+                      <code><span>this.ClusterMeans</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="685">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ClusterMeans</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;'TDataSum&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.Clustering.KMeans`2.ClusterMeans``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Clustering.KMeans`2.ClusterMeans\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets a list which contains the mean values of the clusters (length is numberOfClusters).
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;'TDataSum&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '686', 686)" onmouseover="showTip(event, '686', 686)">
+                <p>
+                  <a id="Data">
+                    <a href="#Data">
+                      <code><span>this.Data</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="686">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Data</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;'TData&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.Clustering.KMeans`2.Data``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Clustering.KMeans`2.Data\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets a list which contains the data points provided.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;'TData&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '687', 687)" onmouseover="showTip(event, '687', 687)">
+                <p>
+                  <a id="Evaluate">
+                    <a href="#Evaluate">
+                      <code><span>this.Evaluate</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="687">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Evaluate</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        data
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'TData&gt;</span></code>
+                       - 
+                      The data points.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfClusters
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of clusters to create.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.Clustering.KMeans`2.Evaluate``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Clustering.KMeans`2.Evaluate\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Clusters the provided data. Please note that the data are not normalized. Thus,
+            for multidimensional data, please normalize the data before!
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  data
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'TData&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The data points.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfClusters
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of clusters to create.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">
+                    InvalidOperationException
+                  </a>
+                </td>
+                <td>
+                  If either the maximum number of iterations has reached without convergence,
+            or empty clusters were created during evaluation, which could not be filled up.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '688', 688)" onmouseover="showTip(event, '688', 688)">
+                <p>
+                  <a id="EvaluateClustersStandardDeviation">
+                    <a href="#EvaluateClustersStandardDeviation">
+                      <code><span>this.EvaluateClustersStandardDeviation</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="688">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.EvaluateClustersStandardDeviation</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                  </span>
+                  The standard deviation of each cluster, i.e. the square root ( of the sum of squared distances divided by N-1)
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.Clustering.KMeans`2.EvaluateClustersStandardDeviation``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Clustering.KMeans`2.EvaluateClustersStandardDeviation\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Evaluates for each cluster the standard deviation, i.e. the square root ( of the sum of squared distances divided by N-1)
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The standard deviation of each cluster, i.e. the square root ( of the sum of squared distances divided by N-1)
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '689', 689)" onmouseover="showTip(event, '689', 689)">
+                <p>
+                  <a id="EvaluateDaviesBouldinIndex">
+                    <a href="#EvaluateDaviesBouldinIndex">
+                      <code><span>this.EvaluateDaviesBouldinIndex</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="689">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.EvaluateDaviesBouldinIndex</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        distanceFunctionOfClusterMeans
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'TDataSum,&#32;'TDataSum,&#32;float</span>&gt;</span></code>
+                       - 
+                      Function to calculate the Euclidean distance between two cluster centroids.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The Davies-Bouldin-Index using q=1 (p=2 if <span class="fsdocs-param-name">distanceFunctionOfClusterMeans</span> returns the Euclidean distance between the cluster centroids).
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.Clustering.KMeans`2.EvaluateDaviesBouldinIndex``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Clustering.KMeans`2.EvaluateDaviesBouldinIndex\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Evaluates the Davies-Bouldin-Index. The exponent q (see <a href="/FsODE/reference/altaxo-calc-clustering-kmeans-2.html#EvaluateDaviesBouldinIndex">KMeans.EvaluateDaviesBouldinIndex</a>) is set to 1,
+            meaning that the mean Euclidean distance of the points to their respective centroid is used in the nominator.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  distanceFunctionOfClusterMeans
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'TDataSum,&#32;'TDataSum,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to calculate the Euclidean distance between two cluster centroids.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The Davies-Bouldin-Index using q=1 (p=2 if <span class="fsdocs-param-name">distanceFunctionOfClusterMeans</span> returns the Euclidean distance between the cluster centroids).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '690', 690)" onmouseover="showTip(event, '690', 690)">
+                <p>
+                  <a id="EvaluateDaviesBouldinIndex">
+                    <a href="#EvaluateDaviesBouldinIndex">
+                      <code><span>this.EvaluateDaviesBouldinIndex</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="690">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.EvaluateDaviesBouldinIndex</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        distanceFunctionOfClusterMeans
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'TDataSum,&#32;'TDataSum,&#32;float</span>&gt;</span></code>
+                       - 
+                      Function to calculate the Euclidean distance between two cluster centroids.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        q
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Order of the moment to calculate the average distance of the cluster points to their centroid. A value of one results in
+            calculating the average (Euclidean) distance, a value of 2 results in the square root of the mean squared distances, etc.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The Davies-Bouldin-Index using the exponent q (p is implicitely 2 if <span class="fsdocs-param-name">distanceFunctionOfClusterMeans</span> returns the Euclidean distance between the cluster centroids).
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.Clustering.KMeans`2.EvaluateDaviesBouldinIndex``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Clustering.KMeans`2.EvaluateDaviesBouldinIndex\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Evaluates the Davies-Bouldin-Index. The exponent q (used to calculate the average distance of the cluster points to their centroid) can be set as parameter.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  distanceFunctionOfClusterMeans
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'TDataSum,&#32;'TDataSum,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to calculate the Euclidean distance between two cluster centroids.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  q
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Order of the moment to calculate the average distance of the cluster points to their centroid. A value of one results in
+            calculating the average (Euclidean) distance, a value of 2 results in the square root of the mean squared distances, etc.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The Davies-Bouldin-Index using the exponent q (p is implicitely 2 if <span class="fsdocs-param-name">distanceFunctionOfClusterMeans</span> returns the Euclidean distance between the cluster centroids).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '691', 691)" onmouseover="showTip(event, '691', 691)">
+                <p>
+                  <a id="EvaluateMean2ndMomentOfDistances">
+                    <a href="#EvaluateMean2ndMomentOfDistances">
+                      <code><span>this.EvaluateMean2ndMomentOfDistances</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="691">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.EvaluateMean2ndMomentOfDistances</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                  </span>
+                  The 2nd moment of the distances in each cluster, i.e. the square root of the average of the squared Euclidean distances (or whatever the distance function is) of the points to their respective centroid
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.Clustering.KMeans`2.EvaluateMean2ndMomentOfDistances``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Clustering.KMeans`2.EvaluateMean2ndMomentOfDistances\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Evaluates for each cluster the 2nd moment of the distances, i.e. the square root of the average of the squared Euclidean distances (or whatever the distance function is) of the points to their respective centroid.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The 2nd moment of the distances in each cluster, i.e. the square root of the average of the squared Euclidean distances (or whatever the distance function is) of the points to their respective centroid
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '692', 692)" onmouseover="showTip(event, '692', 692)">
+                <p>
+                  <a id="EvaluateMeanDistances">
+                    <a href="#EvaluateMeanDistances">
+                      <code><span>this.EvaluateMeanDistances</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="692">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.EvaluateMeanDistances</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                  </span>
+                  The mean distance in each cluster, i.e. the mean of the Euclidean distances (or whatever the distance function is) of the points to their respective centroid
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.Clustering.KMeans`2.EvaluateMeanDistances``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Clustering.KMeans`2.EvaluateMeanDistances\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Evaluates for each cluster the mean distance, i.e. the average of the Euclidean distances (or whatever the distance function is) of the points to their respective centroid.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The mean distance in each cluster, i.e. the mean of the Euclidean distances (or whatever the distance function is) of the points to their respective centroid
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '693', 693)" onmouseover="showTip(event, '693', 693)">
+                <p>
+                  <a id="EvaluateMeanNthMomentOfDistances">
+                    <a href="#EvaluateMeanNthMomentOfDistances">
+                      <code><span>this.EvaluateMeanNthMomentOfDistances</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="693">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.EvaluateMeanNthMomentOfDistances</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        q
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                  </span>
+                  The mean distance in each cluster, i.e. the square root ( of the sum of squared distances divided by N)
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.Clustering.KMeans`2.EvaluateMeanNthMomentOfDistances``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Clustering.KMeans`2.EvaluateMeanNthMomentOfDistances\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Evaluates for each cluster the mean distance, i.e. the square root ( of the sum of squared distances divided by N)
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  q
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The mean distance in each cluster, i.e. the square root ( of the sum of squared distances divided by N)
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '694', 694)" onmouseover="showTip(event, '694', 694)">
+                <p>
+                  <a id="EvaluateSumOfSquaredDistancesToClusterMean">
+                    <a href="#EvaluateSumOfSquaredDistancesToClusterMean">
+                      <code><span>this.EvaluateSumOfSquaredDistancesToClusterMean</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="694">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.EvaluateSumOfSquaredDistancesToClusterMean</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  Sum of (squared distance of each point to its cluster center).
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.Clustering.KMeans`2.EvaluateSumOfSquaredDistancesToClusterMean``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Clustering.KMeans`2.EvaluateSumOfSquaredDistancesToClusterMean\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Evaluates the sum of (squared distance of each point to its cluster center).
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Sum of (squared distance of each point to its cluster center).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '695', 695)" onmouseover="showTip(event, '695', 695)">
+                <p>
+                  <a id="HasPatchingEmptyClustersFailed">
+                    <a href="#HasPatchingEmptyClustersFailed">
+                      <code><span>this.HasPatchingEmptyClustersFailed</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="695">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.HasPatchingEmptyClustersFailed</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.Clustering.KMeans`2.HasPatchingEmptyClustersFailed``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Clustering.KMeans`2.HasPatchingEmptyClustersFailed\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            If true, during evaluation, empty clusters have appeared, which could not be patched with other data.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '696', 696)" onmouseover="showTip(event, '696', 696)">
+                <p>
+                  <a id="HasReachedMaximumNumberOfIterations">
+                    <a href="#HasReachedMaximumNumberOfIterations">
+                      <code><span>this.HasReachedMaximumNumberOfIterations</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="696">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.HasReachedMaximumNumberOfIterations</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.Clustering.KMeans`2.HasReachedMaximumNumberOfIterations``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Clustering.KMeans`2.HasReachedMaximumNumberOfIterations\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            If true, the evaluation has reached the maximum number of iterations, without converging.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '697', 697)" onmouseover="showTip(event, '697', 697)">
+                <p>
+                  <a id="SortingOfClusterValues">
+                    <a href="#SortingOfClusterValues">
+                      <code><span>this.SortingOfClusterValues</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="697">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SortingOfClusterValues</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Altaxo.Calc.Clustering.KMeans`2.SortingOfClusterValues``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Clustering.KMeans`2.SortingOfClusterValues\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Get/sets the sorting of cluster values after evaluation. It presumes that the generic type TDataSum
+            implements the <a href="https://docs.microsoft.com/dotnet/api/system.icomparable">IComparable</a> interface.
+            
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '698', 698)" onmouseover="showTip(event, '698', 698)">
+                <p>
+                  <a id="TryEvaluate">
+                    <a href="#TryEvaluate">
+                      <code><span>this.TryEvaluate</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="698">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TryEvaluate</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        data
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'TData&gt;</span></code>
+                       - 
+                      The data points.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfClusters
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of clusters to create.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  True if successful; otherwise, false.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Altaxo.Calc.Clustering.KMeans`2.TryEvaluate``')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Clustering.KMeans`2.TryEvaluate\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Clusters the provided data. Please note that the data are not normalized. Thus,
+            for multidimensional data, please normalize the data before!
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  data
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'TData&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The data points.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfClusters
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of clusters to create.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  True if successful; otherwise, false.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

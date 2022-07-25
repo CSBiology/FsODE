@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pfa235FFT (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    Pfa235FFT Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-fourier.html">
+        Altaxo.Calc.Fourier
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+             Generalized prime factor complex fast Fourier transform and
+             backtransform in one, two, and three dimensions (d = 1,2,3).
+             Each dimension must be of the form n = (2**p) * (3**q) * (5**r).
+             The complex d-dimensional data can be either given in a vector of
+             double precision complex numbers or in two seperate vectors of doubles
+             for the real and imaginary parts respectively, or in single precision,
+             either in a vector of complex or in two seperate vectors of float.
+             A leading dimension different from the first data dimension can be
+             specified - this can prevent memory-bank conflicts and therefore
+             dramatically improves performance on vector machines with interleaved memory.
+             The Fourier transform is always perfored inplace. The data array can be
+             stored either in column (Fortran convention) or row (C convention) order.
+             This makes about 40 different combinations (float - double, dimension,
+             order, complex - real) which can be easily accessed
+             by a simple class definition:
+            
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '827', 827)" onmouseover="showTip(event, '827', 827)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>Pfa235FFT<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="827">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Pfa235FFT<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.Pfa235FFT.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.Pfa235FFT.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            uninitialized setup
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            Setup fast Fourier transform / back-transform for one, two or three
+            dimensions. The dimensions n1,n2,and n3 must be of the form
+                         n = (2**p) * (3**q) * (5**r)
+            otherwise an error will be generated and the error handler function
+            Matpack.Error() is called. On instantiation some trigonometric tables
+            will be allocated and calculated. This approach avoids multiple
+            twiddle factor recalculations if several FFTs are calculated for data
+            with the same dimensions. Sometimes it is convenient to define an
+            "empty" setup (first constructor) and assign a setup later (see
+            copying and assignment). As default the multi-dimensional data
+            are expected in row order (C convention). If you want to transform
+            data stored in column order (Fortran convention) use the member
+            function SetOrder() to change the order - see below. For optimizations
+            on vector machines with separate memory banks an extra leading dimension
+            can be defined to avoid bank conflicts - also see SetOrder().
+            
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '828', 828)" onmouseover="showTip(event, '828', 828)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>Pfa235FFT<span><span>(<span>n1</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="828">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Pfa235FFT<span><span>(<span>n1</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        n1
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.Pfa235FFT.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.Pfa235FFT.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            1-dimensional setup
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            Setup fast Fourier transform / back-transform for one, two or three
+            dimensions. The dimensions n1,n2,and n3 must be of the form
+                         n = (2**p) * (3**q) * (5**r)
+            otherwise an error will be generated and the error handler function
+            Matpack.Error() is called. On instantiation some trigonometric tables
+            will be allocated and calculated. This approach avoids multiple
+            twiddle factor recalculations if several FFTs are calculated for data
+            with the same dimensions. Sometimes it is convenient to define an
+            "empty" setup (first constructor) and assign a setup later (see
+            copying and assignment). As default the multi-dimensional data
+            are expected in row order (C convention). If you want to transform
+            data stored in column order (Fortran convention) use the member
+            function SetOrder() to change the order - see below. For optimizations
+            on vector machines with separate memory banks an extra leading dimension
+            can be defined to avoid bank conflicts - also see SetOrder().
+            
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  n1
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '829', 829)" onmouseover="showTip(event, '829', 829)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>Pfa235FFT<span><span>(<span>n1,&#32;n2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="829">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Pfa235FFT<span><span>(<span>n1,&#32;n2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        n1
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        n2
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.Pfa235FFT.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.Pfa235FFT.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            2-dimensional setup
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            Setup fast Fourier transform / back-transform for one, two or three
+            dimensions. The dimensions n1,n2,and n3 must be of the form
+                         n = (2**p) * (3**q) * (5**r)
+            otherwise an error will be generated and the error handler function
+            Matpack.Error() is called. On instantiation some trigonometric tables
+            will be allocated and calculated. This approach avoids multiple
+            twiddle factor recalculations if several FFTs are calculated for data
+            with the same dimensions. Sometimes it is convenient to define an
+            "empty" setup (first constructor) and assign a setup later (see
+            copying and assignment). As default the multi-dimensional data
+            are expected in row order (C convention). If you want to transform
+            data stored in column order (Fortran convention) use the member
+            function SetOrder() to change the order - see below. For optimizations
+            on vector machines with separate memory banks an extra leading dimension
+            can be defined to avoid bank conflicts - also see SetOrder().
+            
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  n1
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  n2
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '830', 830)" onmouseover="showTip(event, '830', 830)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>Pfa235FFT<span><span>(<span>n1,&#32;n2,&#32;n3</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="830">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Pfa235FFT<span><span>(<span>n1,&#32;n2,&#32;n3</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        n1
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        n2
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        n3
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.Pfa235FFT.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.Pfa235FFT.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            3-dimensional setup
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            Setup fast Fourier transform / back-transform for one, two or three
+            dimensions. The dimensions n1,n2,and n3 must be of the form
+                         n = (2**p) * (3**q) * (5**r)
+            otherwise an error will be generated and the error handler function
+            Matpack.Error() is called. On instantiation some trigonometric tables
+            will be allocated and calculated. This approach avoids multiple
+            twiddle factor recalculations if several FFTs are calculated for data
+            with the same dimensions. Sometimes it is convenient to define an
+            "empty" setup (first constructor) and assign a setup later (see
+            copying and assignment). As default the multi-dimensional data
+            are expected in row order (C convention). If you want to transform
+            data stored in column order (Fortran convention) use the member
+            function SetOrder() to change the order - see below. For optimizations
+            on vector machines with separate memory banks an extra leading dimension
+            can be defined to avoid bank conflicts - also see SetOrder().
+            
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  n1
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  n2
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  n3
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '831', 831)" onmouseover="showTip(event, '831', 831)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>Pfa235FFT<span><span>(<span>fft</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="831">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Pfa235FFT<span><span>(<span>fft</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        fft
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-fourier-pfa235fft.html">Pfa235FFT</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.Pfa235FFT.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.Pfa235FFT.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+             Copy-Constructor
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            Setup fast Fourier transform / back-transform for one, two or three
+            dimensions. The dimensions n1,n2,and n3 must be of the form
+                         n = (2**p) * (3**q) * (5**r)
+            otherwise an error will be generated and the error handler function
+            Matpack.Error() is called. On instantiation some trigonometric tables
+            will be allocated and calculated. This approach avoids multiple
+            twiddle factor recalculations if several FFTs are calculated for data
+            with the same dimensions. Sometimes it is convenient to define an
+            "empty" setup (first constructor) and assign a setup later (see
+            copying and assignment). As default the multi-dimensional data
+            are expected in row order (C convention). If you want to transform
+            data stored in column order (Fortran convention) use the member
+            function SetOrder() to change the order - see below. For optimizations
+            on vector machines with separate memory banks an extra leading dimension
+            can be defined to avoid bank conflicts - also see SetOrder().
+            
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fft
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-fourier-pfa235fft.html">Pfa235FFT</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '832', 832)" onmouseover="showTip(event, '832', 832)">
+                <p>
+                  <a id="FFT">
+                    <a href="#FFT">
+                      <code><span>this.FFT</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="832">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.FFT</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        re
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Input/Output vector of real part.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        im
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Input/Output vector of imaginary part.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        isign
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-fourier-fourierdirection.html">FourierDirection</a></code>
+                       - 
+                      Forward (-1) or reverse (1) transform. 
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  Currently undefined, not used.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.Pfa235FFT.FFT`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.Pfa235FFT.FFT\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Complex forward/backward FFT for 1/2/3 dimensions
+            Interface with separate FLOAT vectors for real and imaginary part
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  re
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Input/Output vector of real part.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  im
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Input/Output vector of imaginary part.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  isign
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-fourier-fourierdirection.html">FourierDirection</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Forward (-1) or reverse (1) transform. 
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Currently undefined, not used.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '833', 833)" onmouseover="showTip(event, '833', 833)">
+                <p>
+                  <a id="RealFFT">
+                    <a href="#RealFFT">
+                      <code><span>this.RealFFT</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="833">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.RealFFT</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        real1
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Input/Output vector of first real array.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        real2
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      Input/Output vector of second real array.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        isign
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-fourier-fourierdirection.html">FourierDirection</a></code>
+                       - 
+                      Forward (-1) or reverse (1) transform. 
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  Currently undefined, not used.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.Pfa235FFT.RealFFT`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.Pfa235FFT.RealFFT\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Performs two FFTs of the two real values arrays and store the result
+            in the arrays.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  real1
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Input/Output vector of first real array.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  real2
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Input/Output vector of second real array.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  isign
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-fourier-fourierdirection.html">FourierDirection</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Forward (-1) or reverse (1) transform. 
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Currently undefined, not used.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '834', 834)" onmouseover="showTip(event, '834', 834)">
+                <p>
+                  <a id="CanFactorized">
+                    <a href="#CanFactorized">
+                      <code><span>Pfa235FFT.CanFactorized<span><span>(<span>n</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="834">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Pfa235FFT.CanFactorized<span><span>(<span>n</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        n
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number to test.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  True if n can be factorized into powers of 2, 3 and 5, or false if not.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.Pfa235FFT.CanFactorized`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.Pfa235FFT.CanFactorized\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Test if the number n can be factorized into powers of 2, 3 and 5.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  n
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number to test.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  True if n can be factorized into powers of 2, 3 and 5, or false if not.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '835', 835)" onmouseover="showTip(event, '835', 835)">
+                <p>
+                  <a id="Factorize">
+                    <a href="#Factorize">
+                      <code><span>Pfa235FFT.Factorize<span><span>(<span>n,&#32;pqr</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="835">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Pfa235FFT.Factorize<span><span>(<span>n,&#32;pqr</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        n
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The dimension n to be factorized into the valid factors n = (2**p) * (3**q) * (5**r)
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pqr
+                      </b>
+                      :
+                      <code><span>int[]</span></code>
+                       - 
+                      Return the powers of the basic prime factors 2, 3 and 5 for the given argument n. Must be at least int[3].
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  True if factorization is successful, False if n can not be factorized into powers of 2, 3, and 5.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.Pfa235FFT.Factorize`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.Pfa235FFT.Factorize\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Factorize the number into powers of 2, 3, and 5
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  n
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The dimension n to be factorized into the valid factors n = (2**p) * (3**q) * (5**r)
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pqr
+                </span>
+                :
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Return the powers of the basic prime factors 2, 3 and 5 for the given argument n. Must be at least int[3].
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  True if factorization is successful, False if n can not be factorized into powers of 2, 3, and 5.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

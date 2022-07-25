@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>XERRWD (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    XERRWD Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode.html">
+        Altaxo.Calc.Ode.Obsolete.DVode
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+             ***PURPOSE  Write error message with values.
+             ***CATEGORY  R3C
+             ***TYPE      DOUBLE PRECISION (XERRWV-S, XERRWD-D)
+             ***AUTHOR  Hindmarsh, Alan C., (LLNL)
+             ***DESCRIPTION
+            
+             Subroutines XERRWD, XSETF, XSETUN, and the function routine IXSAV,
+             as given here, constitute a simplified version of the SLATEC error
+             handling package.
+            
+             All arguments are input arguments.
+            
+             MSG    = The message (character array).
+             NMES   = The length of MSG (number of characters).
+             NERR   = The error number (not used).
+             LEVEL  = The error level..
+             0 or 1 means recoverable (control returns to caller).
+             2 means fatal (run is aborted--see note below).
+             NI     = Number of integers (0, 1, or 2) to be printed with message.
+             I1,I2  = Integers to be printed, depending on NI.
+             NR     = Number of reals (0, 1, or 2) to be printed with message.
+             R1,R2  = Reals to be printed, depending on NR.
+            
+             Note..  this routine is machine-dependent and specialized for use
+             in limited context, in the following ways..
+             1. The argument MSG is assumed to be of type CHARACTER, and
+             the message is printed with a format of (1X,A).
+             2. The message is assumed to take only one line.
+             Multi-line messages are generated by repeated calls.
+             3. If LEVEL = 2, control passes to the statement   STOP
+             to abort the run.  This statement may be machine-dependent.
+             4. R1 and R2 are assumed to be in double precision and are printed
+             in D21.13 format.
+            
+             ***ROUTINES CALLED  IXSAV
+             ***REVISION HISTORY  (YYMMDD)
+             920831  DATE WRITTEN
+             921118  Replaced MFLGSV/LUNSAV by IXSAV. (ACH)
+             930329  Modified prologue to SLATEC format. (FNF)
+             930407  Changed MSG from CHARACTER*1 array to variable. (FNF)
+             930922  Minor cosmetic change. (FNF)
+             ***END PROLOGUE  XERRWD
+            
+             *Internal Notes:
+            
+             For a different default logical unit number, IXSAV (or a subsidiary
+             routine that it calls) will need to be modified.
+             For a different run-abort command, change the statement following
+             statement 100 at the end.
+             -----------------------------------------------------------------------
+             Subroutines called by XERRWD.. None
+             Function routine called by XERRWD.. IXSAV
+             -----------------------------------------------------------------------
+             **End
+            
+             Declare arguments.
+            
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '3301', 3301)" onmouseover="showTip(event, '3301', 3301)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>XERRWD<span><span>(<span>ixsav</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3301">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>XERRWD<span><span>(<span>ixsav</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        ixsav
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-ixsav.html">IXSAV</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Ode.Obsolete.DVode.XERRWD.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Ode.Obsolete.DVode.XERRWD.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ixsav
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-ixsav.html">IXSAV</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '3302', 3302)" onmouseover="showTip(event, '3302', 3302)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>XERRWD<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3302">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>XERRWD<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Ode.Obsolete.DVode.XERRWD.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Ode.Obsolete.DVode.XERRWD.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '3303', 3303)" onmouseover="showTip(event, '3303', 3303)">
+                <p>
+                  <a id="Run">
+                    <a href="#Run">
+                      <code><span>this.Run</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3303">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Run</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        MSG
+                      </b>
+                      :
+                      <code>string</code>
+                       - 
+                      
+             = The message (character array).
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        NMES
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = The length of MSG (number of characters).
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        NERR
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = The error number (not used).
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        LEVEL
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = The error level..
+             0 or 1 means recoverable (control returns to caller).
+             2 means fatal (run is aborted--see note below).
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        NI
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = Number of integers (0, 1, or 2) to be printed with message.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        I1
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        I2
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        NR
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = Number of reals (0, 1, or 2) to be printed with message.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        R1
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        R2
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Ode.Obsolete.DVode.XERRWD.Run`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Ode.Obsolete.DVode.XERRWD.Run\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+             ***PURPOSE  Write error message with values.
+             ***CATEGORY  R3C
+             ***TYPE      DOUBLE PRECISION (XERRWV-S, XERRWD-D)
+             ***AUTHOR  Hindmarsh, Alan C., (LLNL)
+             ***DESCRIPTION
+            
+             Subroutines XERRWD, XSETF, XSETUN, and the function routine IXSAV,
+             as given here, constitute a simplified version of the SLATEC error
+             handling package.
+            
+             All arguments are input arguments.
+            
+             MSG    = The message (character array).
+             NMES   = The length of MSG (number of characters).
+             NERR   = The error number (not used).
+             LEVEL  = The error level..
+             0 or 1 means recoverable (control returns to caller).
+             2 means fatal (run is aborted--see note below).
+             NI     = Number of integers (0, 1, or 2) to be printed with message.
+             I1,I2  = Integers to be printed, depending on NI.
+             NR     = Number of reals (0, 1, or 2) to be printed with message.
+             R1,R2  = Reals to be printed, depending on NR.
+            
+             Note..  this routine is machine-dependent and specialized for use
+             in limited context, in the following ways..
+             1. The argument MSG is assumed to be of type CHARACTER, and
+             the message is printed with a format of (1X,A).
+             2. The message is assumed to take only one line.
+             Multi-line messages are generated by repeated calls.
+             3. If LEVEL = 2, control passes to the statement   STOP
+             to abort the run.  This statement may be machine-dependent.
+             4. R1 and R2 are assumed to be in double precision and are printed
+             in D21.13 format.
+            
+             ***ROUTINES CALLED  IXSAV
+             ***REVISION HISTORY  (YYMMDD)
+             920831  DATE WRITTEN
+             921118  Replaced MFLGSV/LUNSAV by IXSAV. (ACH)
+             930329  Modified prologue to SLATEC format. (FNF)
+             930407  Changed MSG from CHARACTER*1 array to variable. (FNF)
+             930922  Minor cosmetic change. (FNF)
+             ***END PROLOGUE  XERRWD
+            
+             *Internal Notes:
+            
+             For a different default logical unit number, IXSAV (or a subsidiary
+             routine that it calls) will need to be modified.
+             For a different run-abort command, change the statement following
+             statement 100 at the end.
+             -----------------------------------------------------------------------
+             Subroutines called by XERRWD.. None
+             Function routine called by XERRWD.. IXSAV
+             -----------------------------------------------------------------------
+             **End
+            
+             Declare arguments.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  MSG
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The message (character array).
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  NMES
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The length of MSG (number of characters).
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  NERR
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The error number (not used).
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  LEVEL
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The error level..
+             0 or 1 means recoverable (control returns to caller).
+             2 means fatal (run is aborted--see note below).
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  NI
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = Number of integers (0, 1, or 2) to be printed with message.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  I1
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  I2
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  NR
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = Number of reals (0, 1, or 2) to be printed with message.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  R1
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  R2
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

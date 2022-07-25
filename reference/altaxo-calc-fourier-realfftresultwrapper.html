@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RealFFTResultWrapper (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    RealFFTResultWrapper Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-fourier.html">
+        Altaxo.Calc.Fourier
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Class to provide convenient access to the result of a real valued fourier transform. See remarks for learning about different representations of a real valued Fourier transform.
+            
+      </p>
+    </div>
+    <p class="fsdocs-remarks">
+      <p class='fsdocs-para'>
+            This class is a wrapper for different representations of the result of a real valued fourier transformation.
+            </p><p class='fsdocs-para'>1. Real value representation</p><p class='fsdocs-para'>----------------------------</p><p class='fsdocs-para'>
+            The first value of the array is the real part of the spectrum at zero frequency, followed by the real part of the spectrum at first frequency and so on.
+            The last value of the array is the imaginary part of the spectrum at first frequency, the value before this is the imaginary part of the spectrum at second frequency and so on.
+            If the length of the fourier transform is even, the value of the array at index of half the length (N/2) is the real part of the spectrum at nyquist frequency. If the length of the fourier
+            transform is odd, there is no value of the spectrum at nyquist frequency.
+            </p><p class='fsdocs-para'></p><p class='fsdocs-para'>2. Verbose complex representation</p><p class='fsdocs-para'>---------------------------------</p><p class='fsdocs-para'>
+            The real and imaginary part of the spectrum are properly ordered from zero frequency to nyquist frequency.
+            The element at zero frequency contains only the real part, the imaginary part of this element is zero.
+            The element at nyquist frequency contains only the real part at nyquist frequency, the imaginary part of this element is zero.
+            Note that if the length of the FFT is for instance 1024, there are 513 complex spectral values. If the length of the FFT is 1023 (odd), there are 512 complex spectral values.
+            </p><p class='fsdocs-para'>3. Compact complex representation</p><p class='fsdocs-para'>---------------------------------</p><p class='fsdocs-para'>
+            The real and imaginary part of the spectrum are properly ordered from zero frequency to one element below the nyquist frequency. The value at nyquist frequency
+            is put into the imaginary part of the spectrum at zero index. If the length of the FFT is odd, there is no value at nyquist frequency, and hence the imaginary part
+            at zero index is set to zero.
+            If the length of the FFT is for instance 1024, there are 512 complex spectral values. If the length of the FFT is 1023 (odd), there are still 512 complex spectral values, but the imaginary part of the first value is set to zero.
+            </p>
+    </p>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '836', 836)" onmouseover="showTip(event, '836', 836)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>RealFFTResultWrapper<span><span>(<span>fftresult</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="836">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>RealFFTResultWrapper<span><span>(<span>fftresult</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        fftresult
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The result of a real valued fourier transformation.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Constructur. You must provide the array with the result of a real valued fourier transformation.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fftresult
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The result of a real valued fourier transformation.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '837', 837)" onmouseover="showTip(event, '837', 837)">
+                <p>
+                  <a id="Amplitude">
+                    <a href="#Amplitude">
+                      <code><span>this.Amplitude</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="837">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Amplitude</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Fourier.RealFFTResultWrapper.Amplitude`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Fourier.RealFFTResultWrapper.Amplitude\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the vector of amplitudes, i.e. the modulus of the complex result.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '838', 838)" onmouseover="showTip(event, '838', 838)">
+                <p>
+                  <a id="CircularFrequenciesFromXIncrement">
+                    <a href="#CircularFrequenciesFromXIncrement">
+                      <code><span>this.CircularFrequenciesFromXIncrement</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="838">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.CircularFrequenciesFromXIncrement</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        xincrement
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      X interval between two points before the Fourier transformation (sample period).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+                  </span>
+                  The vector of circular frequencies that correspond to the vectors Amplitude, RealPart, ImaginaryPart and Phase.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.CircularFrequenciesFromXIncrement`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.CircularFrequenciesFromXIncrement\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Given a value for the xincrement (x interval between two points before the Fourier transformation), the vector of circular frequencies
+            is returned.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xincrement
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  X interval between two points before the Fourier transformation (sample period).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The vector of circular frequencies that correspond to the vectors Amplitude, RealPart, ImaginaryPart and Phase.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '839', 839)" onmouseover="showTip(event, '839', 839)">
+                <p>
+                  <a id="CircularFrequenciesFromXRate">
+                    <a href="#CircularFrequenciesFromXRate">
+                      <code><span>this.CircularFrequenciesFromXRate</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="839">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.CircularFrequenciesFromXRate</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        xrate
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Inverse of the x interval between two points before the Fourier transformation (sample rate).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+                  </span>
+                  The vector of circular frequencies that correspond to the vectors Amplitude, RealPart, ImaginaryPart and Phase.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.CircularFrequenciesFromXRate`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.CircularFrequenciesFromXRate\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Given a value for the xrate (inverse of x interval between two points before the Fourier transformation), the vector of circular frequencies
+            is returned.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xrate
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Inverse of the x interval between two points before the Fourier transformation (sample rate).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The vector of circular frequencies that correspond to the vectors Amplitude, RealPart, ImaginaryPart and Phase.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '840', 840)" onmouseover="showTip(event, '840', 840)">
+                <p>
+                  <a id="ComplexResult">
+                    <a href="#ComplexResult">
+                      <code><span>this.ComplexResult</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="840">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ComplexResult</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-irocomplexdoublevector.html">IROComplexDoubleVector</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Fourier.RealFFTResultWrapper.ComplexResult`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Fourier.RealFFTResultWrapper.ComplexResult\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the vector of the complex result of the FFT.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-irocomplexdoublevector.html">IROComplexDoubleVector</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '841', 841)" onmouseover="showTip(event, '841', 841)">
+                <p>
+                  <a id="Count">
+                    <a href="#Count">
+                      <code><span>this.Count</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="841">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Count</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Fourier.RealFFTResultWrapper.Count`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Fourier.RealFFTResultWrapper.Count\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Return the length of the wrapper vectors Amplitude, RealPart, ImaginaryPart and Phase
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '842', 842)" onmouseover="showTip(event, '842', 842)">
+                <p>
+                  <a id="FrequenciesFromXIncrement">
+                    <a href="#FrequenciesFromXIncrement">
+                      <code><span>this.FrequenciesFromXIncrement</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="842">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.FrequenciesFromXIncrement</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        xincrement
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      X interval between two points before the Fourier transformation (sample period).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+                  </span>
+                  The vector of frequencies that correspond to the vectors Amplitude, RealPart, ImaginaryPart and Phase.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FrequenciesFromXIncrement`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FrequenciesFromXIncrement\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Given a value for the xincrement (x interval between two points before the Fourier transformation), the vector of frequencies
+            is returned.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xincrement
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  X interval between two points before the Fourier transformation (sample period).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The vector of frequencies that correspond to the vectors Amplitude, RealPart, ImaginaryPart and Phase.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '843', 843)" onmouseover="showTip(event, '843', 843)">
+                <p>
+                  <a id="FrequenciesFromXRate">
+                    <a href="#FrequenciesFromXRate">
+                      <code><span>this.FrequenciesFromXRate</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="843">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.FrequenciesFromXRate</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        xrate
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Inverse of the x interval between two points before the Fourier transformation (sample rate).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+                  </span>
+                  The vector of frequencies that correspond to the vectors Amplitude, RealPart, ImaginaryPart and Phase.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FrequenciesFromXRate`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FrequenciesFromXRate\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Given a value for the xrate (inverse of x interval between two points before the Fourier transformation), the vector of frequencies
+            is returned.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xrate
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Inverse of the x interval between two points before the Fourier transformation (sample rate).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The vector of frequencies that correspond to the vectors Amplitude, RealPart, ImaginaryPart and Phase.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '844', 844)" onmouseover="showTip(event, '844', 844)">
+                <p>
+                  <a id="ImaginaryPart">
+                    <a href="#ImaginaryPart">
+                      <code><span>this.ImaginaryPart</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="844">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ImaginaryPart</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Fourier.RealFFTResultWrapper.ImaginaryPart`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Fourier.RealFFTResultWrapper.ImaginaryPart\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the vector of the resulting imaginary parts of the FFT.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '845', 845)" onmouseover="showTip(event, '845', 845)">
+                <p>
+                  <a id="Phase">
+                    <a href="#Phase">
+                      <code><span>this.Phase</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="845">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Phase</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Fourier.RealFFTResultWrapper.Phase`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Fourier.RealFFTResultWrapper.Phase\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the vector of the resulting phases of the FFT.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '846', 846)" onmouseover="showTip(event, '846', 846)">
+                <p>
+                  <a id="RealPart">
+                    <a href="#RealPart">
+                      <code><span>this.RealPart</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="846">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.RealPart</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Fourier.RealFFTResultWrapper.RealPart`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Fourier.RealFFTResultWrapper.RealPart\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the vector of the resulting real parts of the FFT.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-irovector-1.html">IROVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '847', 847)" onmouseover="showTip(event, '847', 847)">
+                <p>
+                  <a id="AddSpectra">
+                    <a href="#AddSpectra">
+                      <code><span>RealFFTResultWrapper.AddSpectra<span><span>(<span>spectrumA,&#32;spectrumB,&#32;result</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="847">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>RealFFTResultWrapper.AddSpectra<span><span>(<span>spectrumA,&#32;spectrumB,&#32;result</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        spectrumA
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The first spectrum to add.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        spectrumB
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The second spectrum to add.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        result
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The resulting of the addition of the two spectras. May be identical to one of the parameters <code>spectraA</code> or <code>spectraB</code>. See remarks on how the data are organized in the array.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.AddSpectra`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.AddSpectra\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Addition of two spectra that where created as the result of two real fourier transformations.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            The data in the nominator and denominator spectral array and in the resulting array are organized as follows.
+            a[0] is the real part of f=0 (for f=0 the imaginary part is always zero)
+            a[i] and a[length-i] are the real and imaginary part of the spectrum at frequency i, respectively.
+            If the length of a is even, then a[length/2] is the real part of the frequency length/2 (the imaginary part at this frequency is always zero).
+            
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  spectrumA
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The first spectrum to add.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  spectrumB
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The second spectrum to add.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  result
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The resulting of the addition of the two spectras. May be identical to one of the parameters <code>spectraA</code> or <code>spectraB</code>. See remarks on how the data are organized in the array.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '848', 848)" onmouseover="showTip(event, '848', 848)">
+                <p>
+                  <a id="DivideSpectra">
+                    <a href="#DivideSpectra">
+                      <code><span>RealFFTResultWrapper.DivideSpectra<span><span>(<span>nominator,&#32;denominator,&#32;result</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="848">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>RealFFTResultWrapper.DivideSpectra<span><span>(<span>nominator,&#32;denominator,&#32;result</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        nominator
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The spectrum acting as nominator of the division.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        denominator
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The denominator spectrum.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        result
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The resulting divided spectrum. See remarks on how the data are organized in the array.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.DivideSpectra`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.DivideSpectra\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Divides two spectra that where created as the result of two real fourier transformations.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            The data in the nominator and denominator spectral array and in the resulting array are organized as follows.
+            a[0] is the real part of f=0 (for f=0 the imaginary part is always zero)
+            a[i] and a[length-i] are the real and imaginary part of the spectrum at frequency i, respectively.
+            If the length of a is even, then a[length/2] is the real part of the frequency length/2 (the imaginary part at this frequency is always zero).
+            
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  nominator
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The spectrum acting as nominator of the division.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  denominator
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The denominator spectrum.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  result
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The resulting divided spectrum. See remarks on how the data are organized in the array.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '849', 849)" onmouseover="showTip(event, '849', 849)">
+                <p>
+                  <a id="FromRepresentationCompactComplexToReal">
+                    <a href="#FromRepresentationCompactComplexToReal">
+                      <code><span>RealFFTResultWrapper.FromRepresentationCompactComplexToReal<span><span>(<span>re,&#32;im,&#32;destination</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="849">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>RealFFTResultWrapper.FromRepresentationCompactComplexToReal<span><span>(<span>re,&#32;im,&#32;destination</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        re
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      Stores the real part of the spectrum.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        im
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      Stores the imaginary part of the spectrum.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destination
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+                       - 
+                      After return, stores the spectrum in normalized real representation. The length of the vector has to be equal to the length of the FFT. 
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FromRepresentationCompactComplexToReal`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FromRepresentationCompactComplexToReal\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Transforms from a compact complex representation (nyquist frequency value put in imaginary part of first element) to real representation.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  re
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Stores the real part of the spectrum.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  im
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Stores the imaginary part of the spectrum.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destination
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  After return, stores the spectrum in normalized real representation. The length of the vector has to be equal to the length of the FFT. 
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '850', 850)" onmouseover="showTip(event, '850', 850)">
+                <p>
+                  <a id="FromRepresentationCompactComplexToReal">
+                    <a href="#FromRepresentationCompactComplexToReal">
+                      <code><span>RealFFTResultWrapper.FromRepresentationCompactComplexToReal<span><span>(<span>src,&#32;destination</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="850">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>RealFFTResultWrapper.FromRepresentationCompactComplexToReal<span><span>(<span>src,&#32;destination</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        src
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-irocomplexdoublevector.html">IROComplexDoubleVector</a></code>
+                       - 
+                      Stores the  complex spectrum.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destination
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+                       - 
+                      After return, stores the spectrum in normalized real representation. The length of the vector has to be equal to the length of the FFT. 
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FromRepresentationCompactComplexToReal`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FromRepresentationCompactComplexToReal\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Transforms from a compact complex representation (nyquist frequency value put in imaginary part of first element) to real representation.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  src
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-irocomplexdoublevector.html">IROComplexDoubleVector</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Stores the  complex spectrum.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destination
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  After return, stores the spectrum in normalized real representation. The length of the vector has to be equal to the length of the FFT. 
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '851', 851)" onmouseover="showTip(event, '851', 851)">
+                <p>
+                  <a id="FromRepresentationRealToCompactComplex">
+                    <a href="#FromRepresentationRealToCompactComplex">
+                      <code><span>RealFFTResultWrapper.FromRepresentationRealToCompactComplex<span><span>(<span>src,&#32;destRe,&#32;destIm</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="851">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>RealFFTResultWrapper.FromRepresentationRealToCompactComplex<span><span>(<span>src,&#32;destRe,&#32;destIm</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        src
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      Real representation of the spectrum.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destRe
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the real part of the spectrum.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destIm
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+                       - 
+                      On return, contains the imaginary part of the spectrum.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FromRepresentationRealToCompactComplex`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FromRepresentationRealToCompactComplex\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Transforms from the real representation of a spectrum to the compact complex representation (nyquist frequency value put in imaginary part of first element).
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  src
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Real representation of the spectrum.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destRe
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the real part of the spectrum.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destIm
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-ivector-1.html">IVector</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the imaginary part of the spectrum.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '852', 852)" onmouseover="showTip(event, '852', 852)">
+                <p>
+                  <a id="FromRepresentationRealToCompactComplex">
+                    <a href="#FromRepresentationRealToCompactComplex">
+                      <code><span>RealFFTResultWrapper.FromRepresentationRealToCompactComplex<span><span>(<span>src,&#32;dest</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="852">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>RealFFTResultWrapper.FromRepresentationRealToCompactComplex<span><span>(<span>src,&#32;dest</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        src
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      Real representation of the spectrum.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        dest
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-icomplexdoublevector.html">IComplexDoubleVector</a></code>
+                       - 
+                      On return, contains the complex spectrum.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FromRepresentationRealToCompactComplex`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Fourier.RealFFTResultWrapper.FromRepresentationRealToCompactComplex\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Transforms from the real representation of a spectrum to the compact complex representation (nyquist frequency value put in imaginary part of first element).
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  src
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Real representation of the spectrum.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dest
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-icomplexdoublevector.html">IComplexDoubleVector</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  On return, contains the complex spectrum.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

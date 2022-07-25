@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>StableDistributionBase (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    StableDistributionBase Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-probability.html">
+        Altaxo.Calc.Probability
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code><a href="/FsODE/reference/altaxo-calc-probability-continuousdistribution.html">ContinuousDistribution</a></code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Represents the base of all StableDistributions classes in different parametrizations.
+            
+      </p>
+    </div>
+    <p class="fsdocs-remarks">
+      
+    </p>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4049', 4049)" onmouseover="showTip(event, '4049', 4049)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>StableDistributionBase<span><span>(<span>generator</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4049">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase<span><span>(<span>generator</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        generator
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-probability-generator.html">Generator</a></code>
+                       - 
+                      The random number generator used.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Initializes a new instance of the <a href="/FsODE/reference/altaxo-calc-probability-stabledistributionbase.html">StableDistributionBase</a> class.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  generator
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-probability-generator.html">Generator</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The random number generator used.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4050', 4050)" onmouseover="showTip(event, '4050', 4050)">
+                <p>
+                  <a id="Maximum">
+                    <a href="#Maximum">
+                      <code><span>this.Maximum</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4050">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Maximum</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Probability.StableDistributionBase.Maximum`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Probability.StableDistributionBase.Maximum\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the maximum possible value of distributed random numbers.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4051', 4051)" onmouseover="showTip(event, '4051', 4051)">
+                <p>
+                  <a id="Mean">
+                    <a href="#Mean">
+                      <code><span>this.Mean</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4051">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Mean</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Probability.StableDistributionBase.Mean`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Probability.StableDistributionBase.Mean\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the mean of distributed random numbers.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4052', 4052)" onmouseover="showTip(event, '4052', 4052)">
+                <p>
+                  <a id="Median">
+                    <a href="#Median">
+                      <code><span>this.Median</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4052">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Median</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Probability.StableDistributionBase.Median`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Probability.StableDistributionBase.Median\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the median of distributed random numbers.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4053', 4053)" onmouseover="showTip(event, '4053', 4053)">
+                <p>
+                  <a id="Minimum">
+                    <a href="#Minimum">
+                      <code><span>this.Minimum</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4053">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Minimum</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Probability.StableDistributionBase.Minimum`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Probability.StableDistributionBase.Minimum\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the minimum possible value of distributed random numbers.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4054', 4054)" onmouseover="showTip(event, '4054', 4054)">
+                <p>
+                  <a id="Mode">
+                    <a href="#Mode">
+                      <code><span>this.Mode</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4054">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Mode</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>float[]</span></code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Probability.StableDistributionBase.Mode`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Probability.StableDistributionBase.Mode\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the mode of distributed random numbers.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4055', 4055)" onmouseover="showTip(event, '4055', 4055)">
+                <p>
+                  <a id="NextDouble">
+                    <a href="#NextDouble">
+                      <code><span>this.NextDouble</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4055">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.NextDouble</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  A distributed double-precision floating point number.
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.NextDouble`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.NextDouble\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Returns a distributed floating point random number.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A distributed double-precision floating point number.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4056', 4056)" onmouseover="showTip(event, '4056', 4056)">
+                <p>
+                  <a id="Variance">
+                    <a href="#Variance">
+                      <code><span>this.Variance</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4056">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Variance</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.Probability.StableDistributionBase.Variance`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.Probability.StableDistributionBase.Variance\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the variance of distributed random numbers.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4057', 4057)" onmouseover="showTip(event, '4057', 4057)">
+                <p>
+                  <a id="BetaFromAlphaGammaAga">
+                    <a href="#BetaFromAlphaGammaAga">
+                      <code><span>StableDistributionBase.BetaFromAlphaGammaAga<span><span>(<span>alpha,&#32;gamma,&#32;aga,&#32;abe</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4057">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.BetaFromAlphaGammaAga<span><span>(<span>alpha,&#32;gamma,&#32;aga,&#32;abe</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        alpha
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        gamma
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        aga
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abe
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.BetaFromAlphaGammaAga`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.BetaFromAlphaGammaAga\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  alpha
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  gamma
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  aga
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abe
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4058', 4058)" onmouseover="showTip(event, '4058', 4058)">
+                <p>
+                  <a id="BracketRootByExtensionOnly">
+                    <a href="#BracketRootByExtensionOnly">
+                      <code><span>StableDistributionBase.BracketRootByExtensionOnly<span><span>(<span>func,&#32;ysearch,&#32;x0,&#32;x1</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4058">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.BracketRootByExtensionOnly<span><span>(<span>func,&#32;ysearch,&#32;x0,&#32;x1</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        func
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+                       - 
+                      The function used to evaluate the function values.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ysearch
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The value to find.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x0
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      Starting parameter of x0, at the end the lower value of the bracket interval.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x1
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      Starting parameter of x1, at the end the upper value of the bracket interval.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  True if a bracket interval was found. If such an interval could not be found, the return value is false.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.BracketRootByExtensionOnly`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.BracketRootByExtensionOnly\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Find the bracket of a root, i.e. values for x0 and x1, so that ysearch is inbetween f(x0) and f(x1). This is done be extension of the interval [x0,x1] either
+            to the left or the right side or both. <code>True</code> is returned when a bracket was found.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  func
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>float,&#32;float</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The function used to evaluate the function values.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ysearch
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The value to find.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x0
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Starting parameter of x0, at the end the lower value of the bracket interval.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x1
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Starting parameter of x1, at the end the upper value of the bracket interval.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  True if a bracket interval was found. If such an interval could not be found, the return value is false.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4059', 4059)" onmouseover="showTip(event, '4059', 4059)">
+                <p>
+                  <a id="CosXPiBy2">
+                    <a href="#CosXPiBy2">
+                      <code><span>StableDistributionBase.CosXPiBy2<span><span>(<span>x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4059">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.CosXPiBy2<span><span>(<span>x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Argument x.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  Cos(x*Pi/2) with high accuracy.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.CosXPiBy2`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.CosXPiBy2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Calculates the cosine of <span class="fsdocs-param-name">x</span> times Pi/2 with increased accuracy.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Argument x.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Cos(x*Pi/2) with high accuracy.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4060', 4060)" onmouseover="showTip(event, '4060', 4060)">
+                <p>
+                  <a id="GetAbeFromBeta">
+                    <a href="#GetAbeFromBeta">
+                      <code><span>StableDistributionBase.GetAbeFromBeta<span><span>(<span>beta</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4060">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.GetAbeFromBeta<span><span>(<span>beta</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        beta
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The beta value.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  If beta is >= 0, the return value is (1-beta). Else, if beta is <0, the return value is (1+beta).
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.GetAbeFromBeta`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.GetAbeFromBeta\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Calculates the 'alternative beta' value abe from the skewness parameter beta. The value abe helps to specifiy beta with enhanced accuracy especially when |beta| is close to 1.
+            Of course, this helper function is only intended to give a correct abe value for a given beta. But in order to specify beta with enhanced accuracy around |beta|=1, you should
+            specify abe first, and then calculate beta from abe, which can be done with <a href="/FsODE/reference/altaxo-calc-probability-stabledistributionbase.html#GetBetaFromAbe">StableDistributionBase.GetBetaFromAbe</a>.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The beta value.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  If beta is >= 0, the return value is (1-beta). Else, if beta is <0, the return value is (1+beta).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4061', 4061)" onmouseover="showTip(event, '4061', 4061)">
+                <p>
+                  <a id="GetBetaFromAbe">
+                    <a href="#GetBetaFromAbe">
+                      <code><span>StableDistributionBase.GetBetaFromAbe<span><span>(<span>abe,&#32;isBetaNegative</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4061">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.GetBetaFromAbe<span><span>(<span>abe,&#32;isBetaNegative</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        abe
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      'Alternative beta' value. It is defined as (1-beta) for beta>=0, and as (1+beta) for beta<0. Thus, abe is a value in the range [0,1].
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        isBetaNegative
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      Specifies the sign of the original beta value. If false, the original beta is a nonnegative value. Of true, the original beta is negative.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The skewness parameter beta (range: [-1,1]) as calculated from the 'alternative beta' value <span class="fsdocs-param-name">abe</span>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.GetBetaFromAbe`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.GetBetaFromAbe\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the skewness parameter beta (range: [-1,1]) from the 'alternative beta' value <span class="fsdocs-param-name">abe</span>.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abe
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  'Alternative beta' value. It is defined as (1-beta) for beta>=0, and as (1+beta) for beta<0. Thus, abe is a value in the range [0,1].
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  isBetaNegative
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Specifies the sign of the original beta value. If false, the original beta is a nonnegative value. Of true, the original beta is negative.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The skewness parameter beta (range: [-1,1]) as calculated from the 'alternative beta' value <span class="fsdocs-param-name">abe</span>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4062', 4062)" onmouseover="showTip(event, '4062', 4062)">
+                <p>
+                  <a id="OneMinusExp">
+                    <a href="#OneMinusExp">
+                      <code><span>StableDistributionBase.OneMinusExp<span><span>(<span>x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4062">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.OneMinusExp<span><span>(<span>x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Function argument
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  1-Exp(x)
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.OneMinusExp`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.OneMinusExp\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Calculates 1-Exp(x) with more accuracy around x=0.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              <p class='fsdocs-para'>If |x| is smaller than <a href="/FsODE/reference/altaxo-calc-probability-stabledistributionbase.html">StableDistributionBase.OneMinusExp_SmallBound</a>, the series expansion of (1-Exp(x)) is used for calculation.</p><p class='fsdocs-para'>If |x| is greater than or equal to <a href="/FsODE/reference/altaxo-calc-probability-stabledistributionbase.html">StableDistributionBase.OneMinusExp_SmallBound</a>, the standard way of evaluation is used.</p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function argument
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  1-Exp(x)
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4063', 4063)" onmouseover="showTip(event, '4063', 4063)">
+                <p>
+                  <a id="ParameterConversionFellerToS0">
+                    <a href="#ParameterConversionFellerToS0">
+                      <code><span>StableDistributionBase.ParameterConversionFellerToS0<span><span>(<span>alpha,&#32;gamma,&#32;aga,&#32;sigmaf,&#32;muf,&#32;beta,&#32;abe,&#32;sigma0,&#32;mu0</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4063">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.ParameterConversionFellerToS0<span><span>(<span>alpha,&#32;gamma,&#32;aga,&#32;sigmaf,&#32;muf,&#32;beta,&#32;abe,&#32;sigma0,&#32;mu0</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        alpha
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        gamma
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        aga
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sigmaf
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        muf
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        beta
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abe
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sigma0
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        mu0
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionFellerToS0`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionFellerToS0\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  alpha
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  gamma
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  aga
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sigmaf
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  muf
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abe
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sigma0
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mu0
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4064', 4064)" onmouseover="showTip(event, '4064', 4064)">
+                <p>
+                  <a id="ParameterConversionFellerToS1">
+                    <a href="#ParameterConversionFellerToS1">
+                      <code><span>StableDistributionBase.ParameterConversionFellerToS1<span><span>(<span>alpha,&#32;gamma,&#32;aga,&#32;sigmaf,&#32;muf,&#32;beta,&#32;abe,&#32;sigma1,&#32;mu1</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4064">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.ParameterConversionFellerToS1<span><span>(<span>alpha,&#32;gamma,&#32;aga,&#32;sigmaf,&#32;muf,&#32;beta,&#32;abe,&#32;sigma1,&#32;mu1</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        alpha
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        gamma
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        aga
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sigmaf
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        muf
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        beta
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abe
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sigma1
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        mu1
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionFellerToS1`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionFellerToS1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  alpha
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  gamma
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  aga
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sigmaf
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  muf
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abe
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sigma1
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mu1
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4065', 4065)" onmouseover="showTip(event, '4065', 4065)">
+                <p>
+                  <a id="ParameterConversionS0ToFeller">
+                    <a href="#ParameterConversionS0ToFeller">
+                      <code><span>StableDistributionBase.ParameterConversionS0ToFeller<span><span>(<span>alpha,&#32;beta,&#32;abe,&#32;sigma0,&#32;mu0,&#32;gamma,&#32;aga,&#32;sigmaf,&#32;muf</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4065">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.ParameterConversionS0ToFeller<span><span>(<span>alpha,&#32;beta,&#32;abe,&#32;sigma0,&#32;mu0,&#32;gamma,&#32;aga,&#32;sigmaf,&#32;muf</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        alpha
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        beta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abe
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sigma0
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        mu0
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        gamma
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        aga
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sigmaf
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        muf
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionS0ToFeller`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionS0ToFeller\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  alpha
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abe
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sigma0
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mu0
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  gamma
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  aga
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sigmaf
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  muf
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4066', 4066)" onmouseover="showTip(event, '4066', 4066)">
+                <p>
+                  <a id="ParameterConversionS0ToS1">
+                    <a href="#ParameterConversionS0ToS1">
+                      <code><span>StableDistributionBase.ParameterConversionS0ToS1<span><span>(<span>alpha,&#32;beta,&#32;sigma0,&#32;mu0,&#32;mu1</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4066">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.ParameterConversionS0ToS1<span><span>(<span>alpha,&#32;beta,&#32;sigma0,&#32;mu0,&#32;mu1</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        alpha
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        beta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sigma0
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        mu0
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        mu1
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionS0ToS1`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionS0ToS1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  alpha
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sigma0
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mu0
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mu1
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4067', 4067)" onmouseover="showTip(event, '4067', 4067)">
+                <p>
+                  <a id="ParameterConversionS1ToFeller">
+                    <a href="#ParameterConversionS1ToFeller">
+                      <code><span>StableDistributionBase.ParameterConversionS1ToFeller<span><span>(<span>alpha,&#32;beta,&#32;abe,&#32;sigma1,&#32;mu1,&#32;gamma,&#32;aga,&#32;sigmaf,&#32;muf</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4067">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.ParameterConversionS1ToFeller<span><span>(<span>alpha,&#32;beta,&#32;abe,&#32;sigma1,&#32;mu1,&#32;gamma,&#32;aga,&#32;sigmaf,&#32;muf</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        alpha
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        beta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        abe
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sigma1
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        mu1
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        gamma
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        aga
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sigmaf
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        muf
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionS1ToFeller`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionS1ToFeller\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  alpha
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  abe
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sigma1
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mu1
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  gamma
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  aga
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sigmaf
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  muf
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4068', 4068)" onmouseover="showTip(event, '4068', 4068)">
+                <p>
+                  <a id="ParameterConversionS1ToS0">
+                    <a href="#ParameterConversionS1ToS0">
+                      <code><span>StableDistributionBase.ParameterConversionS1ToS0<span><span>(<span>alpha,&#32;beta,&#32;sigma1,&#32;mu1,&#32;mu0</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4068">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.ParameterConversionS1ToS0<span><span>(<span>alpha,&#32;beta,&#32;sigma1,&#32;mu1,&#32;mu0</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        alpha
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        beta
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        sigma1
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        mu1
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        mu0
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionS1ToS0`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.ParameterConversionS1ToS0\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  alpha
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sigma1
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mu1
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mu0
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4069', 4069)" onmouseover="showTip(event, '4069', 4069)">
+                <p>
+                  <a id="PowerOfOnePlusXSquared">
+                    <a href="#PowerOfOnePlusXSquared">
+                      <code><span>StableDistributionBase.PowerOfOnePlusXSquared<span><span>(<span>x,&#32;pow</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4069">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.PowerOfOnePlusXSquared<span><span>(<span>x,&#32;pow</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Argument x.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        pow
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Power.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The value (1+x²)^pow with increased accuary.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.PowerOfOnePlusXSquared`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.PowerOfOnePlusXSquared\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Calculates (1+x²)^pow with increased accuracy, for both small and big values of |x|.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Argument x.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pow
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Power.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The value (1+x²)^pow with increased accuary.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4070', 4070)" onmouseover="showTip(event, '4070', 4070)">
+                <p>
+                  <a id="SinXPiBy2">
+                    <a href="#SinXPiBy2">
+                      <code><span>StableDistributionBase.SinXPiBy2<span><span>(<span>x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4070">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>StableDistributionBase.SinXPiBy2<span><span>(<span>x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Argument x.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  Sin(x*Pi/2) with high accuracy.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Probability.StableDistributionBase.SinXPiBy2`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Probability.StableDistributionBase.SinXPiBy2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Calculates the sine of <span class="fsdocs-param-name">x</span> times Pi/2 with increased accuracy.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Argument x.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Sin(x*Pi/2) with high accuracy.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

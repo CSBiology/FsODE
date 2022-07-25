@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Altaxo.Calc.Interpolation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="FsODE">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2 id="altaxo-calc-interpolation">
+    Altaxo.Calc.Interpolation Namespace
+  </h2>
+  <div class="fsdocs-xmldoc"></div>
+  <table class="table outer-list fsdocs-entity-list">
+    <thead>
+      <tr>
+        <td>
+          Type
+        </td>
+        <td>
+          Description
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="AkimaCubicSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-akimacubicspline.html">
+                AkimaCubicSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.AkimaCubicSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.AkimaCubicSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            Akima cubic spline interpolation for the given abscissa
+            vector x and ordinate vector y.
+            All vectors must have conformant dimenions.
+            The abscissa vector must be strictly increasing.
+            
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="BezierCubicSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-beziercubicspline.html">
+                BezierCubicSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.BezierCubicSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.BezierCubicSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+             Calculate the Bezier cubic spline interpolation for the
+             given abscissa vector x and ordinate vector y.
+             All vectors must have conformant dimensions.
+             
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="BivariateAkimaSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-bivariateakimaspline.html">
+                BivariateAkimaSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.BivariateAkimaSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.BivariateAkimaSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            Class to spline bivariate function data (in gridded form).
+            
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="BivariateLinearSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-bivariatelinearspline.html">
+                BivariateLinearSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.BivariateLinearSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.BivariateLinearSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="BoundaryConditions">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-boundaryconditions.html">
+                BoundaryConditions
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.BoundaryConditions`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.BoundaryConditions\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              Condition how to manage the left and right boundary of a spline.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="CardinalCubicSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-cardinalcubicspline.html">
+                CardinalCubicSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.CardinalCubicSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.CardinalCubicSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+             Calculate the Cardinal cubic spline interpolation for the
+             given abscissa vector x and ordinate vector y.
+             All vectors must have conformant dimensions.
+             
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="CrossValidatedCubicSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-crossvalidatedcubicspline.html">
+                CrossValidatedCubicSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.CrossValidatedCubicSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.CrossValidatedCubicSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+             Calculates a natural cubic spline curve which smoothes a given set
+             of data points, using statistical considerations to determine the amount
+             of smoothing required as described in reference 2.
+             
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="CurveBase">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-curvebase.html">
+                CurveBase
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.CurveBase`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.CurveBase\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            Base for most interpolations.
+            
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="EmptyArrays">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-emptyarrays.html">
+                EmptyArrays
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.EmptyArrays`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.EmptyArrays\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="ExponentialSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-exponentialspline.html">
+                ExponentialSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.ExponentialSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.ExponentialSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            Exponential Splines.
+            
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="FritschCarlsonCubicSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-fritschcarlsoncubicspline.html">
+                FritschCarlsonCubicSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.FritschCarlsonCubicSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.FritschCarlsonCubicSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              <p class='fsdocs-para'>
+             Calculate the Fritsch-Carlson monotone cubic spline interpolation for the
+             given abscissa vector x and ordinate vector y.
+             All vectors must have conformant dimenions.
+             The abscissa vector must be strictly increasing.
+             </p><p class='fsdocs-para'>
+             The Fritsch-Carlson interpolation produces a neat monotone
+             piecewise cubic curve, which is especially suited for the
+             presentation of scientific data.
+             This is the state of the art to create curves that preserve
+             monotonicity, although it is not so well known as Akima's
+             interpolation. The commonly used Akima interpolation doesn't
+             produce so pleasant results.
+             </p><pre>
+             Reference:
+                F.N.Fritsch,R.E.Carlson: Monotone Piecewise Cubic
+                Interpolation, SIAM J. Numer. Anal. Vol 17, No. 2,
+                April 1980
+            
+             Copyright (C) 1991-1998 by Berndt M. Gammel
+             Translated to C# by Dirk Lellinger.</pre>
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="IInterpolationCurve">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-iinterpolationcurve.html">
+                IInterpolationCurve
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.IInterpolationCurve`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.IInterpolationCurve\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            Represents an interpolation curve. The curve is parametrized using a parameter u. Because of the parametrization, it is possible that
+            for some x values there can exist more than one corresponding y values.
+            
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="IInterpolationFunction">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-iinterpolationfunction.html">
+                IInterpolationFunction
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.IInterpolationFunction`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.IInterpolationFunction\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            Gives an interpolation function, i.e. for every given x, there is exactly one corresponding y value.
+            
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="LinearInterpolation">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-linearinterpolation.html">
+                LinearInterpolation
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.LinearInterpolation`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.LinearInterpolation\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            Contains static methods for linear interpolation of data.
+            
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="Parametrization">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-parametrization.html">
+                Parametrization
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.Parametrization`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.Parametrization\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              curve parametrization methods
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="PolyharmonicSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-polyharmonicspline.html">
+                PolyharmonicSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.PolyharmonicSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.PolyharmonicSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+             Interpolation method for scattered data in any dimension based on radial basis functions.
+             In 2D this is the so called Thin Plate Spline, which is an interpolation method that finds a "minimally bended"
+             smooth surface that passes through all given points.
+             The polyharmonic spline has an arbitrary number of dimensions and arbitrary derivative order.
+             Note: The allocation space requirement is in the order (N+3)*(N+3), where N is the number of control points. Thus it is not applicable for too many points.
+             
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="PolynomialInterpolation">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-polynomialinterpolation.html">
+                PolynomialInterpolation
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.PolynomialInterpolation`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.PolynomialInterpolation\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="PolynomialRegressionAsInterpolation">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-polynomialregressionasinterpolation.html">
+                PolynomialRegressionAsInterpolation
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.PolynomialRegressionAsInterpolation`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.PolynomialRegressionAsInterpolation\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="RationalCubicSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-rationalcubicspline.html">
+                RationalCubicSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.RationalCubicSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.RationalCubicSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+             This kind of generalized splines give much more pleasent results
+             than cubic splines when interpolating, e.g., experimental data.
+             A control parameter p can be used to tune the interpolation smoothly
+             between cubic splines and a linear interpolation.
+             But this doesn't mean smoothing of the data - the rational spline curve
+             will still go through all data points.
+             
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="RationalInterpolation">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-rationalinterpolation.html">
+                RationalInterpolation
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.RationalInterpolation`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.RationalInterpolation\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="SmoothingCubicSpline">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-smoothingcubicspline.html">
+                SmoothingCubicSpline
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.SmoothingCubicSpline`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.SmoothingCubicSpline\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+            Calculates a smoothing cubic spline, whose smoothness is determined by the property <a href="/FsODE/reference/altaxo-calc-interpolation-smoothingcubicspline.html#Smoothness">SmoothingCubicSpline.Smoothness</a>.
+            
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="fsdocs-entity-name">
+          <p>
+            <a name="SmoothingCubicSplineBase">
+              <a href="/FsODE/reference/altaxo-calc-interpolation-smoothingcubicsplinebase.html">
+                SmoothingCubicSplineBase
+              </a>
+            </a>
+          </p>
+        </td>
+        <td class="fsdocs-entity-xmldoc">
+          <div>
+            <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Altaxo.Calc.Interpolation.SmoothingCubicSplineBase`')">
+              <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+            </div>
+            <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Altaxo.Calc.Interpolation.SmoothingCubicSplineBase\'/>')">
+              <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+              <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+            </div>
+            <p class="fsdocs-summary">
+              
+             Calculates a natural cubic spline curve which smoothes a given set
+             of data points, using statistical considerations to determine the amount
+             of smoothing required as described in reference 2.
+             
+            </p>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DVODE (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    DVODE Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode.html">
+        Altaxo.Calc.Ode.Obsolete.DVode
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '3276', 3276)" onmouseover="showTip(event, '3276', 3276)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>DVODE<span><span>(<span>dvnlsd,&#32;dumach,&#32;dvnorm,&#32;dcopy,&#32;dewset,&#32;dvhin,&#32;dscal,&#32;dvindy,&#32;xerrwd,&#32;dvstep,&#32;DVOD01,&#32;DVOD02</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3276">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DVODE<span><span>(<span>dvnlsd,&#32;dumach,&#32;dvnorm,&#32;dcopy,&#32;dewset,&#32;dvhin,&#32;dscal,&#32;dvindy,&#32;xerrwd,&#32;dvstep,&#32;DVOD01,&#32;DVOD02</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        dvnlsd
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dvnlsd.html">DVNLSD</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        dumach
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dumach.html">DUMACH</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        dvnorm
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dvnorm.html">DVNORM</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        dcopy
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dcopy.html">DCOPY</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        dewset
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dewset.html">DEWSET</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        dvhin
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dvhin.html">DVHIN</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        dscal
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dscal.html">DSCAL</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        dvindy
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dvindy.html">DVINDY</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        xerrwd
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-xerrwd.html">XERRWD</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        dvstep
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dvstep.html">DVSTEP</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        DVOD01
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-commonblock.html">CommonBlock</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        DVOD02
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-commonblock.html">CommonBlock</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Ode.Obsolete.DVode.DVODE.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Ode.Obsolete.DVode.DVODE.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dvnlsd
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dvnlsd.html">DVNLSD</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dumach
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dumach.html">DUMACH</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dvnorm
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dvnorm.html">DVNORM</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dcopy
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dcopy.html">DCOPY</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dewset
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dewset.html">DEWSET</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dvhin
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dvhin.html">DVHIN</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dscal
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dscal.html">DSCAL</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dvindy
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dvindy.html">DVINDY</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  xerrwd
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-xerrwd.html">XERRWD</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  dvstep
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-dvstep.html">DVSTEP</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  DVOD01
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-commonblock.html">CommonBlock</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  DVOD02
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-commonblock.html">CommonBlock</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '3277', 3277)" onmouseover="showTip(event, '3277', 3277)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>DVODE<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3277">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DVODE<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Ode.Obsolete.DVode.DVODE.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Ode.Obsolete.DVode.DVODE.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '3278', 3278)" onmouseover="showTip(event, '3278', 3278)">
+                <p>
+                  <a id="Run">
+                    <a href="#Run">
+                      <code><span>this.Run</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3278">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Run</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        F
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-ifex.html">IFEX</a></code>
+                       - 
+                      
+             = The name of the user-supplied subroutine defining the
+             ODE system.  The system must be put in the first-order
+             form dy/dt = f(t,y), where f is a vector-valued function
+             of the scalar t and the vector y.  Subroutine F is to
+             compute the function f.  It is to have the form
+             SUBROUTINE F (NEQ, T, Y, YDOT, RPAR, IPAR)
+             DOUBLE PRECISION T, Y(NEQ), YDOT(NEQ), RPAR
+             where NEQ, T, and Y are input, and the array YDOT = f(t,y)
+             is output.  Y and YDOT are arrays of length NEQ.
+             Subroutine F should not alter Y(1),...,Y(NEQ).
+             F must be declared EXTERNAL in the calling program.
+            
+             Subroutine F may access user-defined real and integer
+             work arrays RPAR and IPAR, which are to be dimensioned
+             in the main program.
+            
+             If quantities computed in the F routine are needed
+             externally to DVODE, an extra call to F should be made
+             for this purpose, for consistent and accurate results.
+             If only the derivative dy/dt is needed, use DVINDY instead.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        NEQ
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = The size of the ODE system (number of first order
+             ordinary differential equations).  Used only for input.
+             NEQ may not be increased during the problem, but
+             can be decreased (with ISTATE = 3 in the input).
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        Y
+                      </b>
+                      :
+                      <code><span>byref&lt;<span>float[]</span>&gt;</span></code>
+                       - 
+                      
+             = A real array for the vector of dependent variables, of
+             length NEQ or more.  Used for both input and output on the
+             first call (ISTATE = 1), and only for output on other calls.
+             On the first call, Y must contain the vector of initial
+             values.  In the output, Y contains the computed solution
+             evaluated at T.  If desired, the Y array may be used
+             for other purposes between calls to the solver.
+            
+             This array is passed as the Y argument in all calls to
+             F and JAC.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        offset_y
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        T
+                      </b>
+                      :
+                      <code><span>byref&lt;float&gt;</span></code>
+                       - 
+                      
+             = The independent variable.  In the input, T is used only on
+             the first call, as the initial point of the integration.
+             In the output, after each call, T is the value at which a
+             computed solution Y is evaluated (usually the same as TOUT).
+             On an error return, T is the farthest point reached.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        TOUT
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      
+             = The next value of t at which a computed solution is desired.
+             Used only for input.
+            
+             When starting the problem (ISTATE = 1), TOUT may be equal
+             to T for one call, then should .ne. T for the next call.
+             For the initial T, an input value of TOUT .ne. T is used
+             in order to determine the direction of the integration
+             (i.e. the algebraic sign of the step sizes) and the rough
+             scale of the problem.  Integration in either direction
+             (forward or backward in t) is permitted.
+            
+             If ITASK = 2 or 5 (one-step modes), TOUT is ignored after
+             the first call (i.e. the first call with TOUT .ne. T).
+             Otherwise, TOUT is required on every call.
+            
+             If ITASK = 1, 3, or 4, the values of TOUT need not be
+             monotone, but a value of TOUT which backs up is limited
+             to the current internal t interval, whose endpoints are
+             TCUR - HU and TCUR.  (See optional output, below, for
+             TCUR and HU.)
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ITOL
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = An indicator for the type of error control.  See
+             description below under ATOL.  Used only for input.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        RTOL
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      
+             = A relative error tolerance parameter, either a scalar or
+             an array of length NEQ.  See description below under ATOL.
+             Input only.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        offset_rtol
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ATOL
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      
+             = An absolute error tolerance parameter, either a scalar or
+             an array of length NEQ.  Input only.
+            
+             The input parameters ITOL, RTOL, and ATOL determine
+             the error control performed by the solver.  The solver will
+             control the vector e = (e(i)) of estimated local errors
+             in Y, according to an inequality of the form
+             rms-norm of ( e(i)/EWT(i) )   .le.   1,
+             where       EWT(i) = RTOL(i)*abs(Y(i)) + ATOL(i),
+             and the rms-norm (root-mean-square norm) here is
+             rms-norm(v) = sqrt(sum v(i)**2 / NEQ).  Here EWT = (EWT(i))
+             is a vector of weights which must always be positive, and
+             the values of RTOL and ATOL should all be non-negative.
+             The following table gives the types (scalar/array) of
+             RTOL and ATOL, and the corresponding form of EWT(i).
+            
+             ITOL    RTOL       ATOL          EWT(i)
+             1     scalar     scalar     RTOL*ABS(Y(i)) + ATOL
+             2     scalar     array      RTOL*ABS(Y(i)) + ATOL(i)
+             3     array      scalar     RTOL(i)*ABS(Y(i)) + ATOL
+             4     array      array      RTOL(i)*ABS(Y(i)) + ATOL(i)
+            
+             When either of these parameters is a scalar, it need not
+             be dimensioned in the user's calling program.
+            
+             If none of the above choices (with ITOL, RTOL, and ATOL
+             fixed throughout the problem) is suitable, more general
+             error controls can be obtained by substituting
+             user-supplied routines for the setting of EWT and/or for
+             the norm calculation.  See Part iv below.
+            
+             If global errors are to be estimated by making a repeated
+             run on the same problem with smaller tolerances, then all
+             components of RTOL and ATOL (i.e. of EWT) should be scaled
+             down uniformly.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        offset_atol
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ITASK
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = An index specifying the task to be performed.
+             Input only.  ITASK has the following values and meanings.
+             1  means normal computation of output values of y(t) at
+             t = TOUT (by overshooting and interpolating).
+             2  means take one step only and return.
+             3  means stop at the first internal mesh point at or
+             beyond t = TOUT and return.
+             4  means normal computation of output values of y(t) at
+             t = TOUT but without overshooting t = TCRIT.
+             TCRIT must be input as RWORK(1).  TCRIT may be equal to
+             or beyond TOUT, but not behind it in the direction of
+             integration.  This option is useful if the problem
+             has a singularity at or beyond t = TCRIT.
+             5  means take one step, without passing TCRIT, and return.
+             TCRIT must be input as RWORK(1).
+            
+             Note:  If ITASK = 4 or 5 and the solver reaches TCRIT
+             (within roundoff), it will return T = TCRIT (exactly) to
+             indicate this (unless ITASK = 4 and TOUT comes before TCRIT,
+             in which case answers at T = TOUT are returned first).
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ISTATE
+                      </b>
+                      :
+                      <code><span>byref&lt;int&gt;</span></code>
+                       - 
+                      
+             = an index used for input and output to specify the
+             the state of the calculation.
+            
+             In the input, the values of ISTATE are as follows.
+             1  means this is the first call for the problem
+             (initializations will be done).  See note below.
+             2  means this is not the first call, and the calculation
+             is to continue normally, with no change in any input
+             parameters except possibly TOUT and ITASK.
+             (If ITOL, RTOL, and/or ATOL are changed between calls
+             with ISTATE = 2, the new values will be used but not
+             tested for legality.)
+             3  means this is not the first call, and the
+             calculation is to continue normally, but with
+             a change in input parameters other than
+             TOUT and ITASK.  Changes are allowed in
+             NEQ, ITOL, RTOL, ATOL, IOPT, LRW, LIW, MF, ML, MU,
+             and any of the optional input except H0.
+             (See IWORK description for ML and MU.)
+             Note:  A preliminary call with TOUT = T is not counted
+             as a first call here, as no initialization or checking of
+             input is done.  (Such a call is sometimes useful to include
+             the initial conditions in the output.)
+             Thus the first call for which TOUT .ne. T requires
+             ISTATE = 1 in the input.
+            
+             In the output, ISTATE has the following values and meanings.
+             1  means nothing was done, as TOUT was equal to T with
+             ISTATE = 1 in the input.
+             2  means the integration was performed successfully.
+             -1  means an excessive amount of work (more than MXSTEP
+             steps) was done on this call, before completing the
+             requested task, but the integration was otherwise
+             successful as far as T.  (MXSTEP is an optional input
+             and is normally 500.)  To continue, the user may
+             simply reset ISTATE to a value .gt. 1 and call again.
+             (The excess work step counter will be reset to 0.)
+             In addition, the user may increase MXSTEP to avoid
+             this error return.  (See optional input below.)
+             -2  means too much accuracy was requested for the precision
+             of the machine being used.  This was detected before
+             completing the requested task, but the integration
+             was successful as far as T.  To continue, the tolerance
+             parameters must be reset, and ISTATE must be set
+             to 3.  The optional output TOLSF may be used for this
+             purpose.  (Note: If this condition is detected before
+             taking any steps, then an illegal input return
+             (ISTATE = -3) occurs instead.)
+             -3  means illegal input was detected, before taking any
+             integration steps.  See written message for details.
+             Note:  If the solver detects an infinite loop of calls
+             to the solver with illegal input, it will cause
+             the run to stop.
+             -4  means there were repeated error test failures on
+             one attempted step, before completing the requested
+             task, but the integration was successful as far as T.
+             The problem may have a singularity, or the input
+             may be inappropriate.
+             -5  means there were repeated convergence test failures on
+             one attempted step, before completing the requested
+             task, but the integration was successful as far as T.
+             This may be caused by an inaccurate Jacobian matrix,
+             if one is being used.
+             -6  means EWT(i) became zero for some i during the
+             integration.  Pure relative error control (ATOL(i)=0.0)
+             was requested on a variable which has now vanished.
+             The integration was successful as far as T.
+            
+             Note:  Since the normal output value of ISTATE is 2,
+             it does not need to be reset for normal continuation.
+             Also, since a negative input value of ISTATE will be
+             regarded as illegal, a negative output value requires the
+             user to change it, and possibly other input, before
+             calling the solver again.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        IOPT
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = An integer flag to specify whether or not any optional
+             input is being used on this call.  Input only.
+             The optional input is listed separately below.
+             IOPT = 0 means no optional input is being used.
+             Default values will be used in all cases.
+             IOPT = 1 means optional input is being used.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        RWORK
+                      </b>
+                      :
+                      <code><span>byref&lt;<span>float[]</span>&gt;</span></code>
+                       - 
+                      
+             = A real working array (double precision).
+             The length of RWORK must be at least
+             20 + NYH*(MAXORD + 1) + 3*NEQ + LWM    where
+             NYH    = the initial value of NEQ,
+             MAXORD = 12 (if METH = 1) or 5 (if METH = 2) (unless a
+             smaller value is given as an optional input),
+             LWM = length of work space for matrix-related data:
+             LWM = 0             if MITER = 0,
+             LWM = 2*NEQ**2 + 2  if MITER = 1 or 2, and MF.gt.0,
+             LWM = NEQ**2 + 2    if MITER = 1 or 2, and MF.lt.0,
+             LWM = NEQ + 2       if MITER = 3,
+             LWM = (3*ML+2*MU+2)*NEQ + 2 if MITER = 4 or 5, and MF.gt.0,
+             LWM = (2*ML+MU+1)*NEQ + 2   if MITER = 4 or 5, and MF.lt.0.
+             (See the MF description for METH and MITER.)
+             Thus if MAXORD has its default value and NEQ is constant,
+             this length is:
+             20 + 16*NEQ                    for MF = 10,
+             22 + 16*NEQ + 2*NEQ**2         for MF = 11 or 12,
+             22 + 16*NEQ + NEQ**2           for MF = -11 or -12,
+             22 + 17*NEQ                    for MF = 13,
+             22 + 18*NEQ + (3*ML+2*MU)*NEQ  for MF = 14 or 15,
+             22 + 17*NEQ + (2*ML+MU)*NEQ    for MF = -14 or -15,
+             20 +  9*NEQ                    for MF = 20,
+             22 +  9*NEQ + 2*NEQ**2         for MF = 21 or 22,
+             22 +  9*NEQ + NEQ**2           for MF = -21 or -22,
+             22 + 10*NEQ                    for MF = 23,
+             22 + 11*NEQ + (3*ML+2*MU)*NEQ  for MF = 24 or 25.
+             22 + 10*NEQ + (2*ML+MU)*NEQ    for MF = -24 or -25.
+             The first 20 words of RWORK are reserved for conditional
+             and optional input and optional output.
+            
+             The following word in RWORK is a conditional input:
+             RWORK(1) = TCRIT = critical value of t which the solver
+             is not to overshoot.  Required if ITASK is
+             4 or 5, and ignored otherwise.  (See ITASK.)
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        offset_rwork
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        LRW
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = The length of the array RWORK, as declared by the user.
+             (This will be checked by the solver.)
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        IWORK
+                      </b>
+                      :
+                      <code><span>byref&lt;<span>int[]</span>&gt;</span></code>
+                       - 
+                      
+             = An integer work array.  The length of IWORK must be at least
+             30        if MITER = 0 or 3 (MF = 10, 13, 20, 23), or
+             30 + NEQ  otherwise (abs(MF) = 11,12,14,15,21,22,24,25).
+             The first 30 words of IWORK are reserved for conditional and
+             optional input and optional output.
+            
+             The following 2 words in IWORK are conditional input:
+             IWORK(1) = ML     These are the lower and upper
+             IWORK(2) = MU     half-bandwidths, respectively, of the
+             banded Jacobian, excluding the main diagonal.
+             The band is defined by the matrix locations
+             (i,j) with i-ML .le. j .le. i+MU.  ML and MU
+             must satisfy  0 .le.  ML,MU  .le. NEQ-1.
+             These are required if MITER is 4 or 5, and
+             ignored otherwise.  ML and MU may in fact be
+             the band parameters for a matrix to which
+             df/dy is only approximately equal.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        offset_iwork
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        LIW
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = the length of the array IWORK, as declared by the user.
+             (This will be checked by the solver.)
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        JAC
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-ijex.html">IJEX</a></code>
+                       - 
+                      
+             = The name of the user-supplied routine (MITER = 1 or 4) to
+             compute the Jacobian matrix, df/dy, as a function of
+             the scalar t and the vector y.  It is to have the form
+             SUBROUTINE JAC (NEQ, T, Y, ML, MU, PD, NROWPD,
+             RPAR, IPAR)
+             DOUBLE PRECISION T, Y(NEQ), PD(NROWPD,NEQ), RPAR
+             where NEQ, T, Y, ML, MU, and NROWPD are input and the array
+             PD is to be loaded with partial derivatives (elements of the
+             Jacobian matrix) in the output.  PD must be given a first
+             dimension of NROWPD.  T and Y have the same meaning as in
+             Subroutine F.
+             In the full matrix case (MITER = 1), ML and MU are
+             ignored, and the Jacobian is to be loaded into PD in
+             columnwise manner, with df(i)/dy(j) loaded into PD(i,j).
+             In the band matrix case (MITER = 4), the elements
+             within the band are to be loaded into PD in columnwise
+             manner, with diagonal lines of df/dy loaded into the rows
+             of PD. Thus df(i)/dy(j) is to be loaded into PD(i-j+MU+1,j).
+             ML and MU are the half-bandwidth parameters. (See IWORK).
+             The locations in PD in the two triangular areas which
+             correspond to nonexistent matrix elements can be ignored
+             or loaded arbitrarily, as they are overwritten by DVODE.
+             JAC need not provide df/dy exactly.  A crude
+             approximation (possibly with a smaller bandwidth) will do.
+             In either case, PD is preset to zero by the solver,
+             so that only the nonzero elements need be loaded by JAC.
+             Each call to JAC is preceded by a call to F with the same
+             arguments NEQ, T, and Y.  Thus to gain some efficiency,
+             intermediate quantities shared by both calculations may be
+             saved in a user COMMON block by F and not recomputed by JAC,
+             if desired.  Also, JAC may alter the Y array, if desired.
+             JAC must be declared external in the calling program.
+             Subroutine JAC may access user-defined real and integer
+             work arrays, RPAR and IPAR, whose dimensions are set by the
+             user in the main program.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        MF
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+             = The method flag.  Used only for input.  The legal values of
+             MF are 10, 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 25,
+             -11, -12, -14, -15, -21, -22, -24, -25.
+             MF is a signed two-digit integer, MF = JSV*(10*METH + MITER).
+             JSV = SIGN(MF) indicates the Jacobian-saving strategy:
+             JSV =  1 means a copy of the Jacobian is saved for reuse
+             in the corrector iteration algorithm.
+             JSV = -1 means a copy of the Jacobian is not saved
+             (valid only for MITER = 1, 2, 4, or 5).
+             METH indicates the basic linear multistep method:
+             METH = 1 means the implicit Adams method.
+             METH = 2 means the method based on backward
+             differentiation formulas (BDF-s).
+             MITER indicates the corrector iteration method:
+             MITER = 0 means functional iteration (no Jacobian matrix
+             is involved).
+             MITER = 1 means chord iteration with a user-supplied
+             full (NEQ by NEQ) Jacobian.
+             MITER = 2 means chord iteration with an internally
+             generated (difference quotient) full Jacobian
+             (using NEQ extra calls to F per df/dy value).
+             MITER = 3 means chord iteration with an internally
+             generated diagonal Jacobian approximation
+             (using 1 extra call to F per df/dy evaluation).
+             MITER = 4 means chord iteration with a user-supplied
+             banded Jacobian.
+             MITER = 5 means chord iteration with an internally
+             generated banded Jacobian (using ML+MU+1 extra
+             calls to F per df/dy evaluation).
+             If MITER = 1 or 4, the user must supply a subroutine JAC
+             (the name is arbitrary) as described above under JAC.
+             For other values of MITER, a dummy argument can be used.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        RPAR
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      
+             User-specified array used to communicate real parameters
+             to user-supplied subroutines.  If RPAR is a vector, then
+             it must be dimensioned in the user's main program.  If it
+             is unused or it is a scalar, then it need not be
+             dimensioned.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        offset_rpar
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        IPAR
+                      </b>
+                      :
+                      <code><span>int[]</span></code>
+                       - 
+                      
+             User-specified array used to communicate integer parameter
+             to user-supplied subroutines.  The comments on dimensioning
+             RPAR apply to IPAR.
+            
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        offset_ipar
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.Ode.Obsolete.DVode.DVODE.Run`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.Ode.Obsolete.DVode.DVODE.Run\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  F
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-ifex.html">IFEX</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The name of the user-supplied subroutine defining the
+             ODE system.  The system must be put in the first-order
+             form dy/dt = f(t,y), where f is a vector-valued function
+             of the scalar t and the vector y.  Subroutine F is to
+             compute the function f.  It is to have the form
+             SUBROUTINE F (NEQ, T, Y, YDOT, RPAR, IPAR)
+             DOUBLE PRECISION T, Y(NEQ), YDOT(NEQ), RPAR
+             where NEQ, T, and Y are input, and the array YDOT = f(t,y)
+             is output.  Y and YDOT are arrays of length NEQ.
+             Subroutine F should not alter Y(1),...,Y(NEQ).
+             F must be declared EXTERNAL in the calling program.
+            
+             Subroutine F may access user-defined real and integer
+             work arrays RPAR and IPAR, which are to be dimensioned
+             in the main program.
+            
+             If quantities computed in the F routine are needed
+             externally to DVODE, an extra call to F should be made
+             for this purpose, for consistent and accurate results.
+             If only the derivative dy/dt is needed, use DVINDY instead.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  NEQ
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The size of the ODE system (number of first order
+             ordinary differential equations).  Used only for input.
+             NEQ may not be increased during the problem, but
+             can be decreased (with ISTATE = 3 in the input).
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Y
+                </span>
+                :
+                <code><span>byref&lt;<span>float[]</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = A real array for the vector of dependent variables, of
+             length NEQ or more.  Used for both input and output on the
+             first call (ISTATE = 1), and only for output on other calls.
+             On the first call, Y must contain the vector of initial
+             values.  In the output, Y contains the computed solution
+             evaluated at T.  If desired, the Y array may be used
+             for other purposes between calls to the solver.
+            
+             This array is passed as the Y argument in all calls to
+             F and JAC.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  offset_y
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  T
+                </span>
+                :
+                <code><span>byref&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The independent variable.  In the input, T is used only on
+             the first call, as the initial point of the integration.
+             In the output, after each call, T is the value at which a
+             computed solution Y is evaluated (usually the same as TOUT).
+             On an error return, T is the farthest point reached.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  TOUT
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The next value of t at which a computed solution is desired.
+             Used only for input.
+            
+             When starting the problem (ISTATE = 1), TOUT may be equal
+             to T for one call, then should .ne. T for the next call.
+             For the initial T, an input value of TOUT .ne. T is used
+             in order to determine the direction of the integration
+             (i.e. the algebraic sign of the step sizes) and the rough
+             scale of the problem.  Integration in either direction
+             (forward or backward in t) is permitted.
+            
+             If ITASK = 2 or 5 (one-step modes), TOUT is ignored after
+             the first call (i.e. the first call with TOUT .ne. T).
+             Otherwise, TOUT is required on every call.
+            
+             If ITASK = 1, 3, or 4, the values of TOUT need not be
+             monotone, but a value of TOUT which backs up is limited
+             to the current internal t interval, whose endpoints are
+             TCUR - HU and TCUR.  (See optional output, below, for
+             TCUR and HU.)
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ITOL
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = An indicator for the type of error control.  See
+             description below under ATOL.  Used only for input.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  RTOL
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = A relative error tolerance parameter, either a scalar or
+             an array of length NEQ.  See description below under ATOL.
+             Input only.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  offset_rtol
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ATOL
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = An absolute error tolerance parameter, either a scalar or
+             an array of length NEQ.  Input only.
+            
+             The input parameters ITOL, RTOL, and ATOL determine
+             the error control performed by the solver.  The solver will
+             control the vector e = (e(i)) of estimated local errors
+             in Y, according to an inequality of the form
+             rms-norm of ( e(i)/EWT(i) )   .le.   1,
+             where       EWT(i) = RTOL(i)*abs(Y(i)) + ATOL(i),
+             and the rms-norm (root-mean-square norm) here is
+             rms-norm(v) = sqrt(sum v(i)**2 / NEQ).  Here EWT = (EWT(i))
+             is a vector of weights which must always be positive, and
+             the values of RTOL and ATOL should all be non-negative.
+             The following table gives the types (scalar/array) of
+             RTOL and ATOL, and the corresponding form of EWT(i).
+            
+             ITOL    RTOL       ATOL          EWT(i)
+             1     scalar     scalar     RTOL*ABS(Y(i)) + ATOL
+             2     scalar     array      RTOL*ABS(Y(i)) + ATOL(i)
+             3     array      scalar     RTOL(i)*ABS(Y(i)) + ATOL
+             4     array      array      RTOL(i)*ABS(Y(i)) + ATOL(i)
+            
+             When either of these parameters is a scalar, it need not
+             be dimensioned in the user's calling program.
+            
+             If none of the above choices (with ITOL, RTOL, and ATOL
+             fixed throughout the problem) is suitable, more general
+             error controls can be obtained by substituting
+             user-supplied routines for the setting of EWT and/or for
+             the norm calculation.  See Part iv below.
+            
+             If global errors are to be estimated by making a repeated
+             run on the same problem with smaller tolerances, then all
+             components of RTOL and ATOL (i.e. of EWT) should be scaled
+             down uniformly.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  offset_atol
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ITASK
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = An index specifying the task to be performed.
+             Input only.  ITASK has the following values and meanings.
+             1  means normal computation of output values of y(t) at
+             t = TOUT (by overshooting and interpolating).
+             2  means take one step only and return.
+             3  means stop at the first internal mesh point at or
+             beyond t = TOUT and return.
+             4  means normal computation of output values of y(t) at
+             t = TOUT but without overshooting t = TCRIT.
+             TCRIT must be input as RWORK(1).  TCRIT may be equal to
+             or beyond TOUT, but not behind it in the direction of
+             integration.  This option is useful if the problem
+             has a singularity at or beyond t = TCRIT.
+             5  means take one step, without passing TCRIT, and return.
+             TCRIT must be input as RWORK(1).
+            
+             Note:  If ITASK = 4 or 5 and the solver reaches TCRIT
+             (within roundoff), it will return T = TCRIT (exactly) to
+             indicate this (unless ITASK = 4 and TOUT comes before TCRIT,
+             in which case answers at T = TOUT are returned first).
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ISTATE
+                </span>
+                :
+                <code><span>byref&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = an index used for input and output to specify the
+             the state of the calculation.
+            
+             In the input, the values of ISTATE are as follows.
+             1  means this is the first call for the problem
+             (initializations will be done).  See note below.
+             2  means this is not the first call, and the calculation
+             is to continue normally, with no change in any input
+             parameters except possibly TOUT and ITASK.
+             (If ITOL, RTOL, and/or ATOL are changed between calls
+             with ISTATE = 2, the new values will be used but not
+             tested for legality.)
+             3  means this is not the first call, and the
+             calculation is to continue normally, but with
+             a change in input parameters other than
+             TOUT and ITASK.  Changes are allowed in
+             NEQ, ITOL, RTOL, ATOL, IOPT, LRW, LIW, MF, ML, MU,
+             and any of the optional input except H0.
+             (See IWORK description for ML and MU.)
+             Note:  A preliminary call with TOUT = T is not counted
+             as a first call here, as no initialization or checking of
+             input is done.  (Such a call is sometimes useful to include
+             the initial conditions in the output.)
+             Thus the first call for which TOUT .ne. T requires
+             ISTATE = 1 in the input.
+            
+             In the output, ISTATE has the following values and meanings.
+             1  means nothing was done, as TOUT was equal to T with
+             ISTATE = 1 in the input.
+             2  means the integration was performed successfully.
+             -1  means an excessive amount of work (more than MXSTEP
+             steps) was done on this call, before completing the
+             requested task, but the integration was otherwise
+             successful as far as T.  (MXSTEP is an optional input
+             and is normally 500.)  To continue, the user may
+             simply reset ISTATE to a value .gt. 1 and call again.
+             (The excess work step counter will be reset to 0.)
+             In addition, the user may increase MXSTEP to avoid
+             this error return.  (See optional input below.)
+             -2  means too much accuracy was requested for the precision
+             of the machine being used.  This was detected before
+             completing the requested task, but the integration
+             was successful as far as T.  To continue, the tolerance
+             parameters must be reset, and ISTATE must be set
+             to 3.  The optional output TOLSF may be used for this
+             purpose.  (Note: If this condition is detected before
+             taking any steps, then an illegal input return
+             (ISTATE = -3) occurs instead.)
+             -3  means illegal input was detected, before taking any
+             integration steps.  See written message for details.
+             Note:  If the solver detects an infinite loop of calls
+             to the solver with illegal input, it will cause
+             the run to stop.
+             -4  means there were repeated error test failures on
+             one attempted step, before completing the requested
+             task, but the integration was successful as far as T.
+             The problem may have a singularity, or the input
+             may be inappropriate.
+             -5  means there were repeated convergence test failures on
+             one attempted step, before completing the requested
+             task, but the integration was successful as far as T.
+             This may be caused by an inaccurate Jacobian matrix,
+             if one is being used.
+             -6  means EWT(i) became zero for some i during the
+             integration.  Pure relative error control (ATOL(i)=0.0)
+             was requested on a variable which has now vanished.
+             The integration was successful as far as T.
+            
+             Note:  Since the normal output value of ISTATE is 2,
+             it does not need to be reset for normal continuation.
+             Also, since a negative input value of ISTATE will be
+             regarded as illegal, a negative output value requires the
+             user to change it, and possibly other input, before
+             calling the solver again.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  IOPT
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = An integer flag to specify whether or not any optional
+             input is being used on this call.  Input only.
+             The optional input is listed separately below.
+             IOPT = 0 means no optional input is being used.
+             Default values will be used in all cases.
+             IOPT = 1 means optional input is being used.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  RWORK
+                </span>
+                :
+                <code><span>byref&lt;<span>float[]</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = A real working array (double precision).
+             The length of RWORK must be at least
+             20 + NYH*(MAXORD + 1) + 3*NEQ + LWM    where
+             NYH    = the initial value of NEQ,
+             MAXORD = 12 (if METH = 1) or 5 (if METH = 2) (unless a
+             smaller value is given as an optional input),
+             LWM = length of work space for matrix-related data:
+             LWM = 0             if MITER = 0,
+             LWM = 2*NEQ**2 + 2  if MITER = 1 or 2, and MF.gt.0,
+             LWM = NEQ**2 + 2    if MITER = 1 or 2, and MF.lt.0,
+             LWM = NEQ + 2       if MITER = 3,
+             LWM = (3*ML+2*MU+2)*NEQ + 2 if MITER = 4 or 5, and MF.gt.0,
+             LWM = (2*ML+MU+1)*NEQ + 2   if MITER = 4 or 5, and MF.lt.0.
+             (See the MF description for METH and MITER.)
+             Thus if MAXORD has its default value and NEQ is constant,
+             this length is:
+             20 + 16*NEQ                    for MF = 10,
+             22 + 16*NEQ + 2*NEQ**2         for MF = 11 or 12,
+             22 + 16*NEQ + NEQ**2           for MF = -11 or -12,
+             22 + 17*NEQ                    for MF = 13,
+             22 + 18*NEQ + (3*ML+2*MU)*NEQ  for MF = 14 or 15,
+             22 + 17*NEQ + (2*ML+MU)*NEQ    for MF = -14 or -15,
+             20 +  9*NEQ                    for MF = 20,
+             22 +  9*NEQ + 2*NEQ**2         for MF = 21 or 22,
+             22 +  9*NEQ + NEQ**2           for MF = -21 or -22,
+             22 + 10*NEQ                    for MF = 23,
+             22 + 11*NEQ + (3*ML+2*MU)*NEQ  for MF = 24 or 25.
+             22 + 10*NEQ + (2*ML+MU)*NEQ    for MF = -24 or -25.
+             The first 20 words of RWORK are reserved for conditional
+             and optional input and optional output.
+            
+             The following word in RWORK is a conditional input:
+             RWORK(1) = TCRIT = critical value of t which the solver
+             is not to overshoot.  Required if ITASK is
+             4 or 5, and ignored otherwise.  (See ITASK.)
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  offset_rwork
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  LRW
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The length of the array RWORK, as declared by the user.
+             (This will be checked by the solver.)
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  IWORK
+                </span>
+                :
+                <code><span>byref&lt;<span>int[]</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = An integer work array.  The length of IWORK must be at least
+             30        if MITER = 0 or 3 (MF = 10, 13, 20, 23), or
+             30 + NEQ  otherwise (abs(MF) = 11,12,14,15,21,22,24,25).
+             The first 30 words of IWORK are reserved for conditional and
+             optional input and optional output.
+            
+             The following 2 words in IWORK are conditional input:
+             IWORK(1) = ML     These are the lower and upper
+             IWORK(2) = MU     half-bandwidths, respectively, of the
+             banded Jacobian, excluding the main diagonal.
+             The band is defined by the matrix locations
+             (i,j) with i-ML .le. j .le. i+MU.  ML and MU
+             must satisfy  0 .le.  ML,MU  .le. NEQ-1.
+             These are required if MITER is 4 or 5, and
+             ignored otherwise.  ML and MU may in fact be
+             the band parameters for a matrix to which
+             df/dy is only approximately equal.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  offset_iwork
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  LIW
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = the length of the array IWORK, as declared by the user.
+             (This will be checked by the solver.)
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  JAC
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-calc-ode-obsolete-dvode-ijex.html">IJEX</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The name of the user-supplied routine (MITER = 1 or 4) to
+             compute the Jacobian matrix, df/dy, as a function of
+             the scalar t and the vector y.  It is to have the form
+             SUBROUTINE JAC (NEQ, T, Y, ML, MU, PD, NROWPD,
+             RPAR, IPAR)
+             DOUBLE PRECISION T, Y(NEQ), PD(NROWPD,NEQ), RPAR
+             where NEQ, T, Y, ML, MU, and NROWPD are input and the array
+             PD is to be loaded with partial derivatives (elements of the
+             Jacobian matrix) in the output.  PD must be given a first
+             dimension of NROWPD.  T and Y have the same meaning as in
+             Subroutine F.
+             In the full matrix case (MITER = 1), ML and MU are
+             ignored, and the Jacobian is to be loaded into PD in
+             columnwise manner, with df(i)/dy(j) loaded into PD(i,j).
+             In the band matrix case (MITER = 4), the elements
+             within the band are to be loaded into PD in columnwise
+             manner, with diagonal lines of df/dy loaded into the rows
+             of PD. Thus df(i)/dy(j) is to be loaded into PD(i-j+MU+1,j).
+             ML and MU are the half-bandwidth parameters. (See IWORK).
+             The locations in PD in the two triangular areas which
+             correspond to nonexistent matrix elements can be ignored
+             or loaded arbitrarily, as they are overwritten by DVODE.
+             JAC need not provide df/dy exactly.  A crude
+             approximation (possibly with a smaller bandwidth) will do.
+             In either case, PD is preset to zero by the solver,
+             so that only the nonzero elements need be loaded by JAC.
+             Each call to JAC is preceded by a call to F with the same
+             arguments NEQ, T, and Y.  Thus to gain some efficiency,
+             intermediate quantities shared by both calculations may be
+             saved in a user COMMON block by F and not recomputed by JAC,
+             if desired.  Also, JAC may alter the Y array, if desired.
+             JAC must be declared external in the calling program.
+             Subroutine JAC may access user-defined real and integer
+             work arrays, RPAR and IPAR, whose dimensions are set by the
+             user in the main program.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  MF
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             = The method flag.  Used only for input.  The legal values of
+             MF are 10, 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 25,
+             -11, -12, -14, -15, -21, -22, -24, -25.
+             MF is a signed two-digit integer, MF = JSV*(10*METH + MITER).
+             JSV = SIGN(MF) indicates the Jacobian-saving strategy:
+             JSV =  1 means a copy of the Jacobian is saved for reuse
+             in the corrector iteration algorithm.
+             JSV = -1 means a copy of the Jacobian is not saved
+             (valid only for MITER = 1, 2, 4, or 5).
+             METH indicates the basic linear multistep method:
+             METH = 1 means the implicit Adams method.
+             METH = 2 means the method based on backward
+             differentiation formulas (BDF-s).
+             MITER indicates the corrector iteration method:
+             MITER = 0 means functional iteration (no Jacobian matrix
+             is involved).
+             MITER = 1 means chord iteration with a user-supplied
+             full (NEQ by NEQ) Jacobian.
+             MITER = 2 means chord iteration with an internally
+             generated (difference quotient) full Jacobian
+             (using NEQ extra calls to F per df/dy value).
+             MITER = 3 means chord iteration with an internally
+             generated diagonal Jacobian approximation
+             (using 1 extra call to F per df/dy evaluation).
+             MITER = 4 means chord iteration with a user-supplied
+             banded Jacobian.
+             MITER = 5 means chord iteration with an internally
+             generated banded Jacobian (using ML+MU+1 extra
+             calls to F per df/dy evaluation).
+             If MITER = 1 or 4, the user must supply a subroutine JAC
+             (the name is arbitrary) as described above under JAC.
+             For other values of MITER, a dummy argument can be used.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  RPAR
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             User-specified array used to communicate real parameters
+             to user-supplied subroutines.  If RPAR is a vector, then
+             it must be dimensioned in the user's main program.  If it
+             is unused or it is a scalar, then it need not be
+             dimensioned.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  offset_rpar
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  IPAR
+                </span>
+                :
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+             User-specified array used to communicate integer parameter
+             to user-supplied subroutines.  The comments on dimensioning
+             RPAR apply to IPAR.
+            
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  offset_ipar
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

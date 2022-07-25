@@ -1,0 +1,3897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DimensionfulQuantity (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    DimensionfulQuantity Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-units.html">
+        Altaxo.Units
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code><a href="https://docs.microsoft.com/dotnet/api/system.valuetype">ValueType</a></code>
+    </dt>
+    <dt>
+      All Interfaces: 
+      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a>&gt;</span></code>
+      , 
+      <code><a href="https://docs.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></code>
+    </dt>
+    <dt>
+      Kind: Struct
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Represents a quantity, consisting of a numeric value, the corresponding unit and, optionally, a SI prefix for the unit.
+            Please note that two <a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a> instances are considered equal only if (i) the units are equal, (ii) the prefixes are equal, and (iii) the values are equal.
+            If you want to compare the SI values, please compare the <a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html#AsValueInSIUnits">DimensionfulQuantity.AsValueInSIUnits</a> values.
+            
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9779', 9779)" onmouseover="showTip(event, '9779', 9779)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>DimensionfulQuantity<span><span>(<span>value</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9779">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DimensionfulQuantity<span><span>(<span>value</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Value.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Creates a dimensionless quantity with the provided value.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Value.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9780', 9780)" onmouseover="showTip(event, '9780', 9780)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>DimensionfulQuantity<span><span>(<span>value,&#32;unit</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9780">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DimensionfulQuantity<span><span>(<span>value,&#32;unit</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The value of the created quantity.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        unit
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+                       - 
+                      The unit of the created quantity.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Creates a quantity with the provided value in the given unit.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The value of the created quantity.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  unit
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The unit of the created quantity.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9781', 9781)" onmouseover="showTip(event, '9781', 9781)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>DimensionfulQuantity<span><span>(<span>value,&#32;prefix,&#32;unit</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9781">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DimensionfulQuantity<span><span>(<span>value,&#32;prefix,&#32;unit</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The value of the created quantity.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        prefix
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-siprefix.html">SIPrefix</a></code>
+                       - 
+                      The prefix of the unit.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        unit
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+                       - 
+                      The unit of the created quantity.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Creates a quantity with the provided value in the given prefixed unit.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The value of the created quantity.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  prefix
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-siprefix.html">SIPrefix</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The prefix of the unit.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  unit
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The unit of the created quantity.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9782', 9782)" onmouseover="showTip(event, '9782', 9782)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>DimensionfulQuantity<span><span>(<span>value,&#32;prefixedUnit</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9782">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DimensionfulQuantity<span><span>(<span>value,&#32;prefixedUnit</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The value of the created quantity.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        prefixedUnit
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-iprefixedunit.html">IPrefixedUnit</a></code>
+                       - 
+                      The prefixed unit of the created quanity.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Creates a quantity with the provided value in the given prefixed unit.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The value of the created quantity.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  prefixedUnit
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-iprefixedunit.html">IPrefixedUnit</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The prefixed unit of the created quanity.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9783', 9783)" onmouseover="showTip(event, '9783', 9783)">
+                <p>
+                  <a id="AsQuantityIn">
+                    <a href="#AsQuantityIn">
+                      <code><span>this.AsQuantityIn</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9783">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.AsQuantityIn</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        unit
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+                       - 
+                      The unit to convert the quantity to.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  New instance of a quantity in the provided unit (without prefix).
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.AsQuantityIn`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.AsQuantityIn\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Converts this quantity to another quantity in the provided unit (without prefix).
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  unit
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The unit to convert the quantity to.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  New instance of a quantity in the provided unit (without prefix).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9784', 9784)" onmouseover="showTip(event, '9784', 9784)">
+                <p>
+                  <a id="AsQuantityIn">
+                    <a href="#AsQuantityIn">
+                      <code><span>this.AsQuantityIn</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9784">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.AsQuantityIn</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        prefix
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-siprefix.html">SIPrefix</a></code>
+                       - 
+                      The prefix of the unit to convert the quantity to.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        unit
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+                       - 
+                      The unit to convert the quantity to.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  New instance of a quantity in the provided unit with the provided prefix.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.AsQuantityIn`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.AsQuantityIn\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Converts this quantity to another quantity in the provided unit, with the provided prefix.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  prefix
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-siprefix.html">SIPrefix</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The prefix of the unit to convert the quantity to.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  unit
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The unit to convert the quantity to.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  New instance of a quantity in the provided unit with the provided prefix.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9785', 9785)" onmouseover="showTip(event, '9785', 9785)">
+                <p>
+                  <a id="AsQuantityIn">
+                    <a href="#AsQuantityIn">
+                      <code><span>this.AsQuantityIn</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9785">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.AsQuantityIn</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        prefixedUnit
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-iprefixedunit.html">IPrefixedUnit</a></code>
+                       - 
+                      The prefixed unit to convert the quantity to.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  New instance of a quantity in the provided prefixed unit.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.AsQuantityIn`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.AsQuantityIn\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Converts this quantity to another quantity in the provided prefixed unit.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  prefixedUnit
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-iprefixedunit.html">IPrefixedUnit</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The prefixed unit to convert the quantity to.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  New instance of a quantity in the provided prefixed unit.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9786', 9786)" onmouseover="showTip(event, '9786', 9786)">
+                <p>
+                  <a id="AsQuantityInSIUnits">
+                    <a href="#AsQuantityInSIUnits">
+                      <code><span>this.AsQuantityInSIUnits</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9786">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.AsQuantityInSIUnits</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Units.DimensionfulQuantity.AsQuantityInSIUnits`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Units.DimensionfulQuantity.AsQuantityInSIUnits\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets this quantity in SI units (without prefix).
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9787', 9787)" onmouseover="showTip(event, '9787', 9787)">
+                <p>
+                  <a id="AsValueIn">
+                    <a href="#AsValueIn">
+                      <code><span>this.AsValueIn</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9787">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.AsValueIn</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        unit
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+                       - 
+                      The unit in which to get the numerical value of this quantity.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  Numerical value of this quantity in the provided unit (without prefix).
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.AsValueIn`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.AsValueIn\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Converts this quantity to its numerical value in the given unit (without prefix).
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  unit
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The unit in which to get the numerical value of this quantity.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Numerical value of this quantity in the provided unit (without prefix).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9788', 9788)" onmouseover="showTip(event, '9788', 9788)">
+                <p>
+                  <a id="AsValueIn">
+                    <a href="#AsValueIn">
+                      <code><span>this.AsValueIn</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9788">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.AsValueIn</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        prefix
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-siprefix.html">SIPrefix</a></code>
+                       - 
+                      The prefix of the unit in which to get the numerical value of this quantity.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        unit
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+                       - 
+                      The unit in which to get the numerical value of this quantity.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  Numerical value of this quantity in the provided unit with the provided prefix.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.AsValueIn`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.AsValueIn\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Converts this quantity to its numerical value in the given unit, with the given prefix.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  prefix
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-siprefix.html">SIPrefix</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The prefix of the unit in which to get the numerical value of this quantity.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  unit
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The unit in which to get the numerical value of this quantity.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Numerical value of this quantity in the provided unit with the provided prefix.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9789', 9789)" onmouseover="showTip(event, '9789', 9789)">
+                <p>
+                  <a id="AsValueIn">
+                    <a href="#AsValueIn">
+                      <code><span>this.AsValueIn</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9789">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.AsValueIn</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        prefixedUnit
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-iprefixedunit.html">IPrefixedUnit</a></code>
+                       - 
+                      The prefixed unit in which to get the numerical value of this quantity.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  Numerical value of this quantity in the provided unit with the provided prefix.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.AsValueIn`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.AsValueIn\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Converts this quantity to its numerical value in the given unit, with the given prefix.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  prefixedUnit
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-iprefixedunit.html">IPrefixedUnit</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The prefixed unit in which to get the numerical value of this quantity.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Numerical value of this quantity in the provided unit with the provided prefix.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9790', 9790)" onmouseover="showTip(event, '9790', 9790)">
+                <p>
+                  <a id="AsValueInSIUnits">
+                    <a href="#AsValueInSIUnits">
+                      <code><span>this.AsValueInSIUnits</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9790">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.AsValueInSIUnits</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Units.DimensionfulQuantity.AsValueInSIUnits`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Units.DimensionfulQuantity.AsValueInSIUnits\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Converts this quantity to its numerical value in SI units (without prefix).
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9791', 9791)" onmouseover="showTip(event, '9791', 9791)">
+                <p>
+                  <a id="CompareTo">
+                    <a href="#CompareTo">
+                      <code><span>this.CompareTo</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9791">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.CompareTo</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        other
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                       - 
+                      The other quantity to compare with.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  The value is 1, if this quantity is greater than the other quantity; 0 if both quantities are equal, and -1 if this quantity is less than the other quantity.
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.CompareTo`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.CompareTo\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Compares this quanitity to another quantity.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  other
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The other quantity to compare with.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The value is 1, if this quantity is greater than the other quantity; 0 if both quantities are equal, and -1 if this quantity is less than the other quantity.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9792', 9792)" onmouseover="showTip(event, '9792', 9792)">
+                <p>
+                  <a id="Equals">
+                    <a href="#Equals">
+                      <code><span>this.Equals</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9792">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Equals</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        obj
+                      </b>
+                      :
+                      <code>obj</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.Equals`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.Equals\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  obj
+                </span>
+                :
+                <code>obj</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9793', 9793)" onmouseover="showTip(event, '9793', 9793)">
+                <p>
+                  <a id="GetHashCode">
+                    <a href="#GetHashCode">
+                      <code><span>this.GetHashCode</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9793">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.GetHashCode</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.GetHashCode`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.GetHashCode\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9794', 9794)" onmouseover="showTip(event, '9794', 9794)">
+                <p>
+                  <a id="HasBiasedUnit">
+                    <a href="#HasBiasedUnit">
+                      <code><span>this.HasBiasedUnit</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9794">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.HasBiasedUnit</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Units.DimensionfulQuantity.HasBiasedUnit`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Units.DimensionfulQuantity.HasBiasedUnit\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets a value indicating whether this instance has a biased unit (i.e. a unit implementing <a href="/FsODE/reference/altaxo-units-ibiasedunit.html">IBiasedUnit</a>.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9795', 9795)" onmouseover="showTip(event, '9795', 9795)">
+                <p>
+                  <a id="IsEmpty">
+                    <a href="#IsEmpty">
+                      <code><span>this.IsEmpty</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9795">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.IsEmpty</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Units.DimensionfulQuantity.IsEmpty`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Units.DimensionfulQuantity.IsEmpty\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets a value indicating whether this instance is empty. It is empty if no unit has been associated so far with this instance.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9796', 9796)" onmouseover="showTip(event, '9796', 9796)">
+                <p>
+                  <a id="IsEqualInValuePrefixUnit">
+                    <a href="#IsEqualInValuePrefixUnit">
+                      <code><span>this.IsEqualInValuePrefixUnit</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9796">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.IsEqualInValuePrefixUnit</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                       - 
+                      Quantity to compare.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  Returns <code>true</code> if <span class="fsdocs-param-name">a</span> is equal in all three components(value, prefix, unit) to this quantity; otherwise, <code>false</code>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.IsEqualInValuePrefixUnit`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.IsEqualInValuePrefixUnit\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Determines whether this instance is equal to another quanity in all three components (value, prefix and unit). This is <b>not</b> a comparison for the physical equality of the quantities.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Quantity to compare.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Returns <code>true</code> if <span class="fsdocs-param-name">a</span> is equal in all three components(value, prefix, unit) to this quantity; otherwise, <code>false</code>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9797', 9797)" onmouseover="showTip(event, '9797', 9797)">
+                <p>
+                  <a id="Prefix">
+                    <a href="#Prefix">
+                      <code><span>this.Prefix</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9797">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Prefix</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-siprefix.html">SIPrefix</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Units.DimensionfulQuantity.Prefix`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Units.DimensionfulQuantity.Prefix\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the SI prefix of this quantity.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-siprefix.html">SIPrefix</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9798', 9798)" onmouseover="showTip(event, '9798', 9798)">
+                <p>
+                  <a id="PrefixedUnit">
+                    <a href="#PrefixedUnit">
+                      <code><span>this.PrefixedUnit</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9798">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.PrefixedUnit</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-prefixedunit.html">PrefixedUnit</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Units.DimensionfulQuantity.PrefixedUnit`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Units.DimensionfulQuantity.PrefixedUnit\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the prefixed unit of this quantity.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-prefixedunit.html">PrefixedUnit</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9799', 9799)" onmouseover="showTip(event, '9799', 9799)">
+                <p>
+                  <a id="ToString">
+                    <a href="#ToString">
+                      <code><span>this.ToString</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9799">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ToString</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>string</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.ToString`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.ToString\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9800', 9800)" onmouseover="showTip(event, '9800', 9800)">
+                <p>
+                  <a id="ToString">
+                    <a href="#ToString">
+                      <code><span>this.ToString</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9800">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.ToString</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        format
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        formatProvider
+                      </b>
+                      :
+                      <code><a href="https://docs.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>string</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.ToString`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.ToString\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  format
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  formatProvider
+                </span>
+                :
+                <code><a href="https://docs.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9801', 9801)" onmouseover="showTip(event, '9801', 9801)">
+                <p>
+                  <a id="TreatedAsUnbiasedDifference">
+                    <a href="#TreatedAsUnbiasedDifference">
+                      <code><span>this.TreatedAsUnbiasedDifference</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9801">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TreatedAsUnbiasedDifference</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Units.DimensionfulQuantity.TreatedAsUnbiasedDifference`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Units.DimensionfulQuantity.TreatedAsUnbiasedDifference\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the quantity as treated as unbiased difference value. If the unit of this quantity is not biased, the
+            return value is exactly this quantity. But if the unit is biased, the return value is the difference of this quantity and the same quantity with zero value.
+            Example: 20 °C will transform to 20 K, because 20°C - 0 °C = 20 K.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9802', 9802)" onmouseover="showTip(event, '9802', 9802)">
+                <p>
+                  <a id="Unit">
+                    <a href="#Unit">
+                      <code><span>this.Unit</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9802">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Unit</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Units.DimensionfulQuantity.Unit`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Units.DimensionfulQuantity.Unit\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the unit of this quantity.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-iunit.html">IUnit</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9803', 9803)" onmouseover="showTip(event, '9803', 9803)">
+                <p>
+                  <a id="Value">
+                    <a href="#Value">
+                      <code><span>this.Value</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9803">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Value</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Units.DimensionfulQuantity.Value`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Units.DimensionfulQuantity.Value\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets the numeric value of this quantity in the context of prefix and unit.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9804', 9804)" onmouseover="showTip(event, '9804', 9804)">
+                <p>
+                  <a id="WithNewValue">
+                    <a href="#WithNewValue">
+                      <code><span>this.WithNewValue</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9804">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.WithNewValue</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      New numeric value.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  A new quantity with the provided value and the same prefix and unit as this quantity.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.WithNewValue`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.WithNewValue\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Creates an instance with a new value, and with the same prefix and unit as this quantity.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  New numeric value.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A new quantity with the provided value and the same prefix and unit as this quantity.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9805', 9805)" onmouseover="showTip(event, '9805', 9805)">
+                <p>
+                  <a id="(*)">
+                    <a href="#(*)">
+                      <code><span><span>a</span>&#32;*&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9805">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;*&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_Multiply`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_Multiply\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9806', 9806)" onmouseover="showTip(event, '9806', 9806)">
+                <p>
+                  <a id="(*)">
+                    <a href="#(*)">
+                      <code><span><span>a</span>&#32;*&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9806">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;*&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_Multiply`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_Multiply\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9807', 9807)" onmouseover="showTip(event, '9807', 9807)">
+                <p>
+                  <a id="(*)">
+                    <a href="#(*)">
+                      <code><span><span>a</span>&#32;*&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9807">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;*&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_Multiply`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_Multiply\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9808', 9808)" onmouseover="showTip(event, '9808', 9808)">
+                <p>
+                  <a id="(+)">
+                    <a href="#(+)">
+                      <code><span><span>a</span>&#32;+&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9808">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;+&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_Addition`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_Addition\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9809', 9809)" onmouseover="showTip(event, '9809', 9809)">
+                <p>
+                  <a id="(-)">
+                    <a href="#(-)">
+                      <code><span><span>a</span>&#32;-&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9809">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;-&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                       - 
+                      a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                       - 
+                      The b.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  
+            The result of the operator.
+            
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_Subtraction`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_Subtraction\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Implements the subtraction operator. Here, the intended operation is ambiguous if we subtract a biased unit and an unbiased unit. The result
+            can be treated either as biased or unbiased. For example:
+            20°C minus 20 Kelvin. The result is either 293.15 K - 20 K = 273.15 K or 20°C - 20 K = 0 °C (biased). Although the same, this
+            results in difficulties if subsequently rates are calculated from this result.
+            Because of that, the decision was made to treat the result as unbiased value.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The b.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  
+            The result of the operator.
+            
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.arithmeticexception">
+                    ArithmeticException
+                  </a>
+                </td>
+                <td>
+                  
+            Try to subtract two incompatible units
+            or
+            Can not execute subtraction of unbiased unit minus biased unit
+            
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.notimplementedexception">
+                    NotImplementedException
+                  </a>
+                </td>
+                <td>
+                  
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9810', 9810)" onmouseover="showTip(event, '9810', 9810)">
+                <p>
+                  <a id="(/)">
+                    <a href="#(/)">
+                      <code><span><span>a</span>&#32;/&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9810">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;/&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_Division`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_Division\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9811', 9811)" onmouseover="showTip(event, '9811', 9811)">
+                <p>
+                  <a id="(/)">
+                    <a href="#(/)">
+                      <code><span><span>a</span>&#32;/&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9811">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;/&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_Division`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_Division\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9812', 9812)" onmouseover="showTip(event, '9812', 9812)">
+                <p>
+                  <a id="(/)">
+                    <a href="#(/)">
+                      <code><span><span>a</span>&#32;/&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9812">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;/&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_Division`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_Division\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9813', 9813)" onmouseover="showTip(event, '9813', 9813)">
+                <p>
+                  <a id="(<)">
+                    <a href="#(<)">
+                      <code><span><span>a</span>&#32;<&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9813">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;<&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_LessThan`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_LessThan\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9814', 9814)" onmouseover="showTip(event, '9814', 9814)">
+                <p>
+                  <a id="(<=)">
+                    <a href="#(<=)">
+                      <code><span><span>a</span>&#32;<=&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9814">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;<=&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_LessThanOrEqual`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_LessThanOrEqual\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9815', 9815)" onmouseover="showTip(event, '9815', 9815)">
+                <p>
+                  <a id="(<>)">
+                    <a href="#(<>)">
+                      <code><span><span>a</span>&#32;<>&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9815">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;<>&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_Inequality`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_Inequality\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9816', 9816)" onmouseover="showTip(event, '9816', 9816)">
+                <p>
+                  <a id="(=)">
+                    <a href="#(=)">
+                      <code><span><span>a</span>&#32;=&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9816">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;=&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_Equality`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_Equality\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9817', 9817)" onmouseover="showTip(event, '9817', 9817)">
+                <p>
+                  <a id="(>)">
+                    <a href="#(>)">
+                      <code><span><span>a</span>&#32;>&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9817">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;>&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_GreaterThan`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_GreaterThan\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9818', 9818)" onmouseover="showTip(event, '9818', 9818)">
+                <p>
+                  <a id="(>=)">
+                    <a href="#(>=)">
+                      <code><span><span>a</span>&#32;>=&#32;<span>b</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9818">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>a</span>&#32;>=&#32;<span>b</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_GreaterThanOrEqual`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_GreaterThanOrEqual\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9819', 9819)" onmouseover="showTip(event, '9819', 9819)">
+                <p>
+                  <a id="(~-)">
+                    <a href="#(~-)">
+                      <code><span>~-<span>a</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9819">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>~-<span>a</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.op_UnaryNegation`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.op_UnaryNegation\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9820', 9820)" onmouseover="showTip(event, '9820', 9820)">
+                <p>
+                  <a id="Abs">
+                    <a href="#Abs">
+                      <code><span>DimensionfulQuantity.Abs<span><span>(<span>a</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9820">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DimensionfulQuantity.Abs<span><span>(<span>a</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.Abs`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.Abs\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9821', 9821)" onmouseover="showTip(event, '9821', 9821)">
+                <p>
+                  <a id="Empty">
+                    <a href="#Empty">
+                      <code><span>DimensionfulQuantity.Empty</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9821">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DimensionfulQuantity.Empty</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Units.DimensionfulQuantity.Empty`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Units.DimensionfulQuantity.Empty\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Gets an empty, i.e. uninitialized, quantity.
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9822', 9822)" onmouseover="showTip(event, '9822', 9822)">
+                <p>
+                  <a id="Max">
+                    <a href="#Max">
+                      <code><span>DimensionfulQuantity.Max<span><span>(<span>a,&#32;b</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9822">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DimensionfulQuantity.Max<span><span>(<span>a,&#32;b</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.Max`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.Max\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9823', 9823)" onmouseover="showTip(event, '9823', 9823)">
+                <p>
+                  <a id="Min">
+                    <a href="#Min">
+                      <code><span>DimensionfulQuantity.Min<span><span>(<span>a,&#32;b</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9823">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DimensionfulQuantity.Min<span><span>(<span>a,&#32;b</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.Min`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.Min\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '9824', 9824)" onmouseover="showTip(event, '9824', 9824)">
+                <p>
+                  <a id="RoundUpOrDown">
+                    <a href="#RoundUpOrDown">
+                      <code><span>DimensionfulQuantity.RoundUpOrDown<span><span>(<span>a,&#32;b</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="9824">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DimensionfulQuantity.RoundUpOrDown<span><span>(<span>a,&#32;b</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Units.DimensionfulQuantity.RoundUpOrDown`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Units.DimensionfulQuantity.RoundUpOrDown\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-units-dimensionfulquantity.html">DimensionfulQuantity</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

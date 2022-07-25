@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DoubleLevinson (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    DoubleLevinson Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-linearalgebra.html">
+        Altaxo.Calc.LinearAlgebra
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code><a href="/FsODE/reference/altaxo-calc-algorithm.html">Algorithm</a></code>
+    </dt>
+    <dt>
+      All Interfaces: 
+      <code><a href="/FsODE/reference/altaxo-calc-ialgorithm.html">IAlgorithm</a></code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+             A Levinson solver for square Toeplitz systems of <code>double</code> type.
+             
+      </p>
+    </div>
+    <p class="fsdocs-remarks">
+      
+             This class provides members for inverting the Toeplitz matrix (see <a href="/FsODE/reference/altaxo-calc-linearalgebra-doublelevinson.html#GetInverse">DoubleLevinson.GetInverse</a> member),
+             calculating the determinant of the matrix (see <a href="/FsODE/reference/altaxo-calc-linearalgebra-doublelevinson.html#GetDeterminant">DoubleLevinson.GetDeterminant</a> member) and solving
+             linear systems associated with the matrix (see <a href="/FsODE/reference/altaxo-calc-linearalgebra-doublelevinson.html#Solve">DoubleLevinson.Solve</a> members).
+             <p class='fsdocs-para'>
+             The class implements a <B>UDL</B> decomposition of the inverse of the
+             square Toeplitz matrix. The decomposition is based upon Levinson's algorithm. As
+             a consequence, all operations require approximately <B>N</B> squared FLOPS, where
+             <B>N</B> is the matrix order. This is significantly faster than <B>LU</B> factorization,
+             which requires <B>N</B> cubed FLOPS.
+             </p><p class='fsdocs-para'>
+             One disadvantage of Levinson's algorithm is that all the leading sub-matrices
+             of the Toeplitz matrix must be non-singular. During the decomposition,
+             sub-matrices are checked to ensure that they are non-singular. When a singular
+             matrix is found the decomposition is halted and an interal flag is set. The
+             <a href="/FsODE/reference/altaxo-calc-linearalgebra-doublelevinson.html#IsSingular">DoubleLevinson.IsSingular</a> property may be used to access the flag, to determine
+             if any singular matrices were detected.
+             </p><p class='fsdocs-para'>
+             A outline of this approach to the UDL decomposition of inverse Toeplitz matrices is
+             found in the following reference:
+             </p><p class='fsdocs-para'><EM>Sun-Yuan Kung and Yu Hen Hu</EM>, A Highly Concurrent Algorithm and Pipelined
+             Architecture for Solving Toeplitz Systems, IEEE Transactions on Acoustics,
+             Speech and Signal Processing, Volume ASSP-31, Number 1, Febuary 1983, pages
+             66 - 75.
+             </p><note type="implementnotes">
+             This class is optimised for non-symmetric Toeplitz matrices. If you wish
+             to solve a symmetric Toeplitz system, use the <see cref="T:Altaxo.Calc.LinearAlgebra.DoubleSymmetricLevinson" /> class,
+             which is twice as fast as this class.
+             </note><p class='fsdocs-para'>Copyright (c) 2003-2004, dnAnalytics Project. All rights reserved. See <a>http://www.dnAnalytics.net</a> for details.</p><p class='fsdocs-para'>Adopted to Altaxo (c) 2005 Dr. Dirk Lellinger.</p>
+    </p>
+    <h5 class="fsdocs-example-header">
+      Example
+    </h5>
+    <p class="fsdocs-example">
+      
+             The following simple example illustrates the use of the class:
+             <p class='fsdocs-para'><pre>
+             using System;
+             using dnA.Exceptions;
+             using dnA.Math;
+             using System.IO;
+            
+             namespace Example_9
+             {
+            
+               class Application
+               {
+            
+                 // format string for matrix/vector elements
+                 private const string frmStr = &quot; 0.000E+000;-0.000E+000&quot;;
+            
+                 // application entry point
+                 [STAThread]
+                 public static void Main(string[] args)
+                 {
+                   // create levinson solver
+                   DoubleLevinson dl = new DoubleLevinson(new double[]{10.0, 2.0, 9.0, 5.0}, new double[]{10.0, 0.0, 4.0, 0.0});
+            
+                   // display the Toeplitz matrix
+                   DoubleMatrix T = dl.GetMatrix();
+                   Console.WriteLine(&quot;Matrix:: {0} &quot;, T.ToString(frmStr));
+                   Console.WriteLine();
+            
+                   // check if matrix is singular
+                   Console.WriteLine(&quot;Singular:          {0}&quot;, dl.IsSingular);
+            
+                   // get the determinant
+                   Console.WriteLine(&quot;Determinant:       {0}&quot;, dl.GetDeterminant().ToString(&quot;E3&quot;));
+                   Console.WriteLine();
+            
+                   // get the inverse
+                   DoubleMatrix Inv = dl.GetInverse();
+                   Console.WriteLine(&quot;Inverse:: {0} &quot;, Inv.ToString(frmStr));
+                   Console.WriteLine();
+            
+                   // solve a linear system
+                   DoubleVector X = dl.Solve(1.0, 2.0, 3.0, 4.0);
+                   Console.WriteLine(&quot;X:: {0} &quot;, X.ToString(frmStr));
+                   Console.WriteLine();
+                 }
+            
+               }
+            
+             }</pre></p><p class='fsdocs-para'>
+             The application generates the following results:
+             </p><p class='fsdocs-para'><pre>
+             Matrix:: rows: 4, cols: 4
+              1.000E+001,  0.000E+000,  4.000E+000,  0.000E+000
+              2.000E+000,  1.000E+001,  0.000E+000,  4.000E+000
+              9.000E+000,  2.000E+000,  1.000E+001,  0.000E+000
+              5.000E+000,  9.000E+000,  2.000E+000,  1.000E+001
+            
+             Singular:          False
+             Determinant:       4.256E+003
+            
+             Inverse:: rows: 4, cols: 4
+              1.541E-001,  1.880E-002, -6.015E-002, -7.519E-003
+             -1.692E-002,  1.504E-001,  1.880E-002, -6.015E-002
+             -1.353E-001, -4.699E-002,  1.504E-001,  1.880E-002
+             -3.477E-002, -1.353E-001, -1.692E-002,  1.541E-001
+            
+             X:: Length: 4
+             -1.880E-002,  9.962E-002,  2.970E-001,  2.603E-001</pre></p>
+    </p>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1609', 1609)" onmouseover="showTip(event, '1609', 1609)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>DoubleLevinson<span><span>(<span>col,&#32;row</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1609">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DoubleLevinson<span><span>(<span>col,&#32;row</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        col
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The left-most column of the Toeplitz matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        row
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The top-most row of the Toeplitz matrix.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Constructor with <code>double[]</code> parameters.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  col
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The left-most column of the Toeplitz matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  row
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The top-most row of the Toeplitz matrix.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  <B>col</B> is a null reference,
+            <p class='fsdocs-para'>or</p><p class='fsdocs-para'><B>row</B> is a null reference.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.rankexception">
+                    RankException
+                  </a>
+                </td>
+                <td>
+                  
+            The length col <B>col</B> is zero,
+            <p class='fsdocs-para'>or</p><p class='fsdocs-para'>the length of <B>col</B> does not match that of <B>row</B>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.arithmeticexception">
+                    ArithmeticException
+                  </a>
+                </td>
+                <td>
+                  
+            The values of the first element of <B>col</B> and <B>row</B> are not equal.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1610', 1610)" onmouseover="showTip(event, '1610', 1610)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>DoubleLevinson<span><span>(<span>col,&#32;row</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1610">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DoubleLevinson<span><span>(<span>col,&#32;row</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        col
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The left-most column of the Toeplitz matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        row
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The top-most row of the Toeplitz matrix.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Constructor with <code>DoubleVector</code> parameters.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  col
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The left-most column of the Toeplitz matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  row
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The top-most row of the Toeplitz matrix.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  <B>col</B> is a null reference,
+            <p class='fsdocs-para'>or</p><p class='fsdocs-para'><B>row</B> is a null reference.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.rankexception">
+                    RankException
+                  </a>
+                </td>
+                <td>
+                  
+            The length col <B>col</B> is zero,
+            <p class='fsdocs-para'>or</p><p class='fsdocs-para'>the length of <B>col</B> does not match that of <B>row</B>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.arithmeticexception">
+                    ArithmeticException
+                  </a>
+                </td>
+                <td>
+                  
+            The values of the first element of <B>col</B> and <B>row</B> are not equal.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1611', 1611)" onmouseover="showTip(event, '1611', 1611)">
+                <p>
+                  <a id="D">
+                    <a href="#D">
+                      <code><span>this.D</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1611">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.D</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.LinearAlgebra.DoubleLevinson.D`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.LinearAlgebra.DoubleLevinson.D\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+             Get the diagonal matrix of the UDL factorisation.
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+             It is recommended that the <a href="/FsODE/reference/altaxo-calc-linearalgebra-doublelevinson.html#IsSingular">DoubleLevinson.IsSingular</a> property
+             be checked to see if the decomposition was completed, before attempting
+             to obtain the diagonal matrix.
+             
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+             The Toeplitz matrix or one of the the leading sub-matrices is singular.
+             
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1612', 1612)" onmouseover="showTip(event, '1612', 1612)">
+                <p>
+                  <a id="GetDeterminant">
+                    <a href="#GetDeterminant">
+                      <code><span>this.GetDeterminant</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1612">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.GetDeterminant</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>float</code>
+                  </span>
+                  The determinant
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.GetDeterminant`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.GetDeterminant\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Get the determinant of the Toeplitz matrix.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            It is recommended that the <a href="/FsODE/reference/altaxo-calc-linearalgebra-doublelevinson.html#IsSingular">DoubleLevinson.IsSingular</a> property
+            be checked to see if the decomposition was completed, before attempting
+            to obtain the determinant.
+            
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The determinant
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+            The Toeplitz matrix or one of the the leading sub-matrices is singular.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1613', 1613)" onmouseover="showTip(event, '1613', 1613)">
+                <p>
+                  <a id="GetInverse">
+                    <a href="#GetInverse">
+                      <code><span>this.GetInverse</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1613">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.GetInverse</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+                  </span>
+                  The inverse matrix.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.GetInverse`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.GetInverse\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Get the inverse of the Toeplitz matrix.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            The class implicitly decomposes the inverse Toeplitz matrix into a <b>UDL</b> factorisation
+            using the Levinson algorithm, before using an extended version of Trench's algorithm to complete
+            the inversion.
+            <p class='fsdocs-para'>
+            The extended version of Trench's algorithm requires approximately <b>N</b> squared FLOPS,
+            compared to <b>N</b> cubed FLOPS if we simply multiplied the <b>UDL</b> factors
+            (<b>N</b> is the matrix order).
+            </p>
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The inverse matrix.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+            The Toeplitz matrix or one of the the leading sub-matrices is singular.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1614', 1614)" onmouseover="showTip(event, '1614', 1614)">
+                <p>
+                  <a id="GetLeftColumn">
+                    <a href="#GetLeftColumn">
+                      <code><span>this.GetLeftColumn</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1614">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.GetLeftColumn</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublevector.html">DoubleVector</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.GetLeftColumn`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.GetLeftColumn\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Get a vector that represents the left-most column of the Toplitz matrix.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublevector.html">DoubleVector</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1615', 1615)" onmouseover="showTip(event, '1615', 1615)">
+                <p>
+                  <a id="GetMatrix">
+                    <a href="#GetMatrix">
+                      <code><span>this.GetMatrix</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1615">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.GetMatrix</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.GetMatrix`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.GetMatrix\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Get a copy of the Toeplitz matrix.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1616', 1616)" onmouseover="showTip(event, '1616', 1616)">
+                <p>
+                  <a id="GetTopRow">
+                    <a href="#GetTopRow">
+                      <code><span>this.GetTopRow</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1616">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.GetTopRow</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublevector.html">DoubleVector</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.GetTopRow`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.GetTopRow\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Get a vector that represents the top-most row of the Toplitz matrix.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublevector.html">DoubleVector</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1617', 1617)" onmouseover="showTip(event, '1617', 1617)">
+                <p>
+                  <a id="IsSingular">
+                    <a href="#IsSingular">
+                      <code><span>this.IsSingular</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1617">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.IsSingular</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.LinearAlgebra.DoubleLevinson.IsSingular`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.LinearAlgebra.DoubleLevinson.IsSingular\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Check if the Toeplitz matrix or any leading sub-matrices are singular.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            If the Toeplitz matrix or any leading sub-matrices are singular, it is
+            not possible to complete the <b>UDL</b> decomposition using the Levinson
+            algorithm.
+            
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1618', 1618)" onmouseover="showTip(event, '1618', 1618)">
+                <p>
+                  <a id="L">
+                    <a href="#L">
+                      <code><span>this.L</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1618">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.L</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.LinearAlgebra.DoubleLevinson.L`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.LinearAlgebra.DoubleLevinson.L\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+             Get the lower triangle matrix of the UDL factorisation.
+             
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+             It is recommended that the <a href="/FsODE/reference/altaxo-calc-linearalgebra-doublelevinson.html#IsSingular">DoubleLevinson.IsSingular</a> property
+             be checked to see if the decomposition was completed, before attempting
+             to obtain the lower triangle matrix.
+             
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+             The Toeplitz matrix or one of the the leading sub-matrices is singular.
+             
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1619', 1619)" onmouseover="showTip(event, '1619', 1619)">
+                <p>
+                  <a id="Order">
+                    <a href="#Order">
+                      <code><span>this.Order</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1619">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Order</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Order`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Order\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Get the order of the Toeplitz matrix.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1620', 1620)" onmouseover="showTip(event, '1620', 1620)">
+                <p>
+                  <a id="Solve">
+                    <a href="#Solve">
+                      <code><span>this.Solve</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1620">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Solve</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Y
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The right-hand side of the system.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublevector.html">DoubleVector</a></code>
+                  </span>
+                  The solution vector.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Solve`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Solve\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Solve a square Toeplitz system with a right-side vector.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            This member solves the linear system <B>TX</B> = <B>Y</B>, where <B>T</B> is
+            the square Toeplitz matrix, <B>X</B> is the unknown solution vector
+            and <B>Y</B> is a known vector.
+            <p class='fsdocs-para'>
+            The class implicitly decomposes the inverse Toeplitz matrix into a <b>UDL</b> factorisation
+            using the Levinson algorithm, before calculating the solution vector.
+            </p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Y
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The right-hand side of the system.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublevector.html">DoubleVector</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The solution vector.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  
+            Parameter <B>Y</B> is a null reference.
+            
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.rankexception">
+                    RankException
+                  </a>
+                </td>
+                <td>
+                  
+            The length of Y is not equal to the number of rows in the Toeplitz matrix.
+            
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+            The Toeplitz matrix or one of the the leading sub-matrices is singular.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1621', 1621)" onmouseover="showTip(event, '1621', 1621)">
+                <p>
+                  <a id="Solve">
+                    <a href="#Solve">
+                      <code><span>this.Solve</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1621">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Solve</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Y
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                       - 
+                      The right-hand side of the system.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublevector.html">DoubleVector</a></code>
+                  </span>
+                  The solution vector.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Solve`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Solve\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Solve a square Toeplitz system with a right-side array.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            This member solves the linear system <B>TX</B> = <B>Y</B>, where <B>T</B> is
+            the square Toeplitz matrix, <B>X</B> is the unknown solution vector
+            and <B>Y</B> is a known vector.
+            <p class='fsdocs-para'>
+            The class implicitly decomposes the inverse Toeplitz matrix into a <b>UDL</b> factorisation
+            using the Levinson algorithm, before calculating the solution vector.
+            </p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Y
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The right-hand side of the system.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublevector.html">DoubleVector</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The solution vector.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  
+            Parameter <B>Y</B> is a null reference.
+            
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.rankexception">
+                    RankException
+                  </a>
+                </td>
+                <td>
+                  
+            The length of Y is not equal to the number of rows in the Toeplitz matrix.
+            
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+            The Toeplitz matrix or one of the the leading sub-matrices is singular.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1622', 1622)" onmouseover="showTip(event, '1622', 1622)">
+                <p>
+                  <a id="Solve">
+                    <a href="#Solve">
+                      <code><span>this.Solve</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1622">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Solve</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Y
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      The right-side matrix
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+                  </span>
+                  The solution matrix.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Solve`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Solve\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Solve a square Toeplitz system with a right-side matrix.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            This member solves the linear system <B>TX</B> = <B>Y</B>, where <B>T</B> is
+            a square Toeplitz matrix, <B>X</B> is the unknown solution matrix
+            and <B>Y</B> is a known matrix.
+            <p class='fsdocs-para'>
+            The class implicitly decomposes the inverse Toeplitz matrix into a <b>UDL</b> factorisation
+            using the Levinson algorithm, before calculating the solution vector.
+            </p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Y
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The right-side matrix
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The solution matrix.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  
+            Parameter <B>Y</B> is a null reference.
+            
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.rankexception">
+                    RankException
+                  </a>
+                </td>
+                <td>
+                  
+            The number of rows in <B>Y</B> is not equal to the number of rows in the Toeplitz matrix.
+            
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+            The Toeplitz matrix or one of the the leading sub-matrices is singular.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1623', 1623)" onmouseover="showTip(event, '1623', 1623)">
+                <p>
+                  <a id="U">
+                    <a href="#U">
+                      <code><span>this.U</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1623">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.U</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Calc.LinearAlgebra.DoubleLevinson.U`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Calc.LinearAlgebra.DoubleLevinson.U\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+             Get the upper triangle matrix of the UDL factorisation.
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+             It is recommended that the <a href="/FsODE/reference/altaxo-calc-linearalgebra-doublelevinson.html#IsSingular">DoubleLevinson.IsSingular</a> property
+             be checked to see if the decomposition was completed, before attempting
+             to obtain the upper triangle matrix.
+             
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+             The Toeplitz matrix or one of the the leading sub-matrices is singular.
+             
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1624', 1624)" onmouseover="showTip(event, '1624', 1624)">
+                <p>
+                  <a id="Inverse">
+                    <a href="#Inverse">
+                      <code><span>DoubleLevinson.Inverse<span><span>(<span>col,&#32;row</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1624">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DoubleLevinson.Inverse<span><span>(<span>col,&#32;row</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        col
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The left-most column of the Toeplitz matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        row
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The top-most row of the Toeplitz matrix.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+                  </span>
+                  The inverse matrix.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Inverse`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Inverse\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Invert a square Toeplitz matrix.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            This static member combines the <b>UDL</b> decomposition and Trench's algorithm into a
+            single algorithm. It requires minimal data storage, compared to the non-static member
+            and suffers from no speed penalty in comparision.
+            <p class='fsdocs-para'>
+            Trench's algorithm requires <b>N</b> squared FLOPS, compared to <b>N</b> cubed FLOPS
+            if we simply solved a linear Toeplitz system with a right-side identity matrix (<b>N</b> is the matrix order).
+            </p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  col
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The left-most column of the Toeplitz matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  row
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The top-most row of the Toeplitz matrix.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The inverse matrix.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  <B>col</B> is a null reference.
+            <p class='fsdocs-para'>or</p><p class='fsdocs-para'><B>row</B> is a null reference.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.rankexception">
+                    RankException
+                  </a>
+                </td>
+                <td>
+                  
+            The length of <B>col</B> is 0,
+            <p class='fsdocs-para'>or</p><p class='fsdocs-para'>the lengths of <B>col</B> and <B>row</B> are not equal.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+            The Toeplitz matrix or one of the the leading sub-matrices is singular.
+            
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.arithmeticexception">
+                    ArithmeticException
+                  </a>
+                </td>
+                <td>
+                  
+            The values of the first element of <B>col</B> and <B>row</B> are not equal.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1625', 1625)" onmouseover="showTip(event, '1625', 1625)">
+                <p>
+                  <a id="Solve">
+                    <a href="#Solve">
+                      <code><span>DoubleLevinson.Solve<span><span>(<span>col,&#32;row,&#32;Y</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1625">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DoubleLevinson.Solve<span><span>(<span>col,&#32;row,&#32;Y</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        col
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The left-most column of the Toeplitz matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        row
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The top-most row of the Toeplitz matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        Y
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The right-side vector of the system.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublevector.html">DoubleVector</a></code>
+                  </span>
+                  The solution vector.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Solve`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Solve\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Solve a square Toeplitz system with a right-side vector.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            This method solves the linear system <B>AX</B> = <B>Y</B>. Where
+            <B>T</B> is a square Toeplitz matrix, <B>X</B> is an unknown
+            vector and <B>Y</B> is a known vector.
+            <p class='fsdocs-para'>
+            The classic Levinson algorithm is used to solve the system. The algorithm
+            assumes that all the leading sub-matrices of the Toeplitz matrix are
+            non-singular. When a sub-matrix is near singular, accuracy will
+            be degraded. This member requires approximately <B>N</B> squared
+            FLOPS to calculate a solution, where <B>N</B> is the matrix order.
+            </p><p class='fsdocs-para'>
+            This static method has minimal storage requirements as it combines
+            the <b>UDL</b> decomposition with the calculation of the solution vector
+            in a single algorithm.
+            </p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  col
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The left-most column of the Toeplitz matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  row
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The top-most row of the Toeplitz matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Y
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The right-side vector of the system.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublevector.html">DoubleVector</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The solution vector.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  <EM>col</EM> is a null reference,
+            <p class='fsdocs-para'>or</p><p class='fsdocs-para'><EM>row</EM> is a null reference,</p><p class='fsdocs-para'>or</p><p class='fsdocs-para'><EM>Y</EM> is a null reference.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.rankexception">
+                    RankException
+                  </a>
+                </td>
+                <td>
+                  
+            The length of <EM>col</EM> is 0,
+            <p class='fsdocs-para'>or</p><p class='fsdocs-para'>the lengths of <EM>col</EM> and <EM>row</EM> are not equal,</p><p class='fsdocs-para'>or</p><p class='fsdocs-para'>the number of rows in <EM>Y</EM> does not the length of <EM>col</EM> and <EM>row</EM>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+            The Toeplitz matrix or one of the the leading sub-matrices is singular.
+            
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.arithmeticexception">
+                    ArithmeticException
+                  </a>
+                </td>
+                <td>
+                  
+            The values of the first element of <EM>col</EM> and <EM>row</EM> are not equal.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1626', 1626)" onmouseover="showTip(event, '1626', 1626)">
+                <p>
+                  <a id="Solve">
+                    <a href="#Solve">
+                      <code><span>DoubleLevinson.Solve<span><span>(<span>col,&#32;row,&#32;Y</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1626">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>DoubleLevinson.Solve<span><span>(<span>col,&#32;row,&#32;Y</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        col
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The left-most column of the Toeplitz matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        row
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+                       - 
+                      The top-most row of the Toeplitz matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        Y
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      The right-side matrix of the system.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+                  </span>
+                  The solution matrix.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Solve`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.DoubleLevinson.Solve\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Solve a square Toeplitz system with a right-side matrix.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              
+            This method solves the linear system <B>AX</B> = <B>Y</B>. Where
+            <B>T</B> is a square Toeplitz matrix, <B>X</B> is an unknown
+            matrix and <B>Y</B> is a known matrix.
+            <p class='fsdocs-para'>
+            The classic Levinson algorithm is used to solve the system. The algorithm
+            assumes that all the leading sub-matrices of the Toeplitz matrix are
+            non-singular. When a sub-matrix is near singular, accuracy will
+            be degraded. This member requires approximately <B>N</B> squared
+            FLOPS to calculate a solution, where <B>N</B> is the matrix order.
+            </p><p class='fsdocs-para'>
+            This static method has minimal storage requirements as it combines
+            the <b>UDL</b> decomposition with the calculation of the solution vector
+            in a single algorithm.
+            </p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  col
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The left-most column of the Toeplitz matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  row
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The top-most row of the Toeplitz matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Y
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The right-side matrix of the system.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-doublematrix.html">DoubleMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The solution matrix.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  <EM>col</EM> is a null reference,
+            <p class='fsdocs-para'>or</p><p class='fsdocs-para'><EM>row</EM> is a null reference,</p><p class='fsdocs-para'>or</p><p class='fsdocs-para'><EM>Y</EM> is a null reference.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.rankexception">
+                    RankException
+                  </a>
+                </td>
+                <td>
+                  
+            The length of <EM>col</EM> is 0,
+            <p class='fsdocs-para'>or</p><p class='fsdocs-para'>the lengths of <EM>col</EM> and <EM>row</EM> are not equal,</p><p class='fsdocs-para'>or</p><p class='fsdocs-para'>the number of rows in <EM>Y</EM> does not the length of <EM>col</EM> and <EM>row</EM>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/FsODE/reference/altaxo-calc-linearalgebra-singularmatrixexception.html">
+                    SingularMatrixException
+                  </a>
+                </td>
+                <td>
+                  
+            The Toeplitz matrix or one of the the leading sub-matrices is singular.
+            
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.arithmeticexception">
+                    ArithmeticException
+                  </a>
+                </td>
+                <td>
+                  
+            The values of the first element of <EM>col</EM> and <EM>row</EM> are not equal.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

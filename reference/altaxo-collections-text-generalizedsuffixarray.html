@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GeneralizedSuffixArray (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    GeneralizedSuffixArray Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-collections-text.html">
+        Altaxo.Collections.Text
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Given a text string, the substring starting at position i and until the end of text is called the suffix starting at position i. For a text string with N characters there are N suffixes.
+            This class gives an efficient algorithm to sort all N suffixes lexicographically, and to determine the length of the longest common prefix of each suffix with its lexicographical predecessor.
+            This is generally done in O(N) time.
+            
+      </p>
+    </div>
+    <p class="fsdocs-remarks">
+      <p class='fsdocs-para'>
+            First of all, we need an O(N) algorithm to calculate the suffix array in O(N) time. This algorithm is implemented according to J. Kärkkäinen and P. Sanders: "Simple linear work suffix array construction.",
+            Proc. 30th International Colloquium on Automata, Languages and Programming, volume 2719 of Lecture Notes in Computer Science, pages 943-955, Berlin, 2003, Springer-Verlag."
+            </p><p class='fsdocs-para'>
+            Secondly, an O(N) algorithm is neccessary to calculated the length of longest common prefix of two adjacent suffixes. This is implemented according to T. Kasai, G. Lee, H. Arimura, S. Arikawa1, and K. Park:
+            "Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications", Proc. 12th Annual Symposium on Combinatorial Pattern Matching. Lecture Notes in Computer Science, vol. 2089, pp. 181–192. Springer, Berlin (2001).
+            </p><p class='fsdocs-para'>
+            See also the very nice paper by Michael Arnold and Enno Ohlebusch, 'Linear Time Algorithms for Generalizations of the Longest Common Substring Problem', Algorithmica (2011) 60; 806-818; DOI: 10.1007/s00453-009-9369-1.
+            The code here was partially adopted from the C++ sources from the web site of the authors at http://www.uni-ulm.de/in/theo/research/sequana.html.
+            </p>
+    </p>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5284', 5284)" onmouseover="showTip(event, '5284', 5284)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>GeneralizedSuffixArray<span><span>(<span>textWithPadding,&#32;textLength,&#32;numberOfWords,&#32;wordStartPositions,&#32;alphabetSize</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5284">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GeneralizedSuffixArray<span><span>(<span>textWithPadding,&#32;textLength,&#32;numberOfWords,&#32;wordStartPositions,&#32;alphabetSize</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        textWithPadding
+                      </b>
+                      :
+                      <code><span>int[]</span></code>
+                       - 
+                      The text. The character of this texts are integers. Each unique element of the original text (or list of objects) is mapped to an unique integer value, while preserving the lexicographical order of the original characters in the integer values.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        textLength
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of characters of the text. This usually is smaller than the length of text array.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        numberOfWords
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of words in the original text, if the original text was separated into words. Otherwise, this parameter should be 1.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        wordStartPositions
+                      </b>
+                      :
+                      <code><span>int[]</span></code>
+                       - 
+                      The start positions of the words in the text array, if the original text was separated into words. Otherwise, this parameter is ignored.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        alphabetSize
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Size of the alphabet. This is the number of unique characters (or objects) of the original text. If the text was separated into words, the numberOfWords is added, since each separator is a unique character.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Collections.Text.GeneralizedSuffixArray.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.Text.GeneralizedSuffixArray.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Constructs an instance of the <a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray</a> class.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  textWithPadding
+                </span>
+                :
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The text. The character of this texts are integers. Each unique element of the original text (or list of objects) is mapped to an unique integer value, while preserving the lexicographical order of the original characters in the integer values.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  textLength
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of characters of the text. This usually is smaller than the length of text array.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  numberOfWords
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of words in the original text, if the original text was separated into words. Otherwise, this parameter should be 1.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  wordStartPositions
+                </span>
+                :
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The start positions of the words in the text array, if the original text was separated into words. Otherwise, this parameter is ignored.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  alphabetSize
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Size of the alphabet. This is the number of unique characters (or objects) of the original text. If the text was separated into words, the numberOfWords is added, since each separator is a unique character.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5285', 5285)" onmouseover="showTip(event, '5285', 5285)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>GeneralizedSuffixArray<span><span>(<span>integerText</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5285">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GeneralizedSuffixArray<span><span>(<span>integerText</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        integerText
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/altaxo-collections-text-integertext.html">IntegerText</a></code>
+                       - 
+                      The integer text data.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Collections.Text.GeneralizedSuffixArray.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.Text.GeneralizedSuffixArray.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Constructs a new instance of the <a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray</a> class from <a href="/FsODE/reference/altaxo-collections-text-integertext.html">IntegerText</a>.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  integerText
+                </span>
+                :
+                <code><a href="/FsODE/reference/altaxo-collections-text-integertext.html">IntegerText</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The integer text data.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5286', 5286)" onmouseover="showTip(event, '5286', 5286)">
+                <p>
+                  <a id="InverseSuffixArray">
+                    <a href="#InverseSuffixArray">
+                      <code><span>this.InverseSuffixArray</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5286">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.InverseSuffixArray</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Collections.Text.GeneralizedSuffixArray.InverseSuffixArray`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Collections.Text.GeneralizedSuffixArray.InverseSuffixArray\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Maps the suffix that starts at position i in the text to the lexicographical order position of this suffix, which is the value of the i-th element of this array.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5287', 5287)" onmouseover="showTip(event, '5287', 5287)">
+                <p>
+                  <a id="LCPArray">
+                    <a href="#LCPArray">
+                      <code><span>this.LCPArray</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5287">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.LCPArray</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Collections.Text.GeneralizedSuffixArray.LCPArray`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Collections.Text.GeneralizedSuffixArray.LCPArray\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Stores the length of the Longest Common Prefix of the lexicographically i-th suffix and its lexicographical  predecessor (the lexicographically (i-1)-th suffix).
+            The element at index 0 is always 0.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5288', 5288)" onmouseover="showTip(event, '5288', 5288)">
+                <p>
+                  <a id="LCPSArray">
+                    <a href="#LCPSArray">
+                      <code><span>this.LCPSArray</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5288">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.LCPSArray</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Collections.Text.GeneralizedSuffixArray.LCPSArray`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Collections.Text.GeneralizedSuffixArray.LCPSArray\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5289', 5289)" onmouseover="showTip(event, '5289', 5289)">
+                <p>
+                  <a id="MaximumLcp">
+                    <a href="#MaximumLcp">
+                      <code><span>this.MaximumLcp</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5289">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.MaximumLcp</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Collections.Text.GeneralizedSuffixArray.MaximumLcp`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Collections.Text.GeneralizedSuffixArray.MaximumLcp\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Maximum of all values in the <a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray._LCP</a> array.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5290', 5290)" onmouseover="showTip(event, '5290', 5290)">
+                <p>
+                  <a id="NumberOfWords">
+                    <a href="#NumberOfWords">
+                      <code><span>this.NumberOfWords</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5290">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.NumberOfWords</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Collections.Text.GeneralizedSuffixArray.NumberOfWords`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Collections.Text.GeneralizedSuffixArray.NumberOfWords\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Number of words, if the text was separated into individual words. Otherwise, this field is equal to one.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5291', 5291)" onmouseover="showTip(event, '5291', 5291)">
+                <p>
+                  <a id="SuffixArray">
+                    <a href="#SuffixArray">
+                      <code><span>this.SuffixArray</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5291">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SuffixArray</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Collections.Text.GeneralizedSuffixArray.SuffixArray`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Collections.Text.GeneralizedSuffixArray.SuffixArray\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Maps the lexicographical order position i of a suffix to the starting position of the suffix in the text, which is the value of the i-th element of this array.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5292', 5292)" onmouseover="showTip(event, '5292', 5292)">
+                <p>
+                  <a id="WordIndices">
+                    <a href="#WordIndices">
+                      <code><span>this.WordIndices</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5292">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.WordIndices</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Collections.Text.GeneralizedSuffixArray.WordIndices`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Collections.Text.GeneralizedSuffixArray.WordIndices\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Maps the lexicographical order position i of a suffix to the index of the word, in which this suffix starts. This means, that for instance the value of the i-th
+            element contains the index of the word, in which the lexicographically i-th suffix that starts at position <a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray._suffixArray</a>
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5293', 5293)" onmouseover="showTip(event, '5293', 5293)">
+                <p>
+                  <a id="WordStartPositions">
+                    <a href="#WordStartPositions">
+                      <code><span>this.WordStartPositions</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5293">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.WordStartPositions</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Altaxo.Collections.Text.GeneralizedSuffixArray.WordStartPositions`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Altaxo.Collections.Text.GeneralizedSuffixArray.WordStartPositions\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Start positions of the words in which the original text was separated in the array <a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray._text</a>.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5294', 5294)" onmouseover="showTip(event, '5294', 5294)">
+                <p>
+                  <a id="FromSeparateWords">
+                    <a href="#FromSeparateWords">
+                      <code><span>GeneralizedSuffixArray.FromSeparateWords<span><span>(<span>words,&#32;useSortedMapping</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5294">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GeneralizedSuffixArray.FromSeparateWords<span><span>(<span>words,&#32;useSortedMapping</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        words
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;string&gt;</span></code>
+                       - 
+                      The list of 'words'.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        useSortedMapping
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      If this parameter is true, a sorted mapping of the elements T to integers will be used. The type T then has to implement IComparable. If this parameter is <code>false</code>, a unsorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a> will be used to make a unique mapping of the elements to integers.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray</a></code>
+                  </span>
+                  The generalized suffix array. Since each list in <span class="fsdocs-param-name">words</span> is treated as separate word, the generalized suffix array is prepared to search for the longest common substring in these words.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Collections.Text.GeneralizedSuffixArray.FromSeparateWords`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.Text.GeneralizedSuffixArray.FromSeparateWords\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Constructs the generalized suffix array from separate 'words'. Each list in the parameter <span class="fsdocs-param-name">words</span> is treated as 'word'. The elements are treated as characters. The elements are converted
+            to an integer alphabet by means of the <a href="/FsODE/reference/altaxo-collections-text-integertext.html">IntegerText</a> class.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  words
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;string&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of 'words'.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  useSortedMapping
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If this parameter is true, a sorted mapping of the elements T to integers will be used. The type T then has to implement IComparable. If this parameter is <code>false</code>, a unsorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a> will be used to make a unique mapping of the elements to integers.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The generalized suffix array. Since each list in <span class="fsdocs-param-name">words</span> is treated as separate word, the generalized suffix array is prepared to search for the longest common substring in these words.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5295', 5295)" onmouseover="showTip(event, '5295', 5295)">
+                <p>
+                  <a id="FromSeparateWords">
+                    <a href="#FromSeparateWords">
+                      <code><span>GeneralizedSuffixArray.FromSeparateWords<span><span>(<span>words,&#32;useSortedMapping</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5295">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GeneralizedSuffixArray.FromSeparateWords<span><span>(<span>words,&#32;useSortedMapping</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        words
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span>&gt;</span></code>
+                       - 
+                      The list of 'words'.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        useSortedMapping
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      If this parameter is true, a sorted mapping of the elements T to integers will be used. The type T then has to implement IComparable. If this parameter is <code>false</code>, a unsorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a> will be used to make a unique mapping of the elements to integers.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray</a></code>
+                  </span>
+                  The generalized suffix array. Since each list in <span class="fsdocs-param-name">words</span> is treated as separate word, the generalized suffix array is prepared to search for the longest common substring in these words.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.Text.GeneralizedSuffixArray.FromSeparateWords``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.Text.GeneralizedSuffixArray.FromSeparateWords``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Constructs the generalized suffix array from separate 'words'. Each list in the parameter <span class="fsdocs-param-name">words</span> is treated as 'word'. The elements are treated as characters. The elements are converted
+            to an integer alphabet by means of the <a href="/FsODE/reference/altaxo-collections-text-integertext.html">IntegerText</a> class.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  words
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of 'words'.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  useSortedMapping
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If this parameter is true, a sorted mapping of the elements T to integers will be used. The type T then has to implement IComparable. If this parameter is <code>false</code>, a unsorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a> will be used to make a unique mapping of the elements to integers.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The generalized suffix array. Since each list in <span class="fsdocs-param-name">words</span> is treated as separate word, the generalized suffix array is prepared to search for the longest common substring in these words.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5296', 5296)" onmouseover="showTip(event, '5296', 5296)">
+                <p>
+                  <a id="FromWords">
+                    <a href="#FromWords">
+                      <code><span>GeneralizedSuffixArray.FromWords<span><span>(<span>words,&#32;withSeparators,&#32;useSortedMapping,&#32;customSortingComparer</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5296">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GeneralizedSuffixArray.FromWords<span><span>(<span>words,&#32;withSeparators,&#32;useSortedMapping,&#32;customSortingComparer</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        words
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;string&gt;</span></code>
+                       - 
+                      The list of 'words'.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        withSeparators
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      If set to <code>true</code>, the words were treated as individual words, and will be separated by special separator elements. If set to <code>false</code>, the converted text will contain the concenated 'words' without separator elements. If set to <code>false</code>, they will be concenated to form one single word.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        useSortedMapping
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      If this parameter is true, a sorted mapping of the elements T to integers will be used. The type T then has to implement IComparable. If this parameter is <code>false</code>, a unsorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a> will be used to make a unique mapping of the elements to integers.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        customSortingComparer
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;char&gt;</span></code>
+                       - 
+                      If <span class="fsdocs-param-name">useSortedMapping</span> is <code>true</code>, you can here provide a custom comparer for the elements of type T. Otherwise, if you want to use the default comparer, leave this parameter <code>null</code>.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray</a></code>
+                  </span>
+                  The generalized suffix array. Since each list in <span class="fsdocs-param-name">words</span> is treated as separate word, the generalized suffix array is prepared to search for the longest common substring in these words.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Collections.Text.GeneralizedSuffixArray.FromWords`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.Text.GeneralizedSuffixArray.FromWords\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Constructs the generalized suffix array from separate 'words'. Each list in the parameter <span class="fsdocs-param-name">words</span> is treated as 'word'. The elements are treated as characters. The elements are converted
+            to an integer alphabet by means of the <a href="/FsODE/reference/altaxo-collections-text-integertext.html">IntegerText</a> class.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  words
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;string&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of 'words'.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  withSeparators
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If set to <code>true</code>, the words were treated as individual words, and will be separated by special separator elements. If set to <code>false</code>, the converted text will contain the concenated 'words' without separator elements. If set to <code>false</code>, they will be concenated to form one single word.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  useSortedMapping
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If this parameter is true, a sorted mapping of the elements T to integers will be used. The type T then has to implement IComparable. If this parameter is <code>false</code>, a unsorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a> will be used to make a unique mapping of the elements to integers.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  customSortingComparer
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;char&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If <span class="fsdocs-param-name">useSortedMapping</span> is <code>true</code>, you can here provide a custom comparer for the elements of type T. Otherwise, if you want to use the default comparer, leave this parameter <code>null</code>.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The generalized suffix array. Since each list in <span class="fsdocs-param-name">words</span> is treated as separate word, the generalized suffix array is prepared to search for the longest common substring in these words.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5297', 5297)" onmouseover="showTip(event, '5297', 5297)">
+                <p>
+                  <a id="FromWords">
+                    <a href="#FromWords">
+                      <code><span>GeneralizedSuffixArray.FromWords<span><span>(<span>words,&#32;withSeparators,&#32;useSortedMapping,&#32;customSortingComparer</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5297">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>GeneralizedSuffixArray.FromWords<span><span>(<span>words,&#32;withSeparators,&#32;useSortedMapping,&#32;customSortingComparer</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        words
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span>&gt;</span></code>
+                       - 
+                      The list of 'words'.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        withSeparators
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      If set to <code>true</code>, the words were treated as individual words, and will be separated by special separator elements. If set to <code>false</code>, the converted text will contain the concenated 'words' without separator elements. If set to <code>false</code>, they will be concenated to form one single word.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        useSortedMapping
+                      </b>
+                      :
+                      <code>bool</code>
+                       - 
+                      If this parameter is true, a sorted mapping of the elements T to integers will be used. The type T then has to implement IComparable. If this parameter is <code>false</code>, a unsorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a> will be used to make a unique mapping of the elements to integers.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        customSortingComparer
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;'T&gt;</span></code>
+                       - 
+                      If <span class="fsdocs-param-name">useSortedMapping</span> is <code>true</code>, you can here provide a custom comparer for the elements of type T. Otherwise, if you want to use the default comparer, leave this parameter <code>null</code>.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray</a></code>
+                  </span>
+                  The generalized suffix array. Since each list in <span class="fsdocs-param-name">words</span> is treated as separate word, the generalized suffix array is prepared to search for the longest common substring in these words.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.Text.GeneralizedSuffixArray.FromWords``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.Text.GeneralizedSuffixArray.FromWords``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                Constructs the generalized suffix array from separate 'words'. Each list in the parameter <span class="fsdocs-param-name">words</span> is treated as 'word'. The elements are treated as characters. The elements are converted
+            to an integer alphabet by means of the <a href="/FsODE/reference/altaxo-collections-text-integertext.html">IntegerText</a> class.
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  words
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The list of 'words'.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  withSeparators
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If set to <code>true</code>, the words were treated as individual words, and will be separated by special separator elements. If set to <code>false</code>, the converted text will contain the concenated 'words' without separator elements. If set to <code>false</code>, they will be concenated to form one single word.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  useSortedMapping
+                </span>
+                :
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If this parameter is true, a sorted mapping of the elements T to integers will be used. The type T then has to implement IComparable. If this parameter is <code>false</code>, a unsorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a> will be used to make a unique mapping of the elements to integers.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  customSortingComparer
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If <span class="fsdocs-param-name">useSortedMapping</span> is <code>true</code>, you can here provide a custom comparer for the elements of type T. Otherwise, if you want to use the default comparer, leave this parameter <code>null</code>.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-collections-text-generalizedsuffixarray.html">GeneralizedSuffixArray</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The generalized suffix array. Since each list in <span class="fsdocs-param-name">words</span> is treated as separate word, the generalized suffix array is prepared to search for the longest common substring in these words.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

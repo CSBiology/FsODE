@@ -1,0 +1,3887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TreeNodeExtensions (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    TreeNodeExtensions Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-collections.html">
+        Altaxo.Collections
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            Implements algorithms common for all trees.
+            
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5236', 5236)" onmouseover="showTip(event, '5236', 5236)">
+                <p>
+                  <a id="AnyBetweenHereAndLeaves">
+                    <a href="#AnyBetweenHereAndLeaves">
+                      <code><span>TreeNodeExtensions.AnyBetweenHereAndLeaves<span><span>(<span>node,&#32;condition</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5236">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.AnyBetweenHereAndLeaves<span><span>(<span>node,&#32;condition</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        condition
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'T,&#32;bool</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'T</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.AnyBetweenHereAndLeaves``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.AnyBetweenHereAndLeaves``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  condition
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'T,&#32;bool</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5237', 5237)" onmouseover="showTip(event, '5237', 5237)">
+                <p>
+                  <a id="AnyBetweenLeavesAndHere">
+                    <a href="#AnyBetweenLeavesAndHere">
+                      <code><span>TreeNodeExtensions.AnyBetweenLeavesAndHere<span><span>(<span>node,&#32;condition</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5237">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.AnyBetweenLeavesAndHere<span><span>(<span>node,&#32;condition</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        condition
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'T,&#32;bool</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'T</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.AnyBetweenLeavesAndHere``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.AnyBetweenLeavesAndHere``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  condition
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'T,&#32;bool</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5238', 5238)" onmouseover="showTip(event, '5238', 5238)">
+                <p>
+                  <a id="AreAllNodesFromSameLevel">
+                    <a href="#AreAllNodesFromSameLevel">
+                      <code><span>TreeNodeExtensions.AreAllNodesFromSameLevel<span><span>(<span>selNodes</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5238">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.AreAllNodesFromSameLevel<span><span>(<span>selNodes</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        selNodes
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+                       - 
+                      Enumeration of nodes
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <code>True</code> if all nodes have the same level; otherwise <code>false</code>. <code>False</code> is also returned if the provided enumeration was empty.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.AreAllNodesFromSameLevel``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.AreAllNodesFromSameLevel``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Determines whether all nodes in the provided enumeration have the same level (see <a href="/FsODE/reference/altaxo-collections-treenodeextensions.html#Level">TreeNodeExtensions.Level</a> for an explanation of level).
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  selNodes
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Enumeration of nodes
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  <code>True</code> if all nodes have the same level; otherwise <code>false</code>. <code>False</code> is also returned if the provided enumeration was empty.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5239', 5239)" onmouseover="showTip(event, '5239', 5239)">
+                <p>
+                  <a id="ElementAt">
+                    <a href="#ElementAt">
+                      <code><span>TreeNodeExtensions.ElementAt<span><span>(<span>rootNode,&#32;index</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5239">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.ElementAt<span><span>(<span>rootNode,&#32;index</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        rootNode
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The root node of the tree.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        index
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+                       - 
+                      The index array. The member at index 0 must always be 0, since this indicates the provided root node. Examples: {0} designates the root node; {0, 1} designates the 2nd child of the root node; {0,1,0} designates the first child of the second child of the root node.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'T</code>
+                  </span>
+                  The node that is designated by the provided index.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.ElementAt``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.ElementAt``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets a node inside a tree by using an index array.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rootNode
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The root node of the tree.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  index
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index array. The member at index 0 must always be 0, since this indicates the provided root node. Examples: {0} designates the root node; {0, 1} designates the 2nd child of the root node; {0,1,0} designates the first child of the second child of the root node.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The node that is designated by the provided index.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  rootNode
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">
+                    ArgumentOutOfRangeException
+                  </a>
+                </td>
+                <td>
+                  
+            Index list is null or empty; or index[0] is not 0; or index is otherwise invalid.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5240', 5240)" onmouseover="showTip(event, '5240', 5240)">
+                <p>
+                  <a id="EnsureValidityOfNodeIndex">
+                    <a href="#EnsureValidityOfNodeIndex">
+                      <code><span>TreeNodeExtensions.EnsureValidityOfNodeIndex<span><span>(<span>rootNode,&#32;index</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5240">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.EnsureValidityOfNodeIndex<span><span>(<span>rootNode,&#32;index</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        rootNode
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The root node of the tree.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        index
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span></code>
+                       - 
+                      The index list. On return, it is ensured that this index list designates a valid index of a node inside the tree.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <code>True</code> if the index list was changed to ensure validity, <code>False</code> if it was not neccessary to change the index list.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.EnsureValidityOfNodeIndex``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.EnsureValidityOfNodeIndex``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Ensures that a list of indices that point to a node in a tree is valid.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rootNode
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The root node of the tree.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  index
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index list. On return, it is ensured that this index list designates a valid index of a node inside the tree.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  <code>True</code> if the index list was changed to ensure validity, <code>False</code> if it was not neccessary to change the index list.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5241', 5241)" onmouseover="showTip(event, '5241', 5241)">
+                <p>
+                  <a id="FirstAncestorImplementing">
+                    <a href="#FirstAncestorImplementing">
+                      <code><span>TreeNodeExtensions.FirstAncestorImplementing<span><span>(<span>node</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5241">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.FirstAncestorImplementing<span><span>(<span>node</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node. The first node being considered is the parent node of this node.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'M</code>
+                  </span>
+                  
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.FirstAncestorImplementing``2```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.FirstAncestorImplementing``2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns the firsts ancestor of this node that has the type M.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node. The first node being considered is the parent node of this node.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>'M</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5242', 5242)" onmouseover="showTip(event, '5242', 5242)">
+                <p>
+                  <a id="FixAndTestParentChildRelations">
+                    <a href="#FixAndTestParentChildRelations">
+                      <code><span>TreeNodeExtensions.FixAndTestParentChildRelations<span><span>(<span>node,&#32;Set1stArgParentNodeTo2ndArg</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5242">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.FixAndTestParentChildRelations<span><span>(<span>node,&#32;Set1stArgParentNodeTo2ndArg</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node where the test starts (normally the root node of the tree).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        Set1stArgParentNodeTo2ndArg
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'T,&#32;'T</span>&gt;</span></code>
+                       - 
+                      Action to set the Parent node property of a node given as the 1st argument to a node given as 2nd argument.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  True if something changed (i.e. the parent-child relationship was broken), false otherwise.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.FixAndTestParentChildRelations``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.FixAndTestParentChildRelations``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Fixes the and test the parent-child relationship in a tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node where the test starts (normally the root node of the tree).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Set1stArgParentNodeTo2ndArg
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'T,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Action to set the Parent node property of a node given as the 1st argument to a node given as 2nd argument.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  True if something changed (i.e. the parent-child relationship was broken), false otherwise.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  
+            node is null
+            or
+            Set1stArgParentNodeTo2ndArg is null.
+            
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5243', 5243)" onmouseover="showTip(event, '5243', 5243)">
+                <p>
+                  <a id="FromHereToLeavesDo">
+                    <a href="#FromHereToLeavesDo">
+                      <code><span>TreeNodeExtensions.FromHereToLeavesDo<span><span>(<span>node,&#32;action</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5243">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.FromHereToLeavesDo<span><span>(<span>node,&#32;action</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        action
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;'T&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.FromHereToLeavesDo``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.FromHereToLeavesDo``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  action
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5244', 5244)" onmouseover="showTip(event, '5244', 5244)">
+                <p>
+                  <a id="FromLeavesToHereDo">
+                    <a href="#FromLeavesToHereDo">
+                      <code><span>TreeNodeExtensions.FromLeavesToHereDo<span><span>(<span>node,&#32;action</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5244">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.FromLeavesToHereDo<span><span>(<span>node,&#32;action</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        action
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;'T&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.FromLeavesToHereDo``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.FromLeavesToHereDo``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  action
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5245', 5245)" onmouseover="showTip(event, '5245', 5245)">
+                <p>
+                  <a id="HaveSameParent">
+                    <a href="#HaveSameParent">
+                      <code><span>TreeNodeExtensions.HaveSameParent<span><span>(<span>nodes</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5245">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.HaveSameParent<span><span>(<span>nodes</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        nodes
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+                       - 
+                      The nodes.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  True if all nodes in the enumeration share the same parent. An exception is thrown if the enumeration is empty or contains empty elements.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.HaveSameParent``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.HaveSameParent``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Determines whether a couple of nodes share the same parent node.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  nodes
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The nodes.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  True if all nodes in the enumeration share the same parent. An exception is thrown if the enumeration is empty or contains empty elements.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5246', 5246)" onmouseover="showTip(event, '5246', 5246)">
+                <p>
+                  <a id="IndexOf">
+                    <a href="#IndexOf">
+                      <code><span>TreeNodeExtensions.IndexOf<span><span>(<span>node</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5246">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.IndexOf<span><span>(<span>node</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node for which the index is determined.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span></code>
+                  </span>
+                  Index of the node inside the tree.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.IndexOf``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.IndexOf``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the index of a given node inside a tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node for which the index is determined.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Index of the node inside the tree.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5247', 5247)" onmouseover="showTip(event, '5247', 5247)">
+                <p>
+                  <a id="IndexOf">
+                    <a href="#IndexOf">
+                      <code><span>TreeNodeExtensions.IndexOf<span><span>(<span>node,&#32;existingList</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5247">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.IndexOf<span><span>(<span>node,&#32;existingList</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node for which the index is determined.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        existingList
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span></code>
+                       - 
+                      List that can be used to hold the indices. If this parameter is null, a new List will be created.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span></code>
+                  </span>
+                  Index of the node inside the tree. If <span class="fsdocs-param-name">existingList</span> was not null, the  <span class="fsdocs-param-name">existingList</span> is returned. Otherwise, a new list is returned.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.IndexOf``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.IndexOf``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the index of a given node inside a tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node for which the index is determined.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  existingList
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  List that can be used to hold the indices. If this parameter is null, a new List will be created.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Index of the node inside the tree. If <span class="fsdocs-param-name">existingList</span> was not null, the  <span class="fsdocs-param-name">existingList</span> is returned. Otherwise, a new list is returned.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5248', 5248)" onmouseover="showTip(event, '5248', 5248)">
+                <p>
+                  <a id="Insert">
+                    <a href="#Insert">
+                      <code><span>TreeNodeExtensions.Insert<span><span>(<span>rootNode,&#32;index,&#32;nodeToInsert</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5248">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.Insert<span><span>(<span>rootNode,&#32;index,&#32;nodeToInsert</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        rootNode
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The root node of the tree.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        index
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+                       - 
+                      The index inside the tree where the node should be inserted.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        nodeToInsert
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node to insert.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.Insert``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.Insert``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Inserts the specified node at a certain index in the tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rootNode
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The root node of the tree.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  index
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index inside the tree where the node should be inserted.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  nodeToInsert
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node to insert.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5249', 5249)" onmouseover="showTip(event, '5249', 5249)">
+                <p>
+                  <a id="InsertAfter">
+                    <a href="#InsertAfter">
+                      <code><span>TreeNodeExtensions.InsertAfter<span><span>(<span>rootNode,&#32;index,&#32;nodeToInsert</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5249">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.InsertAfter<span><span>(<span>rootNode,&#32;index,&#32;nodeToInsert</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        rootNode
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The root node of the tree.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        index
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+                       - 
+                      The index inside the tree after which the node should be inserted.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        nodeToInsert
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node to insert.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.InsertAfter``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.InsertAfter``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Inserts the specified node after a certain index in the tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rootNode
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The root node of the tree.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  index
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index inside the tree after which the node should be inserted.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  nodeToInsert
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node to insert.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5250', 5250)" onmouseover="showTip(event, '5250', 5250)">
+                <p>
+                  <a id="InsertLast">
+                    <a href="#InsertLast">
+                      <code><span>TreeNodeExtensions.InsertLast<span><span>(<span>rootNode,&#32;index,&#32;nodeToInsert</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5250">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.InsertLast<span><span>(<span>rootNode,&#32;index,&#32;nodeToInsert</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        rootNode
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The root node of the tree.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        index
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+                       - 
+                      The index inside the tree that points to a node. The <span class="fsdocs-param-name">nodeToInsert</span> is inserted at the end of the same collection that this node belongs to.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        nodeToInsert
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node to insert.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.InsertLast``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.InsertLast``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Inserts the specified node after all other siblings of the node at a certain index in the tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rootNode
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The root node of the tree.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  index
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index inside the tree that points to a node. The <span class="fsdocs-param-name">nodeToInsert</span> is inserted at the end of the same collection that this node belongs to.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  nodeToInsert
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node to insert.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5251', 5251)" onmouseover="showTip(event, '5251', 5251)">
+                <p>
+                  <a id="IsStructuralEquivalentTo">
+                    <a href="#IsStructuralEquivalentTo">
+                      <code><span>TreeNodeExtensions.IsStructuralEquivalentTo<span><span>(<span>tree1,&#32;tree2,&#32;AreNodesEquivalent</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5251">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.IsStructuralEquivalentTo<span><span>(<span>tree1,&#32;tree2,&#32;AreNodesEquivalent</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        tree1
+                      </b>
+                      :
+                      <code>'T</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tree2
+                      </b>
+                      :
+                      <code>'M</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        AreNodesEquivalent
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'T,&#32;'M,&#32;bool</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.IsStructuralEquivalentTo``2```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.IsStructuralEquivalentTo``2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tree1
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tree2
+                </span>
+                :
+                <code>'M</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  AreNodesEquivalent
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'T,&#32;'M,&#32;bool</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5252', 5252)" onmouseover="showTip(event, '5252', 5252)">
+                <p>
+                  <a id="IsValidIndex">
+                    <a href="#IsValidIndex">
+                      <code><span>TreeNodeExtensions.IsValidIndex<span><span>(<span>rootNode,&#32;index</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5252">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.IsValidIndex<span><span>(<span>rootNode,&#32;index</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        rootNode
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The root node of the tree.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        index
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+                       - 
+                      The index that points to a node inside the tree.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <code>true</code> if the given index is valid; otherwise, <code>false</code>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.IsValidIndex``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.IsValidIndex``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Determines whether the given <span class="fsdocs-param-name">index</span> is valid or not.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rootNode
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The root node of the tree.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  index
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index that points to a node inside the tree.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  <code>true</code> if the given index is valid; otherwise, <code>false</code>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5253', 5253)" onmouseover="showTip(event, '5253', 5253)">
+                <p>
+                  <a id="IsValidIndex">
+                    <a href="#IsValidIndex">
+                      <code><span>TreeNodeExtensions.IsValidIndex<span><span>(<span>rootNode,&#32;index,&#32;nodeAtIndex</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5253">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.IsValidIndex<span><span>(<span>rootNode,&#32;index,&#32;nodeAtIndex</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        rootNode
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The root node of the tree.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        index
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+                       - 
+                      The index that points to a node inside the tree.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        nodeAtIndex
+                      </b>
+                      :
+                      <code><span>byref&lt;'T&gt;</span></code>
+                       - 
+                      If the return value was true, this parameter contains the node at the given index.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <code>true</code> if the given index is valid; otherwise, <code>false</code>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.IsValidIndex``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.IsValidIndex``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Determines whether the given <span class="fsdocs-param-name">index</span> is valid or not.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rootNode
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The root node of the tree.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  index
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The index that points to a node inside the tree.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  nodeAtIndex
+                </span>
+                :
+                <code><span>byref&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If the return value was true, this parameter contains the node at the given index.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  <code>true</code> if the given index is valid; otherwise, <code>false</code>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5254', 5254)" onmouseover="showTip(event, '5254', 5254)">
+                <p>
+                  <a id="Level">
+                    <a href="#Level">
+                      <code><span>TreeNodeExtensions.Level<span><span>(<span>node</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5254">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.Level<span><span>(<span>node</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node for which the level is returned.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  The node's level.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.Level``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.Level``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Determines the level of the specified node. The root node (= node that has no parent) will return a level of 0, the child nodes of the root node a level of 1 and so on.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node for which the level is returned.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The node's level.
+                </p>
+              </dd>
+            </dl>
+            <table class="fsdocs-exception-list">
+              <tr>
+                <td>
+                  <a href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">
+                    ArgumentNullException
+                  </a>
+                </td>
+                <td>
+                  node is null.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5255', 5255)" onmouseover="showTip(event, '5255', 5255)">
+                <p>
+                  <a id="MoveNodesUpDown">
+                    <a href="#MoveNodesUpDown">
+                      <code><span>TreeNodeExtensions.MoveNodesUpDown<span><span>(<span>indexDelta,&#32;nodesToMove</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5255">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.MoveNodesUpDown<span><span>(<span>indexDelta,&#32;nodesToMove</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        indexDelta
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of movement steps. Value less than zero will move up the nodes in the tree, values greater null will move down the nodes in the tree.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        nodesToMove
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+                       - 
+                      Nodes to move.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  The number of indices the nodes were moved (either a positive number if the nodes where moved to higher indices, or negative if the nodes were moved to lower indices).
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.MoveNodesUpDown``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.MoveNodesUpDown``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            This procedure will move nodes some indices up or down. All nodes to move should have the same parent.
+            
+              </p>
+            </div>
+            <p class="fsdocs-remarks">
+              The following assumptions must be fullfilled:
+            <p class='fsdocs-para'>The nodes have to have the same parent, otherwise an exception is thrown.</p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  indexDelta
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of movement steps. Value less than zero will move up the nodes in the tree, values greater null will move down the nodes in the tree.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  nodesToMove
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Nodes to move.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The number of indices the nodes were moved (either a positive number if the nodes where moved to higher indices, or negative if the nodes were moved to lower indices).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5256', 5256)" onmouseover="showTip(event, '5256', 5256)">
+                <p>
+                  <a id="NodesOfSameHighestLevel">
+                    <a href="#NodesOfSameHighestLevel">
+                      <code><span>TreeNodeExtensions.NodesOfSameHighestLevel<span><span>(<span>nodes</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5256">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.NodesOfSameHighestLevel<span><span>(<span>nodes</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        nodes
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+                       - 
+                      Nodes to filter.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;'T&gt;</span></code>
+                  </span>
+                  Only those nodes wich have the same highest level number among all the provided nodes.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.NodesOfSameHighestLevel``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.NodesOfSameHighestLevel``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Returns only the nodes with the highest hierarchy level among all the provided nodes (i.e. the nodes most close to the leaf nodes of the true).
+            First, the <span class="fsdocs-param-name">nodes</span> collection is iterated through to determine the highest node level. Then only those nodes with the hightest node level are returned.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  nodes
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Nodes to filter.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Only those nodes wich have the same highest level number among all the provided nodes.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5257', 5257)" onmouseover="showTip(event, '5257', 5257)">
+                <p>
+                  <a id="ProjectTreeToNewTree">
+                    <a href="#ProjectTreeToNewTree">
+                      <code><span>TreeNodeExtensions.ProjectTreeToNewTree<span><span>(<span>sourceRoot,&#32;createDestinationNodeFromSourceNode,&#32;addChildToDestinationNode</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5257">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.ProjectTreeToNewTree<span><span>(<span>sourceRoot,&#32;createDestinationNodeFromSourceNode,&#32;addChildToDestinationNode</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        sourceRoot
+                      </b>
+                      :
+                      <code>'S</code>
+                       - 
+                      The source root tree node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        createDestinationNodeFromSourceNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+                       - 
+                      Function used to create a destination node from a source node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        addChildToDestinationNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+                       - 
+                      Procedure to add a child node to a destination node (first argument is the parent node, 2nd argument is the child node).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'D</code>
+                  </span>
+                  The root node of the newly created destination tree that reflects the structure of the source tree.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToNewTree``2```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToNewTree``2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Projects a tree (source tree) to a new tree (destination tree).
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sourceRoot
+                </span>
+                :
+                <code>'S</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The source root tree node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  createDestinationNodeFromSourceNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function used to create a destination node from a source node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  addChildToDestinationNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Procedure to add a child node to a destination node (first argument is the parent node, 2nd argument is the child node).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>'D</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The root node of the newly created destination tree that reflects the structure of the source tree.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5258', 5258)" onmouseover="showTip(event, '5258', 5258)">
+                <p>
+                  <a id="ProjectTreeToNewTree">
+                    <a href="#ProjectTreeToNewTree">
+                      <code><span>TreeNodeExtensions.ProjectTreeToNewTree<span><span>(<span>sourceRoot,&#32;indices,&#32;createDestinationNodeFromSourceNode,&#32;addChildToDestinationNode</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5258">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.ProjectTreeToNewTree<span><span>(<span>sourceRoot,&#32;indices,&#32;createDestinationNodeFromSourceNode,&#32;addChildToDestinationNode</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        sourceRoot
+                      </b>
+                      :
+                      <code>'S</code>
+                       - 
+                      The source root tree node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        indices
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span></code>
+                       - 
+                      List of indices that describes the destination root node. If this parameter is null, an internal list will be created, and the destination root node will get the index 0.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        createDestinationNodeFromSourceNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'S,&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span>,&#32;'D</span>&gt;</span></code>
+                       - 
+                      Function used to create a destination node from a source node. First parameter is the source node, 2nd parameter is a list of indices that describe the destination node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        addChildToDestinationNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+                       - 
+                      Procedure to add a child node to a destination node (first argument is the parent node, 2nd argument is the child node).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'D</code>
+                  </span>
+                  The root node of the newly created destination tree that reflects the structure of the source tree.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToNewTree``2```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToNewTree``2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Projects a tree (source tree) to a new tree (destination tree). The creation function for the new tree nodes gets information about the node indices.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sourceRoot
+                </span>
+                :
+                <code>'S</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The source root tree node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  indices
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  List of indices that describes the destination root node. If this parameter is null, an internal list will be created, and the destination root node will get the index 0.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  createDestinationNodeFromSourceNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span>'S,&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;int&gt;</span>,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function used to create a destination node from a source node. First parameter is the source node, 2nd parameter is a list of indices that describe the destination node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  addChildToDestinationNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Procedure to add a child node to a destination node (first argument is the parent node, 2nd argument is the child node).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>'D</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The root node of the newly created destination tree that reflects the structure of the source tree.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5259', 5259)" onmouseover="showTip(event, '5259', 5259)">
+                <p>
+                  <a id="ProjectTreeToTree">
+                    <a href="#ProjectTreeToTree">
+                      <code><span>TreeNodeExtensions.ProjectTreeToTree<span><span>(<span>sourceRoot,&#32;destRoot,&#32;updateDestinationNodeFromSourceNode</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5259">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.ProjectTreeToTree<span><span>(<span>sourceRoot,&#32;destRoot,&#32;updateDestinationNodeFromSourceNode</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        sourceRoot
+                      </b>
+                      :
+                      <code>'S</code>
+                       - 
+                      The source root node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destRoot
+                      </b>
+                      :
+                      <code>'D</code>
+                       - 
+                      The destination root node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        updateDestinationNodeFromSourceNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+                       - 
+                      An action that takes a source node and a destination node and updates the destination node according to the contents of the source node.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToTree``2```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToTree``2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Projects a source tree onto a destination tree.
+            Nodes are updated, added, or deleted in the destination tree to match the source tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sourceRoot
+                </span>
+                :
+                <code>'S</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The source root node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destRoot
+                </span>
+                :
+                <code>'D</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The destination root node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  updateDestinationNodeFromSourceNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  An action that takes a source node and a destination node and updates the destination node according to the contents of the source node.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5260', 5260)" onmouseover="showTip(event, '5260', 5260)">
+                <p>
+                  <a id="ProjectTreeToTree">
+                    <a href="#ProjectTreeToTree">
+                      <code><span>TreeNodeExtensions.ProjectTreeToTree<span><span>(<span>sourceRoot,&#32;destRoot,&#32;updateDestinationNodeFromSourceNode,&#32;createDestinationNode</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5260">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.ProjectTreeToTree<span><span>(<span>sourceRoot,&#32;destRoot,&#32;updateDestinationNodeFromSourceNode,&#32;createDestinationNode</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        sourceRoot
+                      </b>
+                      :
+                      <code>'S</code>
+                       - 
+                      The source root node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destRoot
+                      </b>
+                      :
+                      <code>'D</code>
+                       - 
+                      The destination root node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        updateDestinationNodeFromSourceNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+                       - 
+                      An action that takes a source node and a destination node and updates the destination node according to the contents of the source node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        createDestinationNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+                       - 
+                      A function that takes a parent destination node as argument and creates a new destination node as a child of that parent. The return value is the newly created node.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToTree``2```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToTree``2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Projects a source tree onto a destination tree.
+            Nodes are updated, added, or deleted in the destination tree to match the source tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sourceRoot
+                </span>
+                :
+                <code>'S</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The source root node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destRoot
+                </span>
+                :
+                <code>'D</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The destination root node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  updateDestinationNodeFromSourceNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  An action that takes a source node and a destination node and updates the destination node according to the contents of the source node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  createDestinationNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A function that takes a parent destination node as argument and creates a new destination node as a child of that parent. The return value is the newly created node.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5261', 5261)" onmouseover="showTip(event, '5261', 5261)">
+                <p>
+                  <a id="ProjectTreeToTree">
+                    <a href="#ProjectTreeToTree">
+                      <code><span>TreeNodeExtensions.ProjectTreeToTree<span><span>(<span>sourceRoot,&#32;destRoot,&#32;updateDestinationNodeFromSourceNode,&#32;createDestinationNode,&#32;deleteDestinationNode</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5261">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.ProjectTreeToTree<span><span>(<span>sourceRoot,&#32;destRoot,&#32;updateDestinationNodeFromSourceNode,&#32;createDestinationNode,&#32;deleteDestinationNode</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        sourceRoot
+                      </b>
+                      :
+                      <code>'S</code>
+                       - 
+                      The source root node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destRoot
+                      </b>
+                      :
+                      <code>'D</code>
+                       - 
+                      The destination root node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        updateDestinationNodeFromSourceNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+                       - 
+                      An action that takes a source node and a destination node and updates the destination node according to the contents of the source node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        createDestinationNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+                       - 
+                      A function that takes a parent destination node as argument and creates a new destination node as a child of that parent. The return value is the newly created node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        deleteDestinationNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<span>'D,&#32;'D,&#32;int</span>&gt;</span></code>
+                       - 
+                      An action that deletes a destination node. First argument is the parent node, the second argument is the destination node to delete, 3rd argument is the index of the child node (as obtained from the order of the child node enumeration).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToTree``2```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToTree``2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Projects a source tree onto a destination tree.
+            Nodes are updated, added, or deleted in the destination tree to match the source tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sourceRoot
+                </span>
+                :
+                <code>'S</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The source root node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destRoot
+                </span>
+                :
+                <code>'D</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The destination root node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  updateDestinationNodeFromSourceNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  An action that takes a source node and a destination node and updates the destination node according to the contents of the source node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  createDestinationNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A function that takes a parent destination node as argument and creates a new destination node as a child of that parent. The return value is the newly created node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  deleteDestinationNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<span>'D,&#32;'D,&#32;int</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  An action that deletes a destination node. First argument is the parent node, the second argument is the destination node to delete, 3rd argument is the index of the child node (as obtained from the order of the child node enumeration).
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5262', 5262)" onmouseover="showTip(event, '5262', 5262)">
+                <p>
+                  <a id="ProjectTreeToTree">
+                    <a href="#ProjectTreeToTree">
+                      <code><span>TreeNodeExtensions.ProjectTreeToTree<span><span>(<span>sourceRoot,&#32;destRoot,&#32;updateDestinationNodeFromSourceNode,&#32;createDestinationNode,&#32;deleteDestinationNode,&#32;destNodesToDelete</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5262">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.ProjectTreeToTree<span><span>(<span>sourceRoot,&#32;destRoot,&#32;updateDestinationNodeFromSourceNode,&#32;createDestinationNode,&#32;deleteDestinationNode,&#32;destNodesToDelete</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        sourceRoot
+                      </b>
+                      :
+                      <code>'S</code>
+                       - 
+                      The source root node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destRoot
+                      </b>
+                      :
+                      <code>'D</code>
+                       - 
+                      The destination root node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        updateDestinationNodeFromSourceNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+                       - 
+                      An action that takes a source node and a destination node and updates the destination node according to the contents of the source node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        createDestinationNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+                       - 
+                      A function that takes a parent destination node as argument and creates a new destination node as a child of that parent. The return value is the newly created node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        deleteDestinationNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<span>'D,&#32;'D,&#32;int</span>&gt;</span></code>
+                       - 
+                      An action that deletes a destination node. First argument is the parent node, the second argument is the destination node to delete, 3rd argument is the index of the child node (as obtained from the order of the child node enumeration).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destNodesToDelete
+                      </b>
+                      :
+                      <code><span>byref&lt;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span>'D&#32;*&#32;'D&#32;*&#32;int</span>&gt;</span>&gt;</span></code>
+                       - 
+                      A helper collection to collect destination nodes that have to be deleted.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToTree``2```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToTree``2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Projects a source tree onto a destination tree.
+            Nodes are updated, added, or deleted in the destination tree to match the source tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sourceRoot
+                </span>
+                :
+                <code>'S</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The source root node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destRoot
+                </span>
+                :
+                <code>'D</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The destination root node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  updateDestinationNodeFromSourceNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  An action that takes a source node and a destination node and updates the destination node according to the contents of the source node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  createDestinationNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A function that takes a parent destination node as argument and creates a new destination node as a child of that parent. The return value is the newly created node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  deleteDestinationNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<span>'D,&#32;'D,&#32;int</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  An action that deletes a destination node. First argument is the parent node, the second argument is the destination node to delete, 3rd argument is the index of the child node (as obtained from the order of the child node enumeration).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destNodesToDelete
+                </span>
+                :
+                <code><span>byref&lt;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span>'D&#32;*&#32;'D&#32;*&#32;int</span>&gt;</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A helper collection to collect destination nodes that have to be deleted.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5263', 5263)" onmouseover="showTip(event, '5263', 5263)">
+                <p>
+                  <a id="ProjectTreeToTree">
+                    <a href="#ProjectTreeToTree">
+                      <code><span>TreeNodeExtensions.ProjectTreeToTree<span><span>(<span>sourceRootNode,&#32;destinationRootNode,&#32;getSourceChildEnumerator,&#32;getDestinationChildEnumerator,&#32;updateDestinationNodeFromSourceNode,&#32;createDestinationNode,&#32;deleteDestinationNode,&#32;destinationNodesToDelete</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5263">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.ProjectTreeToTree<span><span>(<span>sourceRootNode,&#32;destinationRootNode,&#32;getSourceChildEnumerator,&#32;getDestinationChildEnumerator,&#32;updateDestinationNodeFromSourceNode,&#32;createDestinationNode,&#32;deleteDestinationNode,&#32;destinationNodesToDelete</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        sourceRootNode
+                      </b>
+                      :
+                      <code>'S</code>
+                       - 
+                      The source root node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destinationRootNode
+                      </b>
+                      :
+                      <code>'D</code>
+                       - 
+                      The destination root node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        getSourceChildEnumerator
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'S,&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;'S&gt;</span></span>&gt;</span></code>
+                       - 
+                      A function that takes a source node and returns an enumerator to enumerate the children of that node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        getDestinationChildEnumerator
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'D,&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;'D&gt;</span></span>&gt;</span></code>
+                       - 
+                      A function that takes a destination node and returns an enumerator to enumerate the children of that node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        updateDestinationNodeFromSourceNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+                       - 
+                      An action that takes a source node and a destination node and updates the destination node according to the contents of the source node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        createDestinationNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+                       - 
+                      A function that takes a parent destination node as argument and creates a new destination node as a child of that parent. The return value is the newly created node.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        deleteDestinationNode
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<span>'D,&#32;'D,&#32;int</span>&gt;</span></code>
+                       - 
+                      An action that deletes a destination node. First argument is the parent node, the second argument is the destination node to delete, 3rd argument is the index of the child node (as obtained from the order of the child node enumeration).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        destinationNodesToDelete
+                      </b>
+                      :
+                      <code><span>byref&lt;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span>'D&#32;*&#32;'D&#32;*&#32;int</span>&gt;</span>&gt;</span></code>
+                       - 
+                      A helper collection to collect destination nodes that have to be deleted. Initially, may be null.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToTree``2```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.ProjectTreeToTree``2\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Projects a source tree onto a destination tree.
+            Nodes are updated, added, or deleted in the destination tree to match the source tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  sourceRootNode
+                </span>
+                :
+                <code>'S</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The source root node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destinationRootNode
+                </span>
+                :
+                <code>'D</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The destination root node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  getSourceChildEnumerator
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'S,&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;'S&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A function that takes a source node and returns an enumerator to enumerate the children of that node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  getDestinationChildEnumerator
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'D,&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;'D&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A function that takes a destination node and returns an enumerator to enumerate the children of that node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  updateDestinationNodeFromSourceNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span>'S,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  An action that takes a source node and a destination node and updates the destination node according to the contents of the source node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  createDestinationNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'D,&#32;'D</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A function that takes a parent destination node as argument and creates a new destination node as a child of that parent. The return value is the newly created node.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  deleteDestinationNode
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<span>'D,&#32;'D,&#32;int</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  An action that deletes a destination node. First argument is the parent node, the second argument is the destination node to delete, 3rd argument is the index of the child node (as obtained from the order of the child node enumeration).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  destinationNodesToDelete
+                </span>
+                :
+                <code><span>byref&lt;<span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span>'D&#32;*&#32;'D&#32;*&#32;int</span>&gt;</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  A helper collection to collect destination nodes that have to be deleted. Initially, may be null.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5264', 5264)" onmouseover="showTip(event, '5264', 5264)">
+                <p>
+                  <a id="Remove">
+                    <a href="#Remove">
+                      <code><span>TreeNodeExtensions.Remove<span><span>(<span>node</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5264">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.Remove<span><span>(<span>node</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.Remove``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.Remove``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Frees this node, i.e. removes the node from it's parent collection.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5265', 5265)" onmouseover="showTip(event, '5265', 5265)">
+                <p>
+                  <a id="RootNode">
+                    <a href="#RootNode">
+                      <code><span>TreeNodeExtensions.RootNode<span><span>(<span>node</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5265">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.RootNode<span><span>(<span>node</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node to start with.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'T</code>
+                  </span>
+                  The root node of the tree to which the given node <span class="fsdocs-param-name">node</span> belongs.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.RootNode``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.RootNode``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Gets the root node of a tree to which the given node <span class="fsdocs-param-name">node</span> belongs.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node to start with.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The root node of the tree to which the given node <span class="fsdocs-param-name">node</span> belongs.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5266', 5266)" onmouseover="showTip(event, '5266', 5266)">
+                <p>
+                  <a id="TakeFromFirstLeavesToHere">
+                    <a href="#TakeFromFirstLeavesToHere">
+                      <code><span>TreeNodeExtensions.TakeFromFirstLeavesToHere<span><span>(<span>node</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5266">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.TakeFromFirstLeavesToHere<span><span>(<span>node</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node to start the enumeration with.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+                  </span>
+                  All tree nodes from the upmost leaf of the tree down to the provided node <span class="fsdocs-param-name">node</span>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.TakeFromFirstLeavesToHere``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.TakeFromFirstLeavesToHere``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Enumerates through all tree nodes from the upmost leaf of the tree down to the provided node <span class="fsdocs-param-name">node</span>. The provided node <span class="fsdocs-param-name">node</span> is included in the enumeration.
+            Attention: Since the order of the nodes must be reversed, this enumeration is only efficient for <a href="/FsODE/reference/altaxo-collections-itreelistnode-1.html">ITreeListNode</a> types.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node to start the enumeration with.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  All tree nodes from the upmost leaf of the tree down to the provided node <span class="fsdocs-param-name">node</span>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5267', 5267)" onmouseover="showTip(event, '5267', 5267)">
+                <p>
+                  <a id="TakeFromHereToFirstLeaves">
+                    <a href="#TakeFromHereToFirstLeaves">
+                      <code><span>TreeNodeExtensions.TakeFromHereToFirstLeaves<span><span>(<span>node</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5267">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.TakeFromHereToFirstLeaves<span><span>(<span>node</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node to start the enumeration with.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+                  </span>
+                  All tree nodes from <span class="fsdocs-param-name">node</span> up to the leaves of the tree.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.TakeFromHereToFirstLeaves``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.TakeFromHereToFirstLeaves``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Enumerates through all tree nodes from (and including) the provided node <span class="fsdocs-param-name">node</span> up to the leaves of the tree.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node to start the enumeration with.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  All tree nodes from <span class="fsdocs-param-name">node</span> up to the leaves of the tree.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5268', 5268)" onmouseover="showTip(event, '5268', 5268)">
+                <p>
+                  <a id="TakeFromHereToLastLeaves">
+                    <a href="#TakeFromHereToLastLeaves">
+                      <code><span>TreeNodeExtensions.TakeFromHereToLastLeaves<span><span>(<span>node</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5268">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.TakeFromHereToLastLeaves<span><span>(<span>node</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node to start the enumeration with.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+                  </span>
+                  All tree nodes from <span class="fsdocs-param-name">node</span> up to the leaves of the tree. The downmost leaves will be enumerated first.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.TakeFromHereToLastLeaves``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.TakeFromHereToLastLeaves``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Enumerates through all tree nodes from (and including) the provided node <span class="fsdocs-param-name">node</span> to the leaves of the tree. The downmost leaves will be enumerated first.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node to start the enumeration with.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  All tree nodes from <span class="fsdocs-param-name">node</span> up to the leaves of the tree. The downmost leaves will be enumerated first.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '5269', 5269)" onmouseover="showTip(event, '5269', 5269)">
+                <p>
+                  <a id="TakeFromLeavesToHere">
+                    <a href="#TakeFromLeavesToHere">
+                      <code><span>TreeNodeExtensions.TakeFromLeavesToHere<span><span>(<span>node</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="5269">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TreeNodeExtensions.TakeFromLeavesToHere<span><span>(<span>node</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        node
+                      </b>
+                      :
+                      <code>'T</code>
+                       - 
+                      The node to start the enumeration with.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+                  </span>
+                  All tree nodes from the downmost leaf of the tree down to the provided node <span class="fsdocs-param-name">node</span>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Altaxo.Collections.TreeNodeExtensions.TakeFromLeavesToHere``1```')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Collections.TreeNodeExtensions.TakeFromLeavesToHere``1\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Enumerates through all tree nodes from the downmost leaf of the tree down to the provided node <span class="fsdocs-param-name">node</span>. The provided node <span class="fsdocs-param-name">node</span> is included in the enumeration.
+            Attention: Since the order of the nodes must be reversed, this enumeration is only efficient for <a href="/FsODE/reference/altaxo-collections-itreelistnode-1.html">ITreeListNode</a> types.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  node
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The node to start the enumeration with.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  All tree nodes from the downmost leaf of the tree down to the provided node <span class="fsdocs-param-name">node</span>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>

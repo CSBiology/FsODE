@@ -1,0 +1,4128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JaggedArrayMath (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AltaxoCore.Redist">
+    <link rel="shortcut icon" type="image/x-icon" href="/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    JaggedArrayMath Type
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="/FsODE/reference/altaxo-calc-linearalgebra.html">
+        Altaxo.Calc.LinearAlgebra
+      </a>
+    </dt>
+    <dt>
+      Assembly: AltaxoCore.Redist.dll
+    </dt>
+    <dt>
+      Base Type: 
+      <code>obj</code>
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+            This provides array math for a special case of matrices, so called jagged arrays.
+            
+      </p>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2074', 2074)" onmouseover="showTip(event, '2074', 2074)">
+                <p>
+                  <a id="Add">
+                    <a href="#Add">
+                      <code><span>JaggedArrayMath.Add<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2074">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.Add<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First operand.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second operand.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result. Has to be of same dimensions than a and b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.Add`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.Add\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Calculates a+b and stores the result in matrix c.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First operand.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second operand.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result. Has to be of same dimensions than a and b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2075', 2075)" onmouseover="showTip(event, '2075', 2075)">
+                <p>
+                  <a id="AddRow">
+                    <a href="#AddRow">
+                      <code><span>JaggedArrayMath.AddRow<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;browToAdd,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2075">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.AddRow<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;browToAdd,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First operand.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second operand.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        browToAdd
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The row number of matrix b which should be added to all rows of matrix a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result. Has to be of same dimensions than a and b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.AddRow`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.AddRow\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Add the row <code>browToAdd</code> of matrix b to all rows of matrix a.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First operand.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second operand.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  browToAdd
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The row number of matrix b which should be added to all rows of matrix a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result. Has to be of same dimensions than a and b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2076', 2076)" onmouseover="showTip(event, '2076', 2076)">
+                <p>
+                  <a id="DivideRow">
+                    <a href="#DivideRow">
+                      <code><span>JaggedArrayMath.DivideRow<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;browForDivision,&#32;resultIfNull,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2076">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.DivideRow<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;browForDivision,&#32;resultIfNull,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First operand (minuend).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second operand (subtrahend).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        browForDivision
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The row number of matrix b which serves as denominator.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        resultIfNull
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      If the denominator is null, the result is set to this number.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result. Has to be of same dimensions than a. Must not be identical to b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.DivideRow`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.DivideRow\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Divides all rows of matrix a by the row <code>rowb</code> of matrix b (element by element).
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First operand (minuend).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second operand (subtrahend).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  browForDivision
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The row number of matrix b which serves as denominator.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  resultIfNull
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  If the denominator is null, the result is set to this number.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result. Has to be of same dimensions than a. Must not be identical to b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2077', 2077)" onmouseover="showTip(event, '2077', 2077)">
+                <p>
+                  <a id="GetMatrixArray">
+                    <a href="#GetMatrixArray">
+                      <code><span>JaggedArrayMath.GetMatrixArray<span><span>(<span>n,&#32;m</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2077">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.GetMatrixArray<span><span>(<span>n,&#32;m</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        n
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      First matrix dimension (rows).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        m
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Second matrix dimension( columns).
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>float[]</span>[]</span></code>
+                  </span>
+                  Array of dimensions n x m.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.GetMatrixArray`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.GetMatrixArray\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Allocates an array of n x m values.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  n
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First matrix dimension (rows).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  m
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second matrix dimension( columns).
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  Array of dimensions n x m.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2078', 2078)" onmouseover="showTip(event, '2078', 2078)">
+                <p>
+                  <a id="GetMatrixCopy">
+                    <a href="#GetMatrixCopy">
+                      <code><span>JaggedArrayMath.GetMatrixCopy<span><span>(<span>a</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2078">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.GetMatrixCopy<span><span>(<span>a</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                       - 
+                      The matrix to copy.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>float[]</span>[]</span></code>
+                  </span>
+                  New jagged array with the same element values than matrix a.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.GetMatrixCopy`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.GetMatrixCopy\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Allocates an array of the same dimensions than the provided matrix a, and copies the element of a to the new array.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix to copy.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  New jagged array with the same element values than matrix a.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2079', 2079)" onmouseover="showTip(event, '2079', 2079)">
+                <p>
+                  <a id="Multiply">
+                    <a href="#Multiply">
+                      <code><span>JaggedArrayMath.Multiply<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2079">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.Multiply<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result. Has to be of dimension (arows, bcols).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.Multiply`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.Multiply\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Multiplies matrix a with matrix b and stores the result in matrix c.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result. Has to be of dimension (arows, bcols).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2080', 2080)" onmouseover="showTip(event, '2080', 2080)">
+                <p>
+                  <a id="MultiplyFirstTransposed">
+                    <a href="#MultiplyFirstTransposed">
+                      <code><span>JaggedArrayMath.MultiplyFirstTransposed<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2080">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.MultiplyFirstTransposed<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result. Has to be of dimension (acols, bcols).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.MultiplyFirstTransposed`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.MultiplyFirstTransposed\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Multiplies matrix a_transposed with matrix b and stores the result in matrix c.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result. Has to be of dimension (acols, bcols).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2081', 2081)" onmouseover="showTip(event, '2081', 2081)">
+                <p>
+                  <a id="MultiplyFirstTransposedWithItself">
+                    <a href="#MultiplyFirstTransposedWithItself">
+                      <code><span>JaggedArrayMath.MultiplyFirstTransposedWithItself<span><span>(<span>a,&#32;arows,&#32;acols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2081">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.MultiplyFirstTransposedWithItself<span><span>(<span>a,&#32;arows,&#32;acols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First and second multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result. Has to be of dimension (acols, acols).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.MultiplyFirstTransposedWithItself`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.MultiplyFirstTransposedWithItself\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Multiplies matrix a_transposed with matrix a itself and stores the result in matrix c.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First and second multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result. Has to be of dimension (acols, acols).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2082', 2082)" onmouseover="showTip(event, '2082', 2082)">
+                <p>
+                  <a id="MultiplyRow">
+                    <a href="#MultiplyRow">
+                      <code><span>JaggedArrayMath.MultiplyRow<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;browToMultiply,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2082">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.MultiplyRow<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;browToMultiply,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        browToMultiply
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The row number of matrix b to multiply.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result. Has to be of same dimension than a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.MultiplyRow`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.MultiplyRow\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Multiplies the row <code>rowb</code> of matrix b element by element to all rows of matrix a.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  browToMultiply
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The row number of matrix b to multiply.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result. Has to be of same dimension than a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2083', 2083)" onmouseover="showTip(event, '2083', 2083)">
+                <p>
+                  <a id="MultiplyScalar">
+                    <a href="#MultiplyScalar">
+                      <code><span>JaggedArrayMath.MultiplyScalar<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2083">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.MultiplyScalar<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The first multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      The second multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The resulting matrix. Has to be of same dimensions than a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.MultiplyScalar`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.MultiplyScalar\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Multiplies the matrix a with a scalar value b and stores the result in c. Matrix a and c are allowed to be the same matrix.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The first multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The second multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The resulting matrix. Has to be of same dimensions than a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2084', 2084)" onmouseover="showTip(event, '2084', 2084)">
+                <p>
+                  <a id="MultiplySecondTransposed">
+                    <a href="#MultiplySecondTransposed">
+                      <code><span>JaggedArrayMath.MultiplySecondTransposed<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2084">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.MultiplySecondTransposed<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result. Has to be of dimension (arows, brows).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.MultiplySecondTransposed`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.MultiplySecondTransposed\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Multiplies matrix a with matrix b_transposed and stores the result in matrix c.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result. Has to be of dimension (arows, brows).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2085', 2085)" onmouseover="showTip(event, '2085', 2085)">
+                <p>
+                  <a id="Subtract">
+                    <a href="#Subtract">
+                      <code><span>JaggedArrayMath.Subtract<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2085">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.Subtract<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First operand (minuend).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second operand (subtrahend).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result <code>a-b</code>. Has to be of same dimensions than a and b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.Subtract`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.Subtract\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Calculates a-b and stores the result in matrix c.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First operand (minuend).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second operand (subtrahend).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result <code>a-b</code>. Has to be of same dimensions than a and b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2086', 2086)" onmouseover="showTip(event, '2086', 2086)">
+                <p>
+                  <a id="SubtractColumn">
+                    <a href="#SubtractColumn">
+                      <code><span>JaggedArrayMath.SubtractColumn<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;bcolToSubtract,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2086">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.SubtractColumn<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;bcolToSubtract,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First operand (minuend).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second operand (subtrahend).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcolToSubtract
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The column number of matrix b which should be subtracted from all columns of matrix a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result. Has to be of same dimensions than a. Must not be identical to b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.SubtractColumn`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.SubtractColumn\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Subtract the column <code>bcolToSubtract</code> of matrix b from all columns of matrix a.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First operand (minuend).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second operand (subtrahend).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcolToSubtract
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The column number of matrix b which should be subtracted from all columns of matrix a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result. Has to be of same dimensions than a. Must not be identical to b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2087', 2087)" onmouseover="showTip(event, '2087', 2087)">
+                <p>
+                  <a id="SubtractProductFromSelf">
+                    <a href="#SubtractProductFromSelf">
+                      <code><span>JaggedArrayMath.SubtractProductFromSelf<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2087">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.SubtractProductFromSelf<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First operand of multiplication.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second operand of multiplication.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result <code>c = c - a*b</code>. Has to be of same dimensions than the product of a and b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.SubtractProductFromSelf`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.SubtractProductFromSelf\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Calculates c = c - ab
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First operand of multiplication.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second operand of multiplication.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result <code>c = c - a*b</code>. Has to be of same dimensions than the product of a and b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2088', 2088)" onmouseover="showTip(event, '2088', 2088)">
+                <p>
+                  <a id="SubtractProductFromSelf">
+                    <a href="#SubtractProductFromSelf">
+                      <code><span>JaggedArrayMath.SubtractProductFromSelf<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2088">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.SubtractProductFromSelf<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First operand of multiplication.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code>float</code>
+                       - 
+                      Second multiplicant.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The third operand and matrix where to store the result <code>c = c - a*b</code>. Has to be of same dimensions than a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.SubtractProductFromSelf`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.SubtractProductFromSelf\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Calculates c = c - ab
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First operand of multiplication.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second multiplicant.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The third operand and matrix where to store the result <code>c = c - a*b</code>. Has to be of same dimensions than a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2089', 2089)" onmouseover="showTip(event, '2089', 2089)">
+                <p>
+                  <a id="SubtractRow">
+                    <a href="#SubtractRow">
+                      <code><span>JaggedArrayMath.SubtractRow<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;browToSubtract,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2089">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.SubtractRow<span><span>(<span>a,&#32;arows,&#32;acols,&#32;b,&#32;brows,&#32;bcols,&#32;browToSubtract,&#32;c,&#32;crows,&#32;ccols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        a
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      First operand (minuend).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        acols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        b
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      Second operand (subtrahend).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        brows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        bcols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        browToSubtract
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The row number of matrix b which should be subtracted from all rows of matrix a.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        c
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The matrix where to store the result. Has to be of same dimensions than a. Must not be identical to b.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        crows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of rows of c.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ccols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      Number of columns of c.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.SubtractRow`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.SubtractRow\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            Subtract the row <code>browToSubtract</code> of matrix b from all rows of matrix a.
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  a
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  First operand (minuend).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  acols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  b
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Second operand (subtrahend).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  brows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  bcols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  browToSubtract
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The row number of matrix b which should be subtracted from all rows of matrix a.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  c
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The matrix where to store the result. Has to be of same dimensions than a. Must not be identical to b.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  crows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of rows of c.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ccols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Number of columns of c.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2090', 2090)" onmouseover="showTip(event, '2090', 2090)">
+                <p>
+                  <a id="ToMatrix">
+                    <a href="#ToMatrix">
+                      <code><span>JaggedArrayMath.ToMatrix<span><span>(<span>x,&#32;rows,&#32;cols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2090">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.ToMatrix<span><span>(<span>x,&#32;rows,&#32;cols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The jagged array. Each double[] vector is a row of the matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        rows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of (used) rows of the array.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        cols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of (used) columns of the array.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-jaggedarraymatrix.html">JaggedArrayMatrix</a></code>
+                  </span>
+                  A jagged array matrix wrapping the provided array with a IMatrix interface.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.ToMatrix`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.ToMatrix\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            This wraps a jagged double array to the <a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a> interface. The data is not copied!
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The jagged array. Each double[] vector is a row of the matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of (used) rows of the array.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  cols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of (used) columns of the array.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/altaxo-calc-linearalgebra-jaggedarraymatrix.html">JaggedArrayMatrix</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A jagged array matrix wrapping the provided array with a IMatrix interface.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2091', 2091)" onmouseover="showTip(event, '2091', 2091)">
+                <p>
+                  <a id="ToTransposedMatrix">
+                    <a href="#ToTransposedMatrix">
+                      <code><span>JaggedArrayMath.ToTransposedMatrix<span><span>(<span>x,&#32;rows,&#32;cols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2091">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.ToTransposedMatrix<span><span>(<span>x,&#32;rows,&#32;cols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The jagged array. Each double[] vector is a column of the matrix (because of transpose).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        rows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of (used) rows of the resulting matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        cols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of (used) columns of the resulting matrix = length of the first level of the jagged array.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+                  </span>
+                  A IROMatrix wrapping the provided array so that it seems to be transposed.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.ToTransposedMatrix`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.ToTransposedMatrix\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            This wraps a jagged double array to the <a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a> interface so that the array appears to be transposed. The data is not copied!
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The jagged array. Each double[] vector is a column of the matrix (because of transpose).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of (used) rows of the resulting matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  cols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of (used) columns of the resulting matrix = length of the first level of the jagged array.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-imatrix-1.html">IMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A IROMatrix wrapping the provided array so that it seems to be transposed.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2092', 2092)" onmouseover="showTip(event, '2092', 2092)">
+                <p>
+                  <a id="ToTransposedROMatrix">
+                    <a href="#ToTransposedROMatrix">
+                      <code><span>JaggedArrayMath.ToTransposedROMatrix<span><span>(<span>x,&#32;rows,&#32;cols</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2092">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>JaggedArrayMath.ToTransposedROMatrix<span><span>(<span>x,&#32;rows,&#32;cols</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><span>float[]</span>[]</span></code>
+                       - 
+                      The jagged array. Each double[] vector is a column of the matrix (because of transpose).
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        rows
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of (used) rows of the resulting matrix.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        cols
+                      </b>
+                      :
+                      <code>int</code>
+                       - 
+                      The number of (used) columns of the resulting matrix = length of the first level of the jagged array.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+                  </span>
+                  A IROMatrix wrapping the provided array so that it seems to be transposed.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.ToTransposedROMatrix`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Altaxo.Calc.LinearAlgebra.JaggedArrayMath.ToTransposedROMatrix\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+            This wraps a jagged double array to the <a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a> interface so that the array appears to be transposed. The data is not copied!
+            
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><span>float[]</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The jagged array. Each double[] vector is a column of the matrix (because of transpose).
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  rows
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of (used) rows of the resulting matrix.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  cols
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The number of (used) columns of the resulting matrix = length of the first level of the jagged array.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><a href="/FsODE/reference/altaxo-calc-linearalgebra-iromatrix-1.html">IROMatrix</a>&lt;float&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A IROMatrix wrapping the provided array so that it seems to be transposed.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = '/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>
