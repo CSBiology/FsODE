@@ -6,11 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Library.fs" />
+    <Compile Include="Ode.fs" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FsODE.CSharp\FsODE.CSharp.csproj" />
+    <ProjectReference Include="..\AltaxoCore\AltaxoCore\Altaxo\Core\AltaxoCore.csproj" />
   </ItemGroup>
 
 </Project>
