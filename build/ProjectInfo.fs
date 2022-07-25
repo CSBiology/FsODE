@@ -7,7 +7,7 @@ let project = "FsODE"
 let testProjects = 
     [
         "tests/FsODE.Tests/FsODE.Tests.fsproj"
-        "tests/FsODE.CSharp.Tests/FsODE.CSharp.Tests.csproj"
+        "src/AltaxoCore/AltaxoCore/Altaxo/CoreTest/AltaxoCoreTest.csproj"
     ]
 
 let solutionFile  = $"{project}.sln"

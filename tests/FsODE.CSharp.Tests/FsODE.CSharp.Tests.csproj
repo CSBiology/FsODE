@@ -20,8 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\FsODE.CSharp\FsODE.CSharp.csproj" />
-  </ItemGroup>
-
 </Project>

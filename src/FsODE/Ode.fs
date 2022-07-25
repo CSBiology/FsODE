@@ -7,7 +7,6 @@ type SimpleModel = (float -> float -> float)
 type Model = (float[] -> float -> float[])  
 
 
-
 type OdeContext(odeSolver:Altaxo.Calc.Ode.RungeKuttaExplicitBase,?methodOptions:Altaxo.Calc.Ode.OdeMethodOptions) =
 
     let methodOptions = 
