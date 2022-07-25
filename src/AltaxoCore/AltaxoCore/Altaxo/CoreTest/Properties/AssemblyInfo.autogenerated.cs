@@ -32,7 +32,7 @@ using System.Runtime.CompilerServices;
 //
 [assembly: AssemblyTitle("AltaxoCoreTest")]
 [assembly: AssemblyDescription("Core Test Library for Altaxo")]
-[assembly: AssemblyConfiguration("REVID: 3105313c4bcc46aba47de668665df7df7ab1b10a, BRANCH: main, DATE: 2022-07-25T09:27:13Z")]
+[assembly: AssemblyConfiguration("REVID: 409e92a9692e71716bcd55cbb203f724cb26703c, BRANCH: main, DATE: 2022-07-25T12:37:13Z")]
 [assembly: AssemblyCompany("http://altaxo.sourceforge.net")]
 [assembly: AssemblyProduct("Altaxo")]
 [assembly: AssemblyCopyright("(C) Dr. Dirk Lellinger 2002-2022")]
@@ -50,8 +50,8 @@ using System.Runtime.CompilerServices;
 // You can specify all the values or you can default the Revision and Build Numbers
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("4.8.9.1")]
-[assembly: AssemblyFileVersion("4.8.9.1")]
+[assembly: AssemblyVersion("4.8.10.1")]
+[assembly: AssemblyFileVersion("4.8.10.1")]
 
 //
 // In order to sign your assembly you must specify a key to use. Refer to the

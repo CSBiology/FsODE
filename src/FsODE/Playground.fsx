@@ -1,5 +1,5 @@
 ﻿#I "bin/Release/net6.0"
-#r "AltaxoCore.dll"
+#r "AltaxoCore.Redist.dll"
 #r "FSOde.dll"
 #r "nuget: Plotly.NET"
 
