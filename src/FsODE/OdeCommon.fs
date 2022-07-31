@@ -37,7 +37,10 @@ type SolPoints() =
         p |> Seq.map f
 
     static member take n (p:seq<SolPoint>) =
-        p |> Seq.take n 
+        p |> Seq.take n
+        
+    static member memorize (p:seq<SolPoint>) =
+        p |> Seq.toArray
 
     // static member evalModel (model:Model) (X:seq<float>) =
     //     X |> Seq.map (fun x -> SolPoint(x, model x)) 

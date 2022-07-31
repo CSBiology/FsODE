@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="OdeExamples.ipynb" />
     <Compile Include="OdeCommon.fs" />
     <Compile Include="Ode.fs" />
     <None Include="Playground.fsx" />
