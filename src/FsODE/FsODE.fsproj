@@ -6,11 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="Playground.fsx" />
+    <Compile Include="OdeCommon.fs" />
     <Compile Include="Ode.fs" />
+    <None Include="Playground.fsx" />
   </ItemGroup>
-
-  <ItemGroup />
 
   <ItemGroup>
     <ProjectReference Include="..\AltaxoCore\AltaxoCore\Altaxo\Core\AltaxoCore.Redist.csproj" />

@@ -7,7 +7,7 @@ open FsODE
 open System
 open Plotly.NET
 
-let ctx = new OdeContext(Altaxo.Calc.Ode.RK8713M())
+let ctx = new OdeContext(OdeSolverMethod.RK8713M)
 
 let y0 = [|Math.PI - 0.1; 0.0|]
 let t = [|0. .. 0.1 .. 10.|]
@@ -24,8 +24,8 @@ let sol =
     )
 
 sol
-|> Seq.map (fun (t, vals) ->
-    (t, vals[0]),(t, vals[1])
+|> Seq.map (fun p ->
+    (p.x, p.Y[0]),(p.x, p.Y[1])
 )
 |> Seq.take 100
 |> Seq.toArray
@@ -44,7 +44,7 @@ let dyV_dx : Model=
         [|x - y.[0] |]
 
 ctx.OdeInt(0.,[|1.|],dyV_dx)
-|> Seq.map (fun (x,y) -> x,y[0])
+|> Seq.map (fun p -> p.x,p.Y[0])
 |> Seq.take 10
 |> Chart.Point 
 |> Chart.show
@@ -58,6 +58,7 @@ let dy_dx : SimpleModel =
 
 
 ctx.OdeInt(0.,1.,dy_dx)
-|> Seq.take 10
+|> SolPoints.take 10
+|> SolPoints.toPoints 1
 |> Chart.Point 
 |> Chart.show
