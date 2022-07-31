@@ -94,6 +94,8 @@
     <div>
       <p class="fsdocs-summary">
         
+ Context to solve ordinary differential equations
+
       </p>
     </div>
   </div>
@@ -126,7 +128,7 @@
                 <p>
                   <a id="``.ctor``">
                     <a href="#``.ctor``">
-                      <code><span>OdeContext<span><span>(<span>odeSolver,&#32;?methodOptions</span>)</span></span></span></code>
+                      <code><span>OdeContext<span><span>(<span>odeSolver</span>)</span></span></span></code>
                     </a>
                   </a>
                 </p>
@@ -134,7 +136,7 @@
               <div class="fsdocs-tip" id="10161">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>OdeContext<span><span>(<span>odeSolver,&#32;?methodOptions</span>)</span></span></span></code>
+                  <code><span>OdeContext<span><span>(<span>odeSolver</span>)</span></span></span></code>
                   <br/>
                   <br/>
                   Parameters: 
@@ -144,15 +146,7 @@
                         odeSolver
                       </b>
                       :
-                      <code><a href="/FsODE/reference/altaxo-calc-ode-rungekuttaexplicitbase.html">RungeKuttaExplicitBase</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        ?methodOptions
-                      </b>
-                      :
-                      <code><a href="/FsODE/reference/altaxo-calc-ode-odemethodoptions.html">OdeMethodOptions</a></code>
+                      <code>obj</code>
                     </span>
                     <br/>
                   </ul>
@@ -186,15 +180,97 @@
                   odeSolver
                 </span>
                 :
-                <code><a href="/FsODE/reference/altaxo-calc-ode-rungekuttaexplicitbase.html">RungeKuttaExplicitBase</a></code>
+                <code>obj</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="/FsODE/reference/fsode-odecontext.html">OdeContext</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '10162', 10162)" onmouseover="showTip(event, '10162', 10162)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>OdeContext<span><span>(<span>?odeSolverMethod,&#32;?odeSolverOptions</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="10162">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OdeContext<span><span>(<span>?odeSolverMethod,&#32;?odeSolverOptions</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        ?odeSolverMethod
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/fsode-odesolvermethod.html">OdeSolverMethod</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?odeSolverOptions
+                      </b>
+                      :
+                      <code><a href="/FsODE/reference/fsode-odesolveroptions.html">OdeSolverOptions</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="/FsODE/reference/fsode-odecontext.html">OdeContext</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FsODE.OdeContext.#ctor`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FsODE.OdeContext.#ctor\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?odeSolverMethod
+                </span>
+                :
+                <code><a href="/FsODE/reference/fsode-odesolvermethod.html">OdeSolverMethod</a></code>
               </dt>
               <dd class="fsdocs-param-docs"></dd>
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
-                  ?methodOptions
+                  ?odeSolverOptions
                 </span>
                 :
-                <code><a href="/FsODE/reference/altaxo-calc-ode-odemethodoptions.html">OdeMethodOptions</a></code>
+                <code><a href="/FsODE/reference/fsode-odesolveroptions.html">OdeSolverOptions</a></code>
               </dt>
               <dd class="fsdocs-param-docs"></dd>
             </dl>
@@ -231,7 +307,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '10162', 10162)" onmouseover="showTip(event, '10162', 10162)">
+              <code onmouseout="hideTip(event, '10163', 10163)" onmouseover="showTip(event, '10163', 10163)">
                 <p>
                   <a id="OdeInt">
                     <a href="#OdeInt">
@@ -240,7 +316,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="10162">
+              <div class="fsdocs-tip" id="10163">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.OdeInt</span></code>
@@ -276,7 +352,7 @@
                   <br/>
                   <span>
                     Returns: 
-                    <code><span>seq&lt;<span>float&#32;*&#32;<span>float[]</span></span>&gt;</span></code>
+                    <code><span>seq&lt;<a href="/FsODE/reference/fsode-solpoint.html">SolPoint</a>&gt;</span></code>
                   </span>
                   <br/>
                 </div>
@@ -295,6 +371,8 @@
               </div>
               <p class="fsdocs-summary">
                 
+ Simulates the model and gets a sequence of solution points
+
               </p>
             </div>
             <dl class="fsdocs-params">
@@ -328,7 +406,7 @@
                 <span class="fsdocs-return-name">
                   Returns: 
                 </span>
-                <code><span>seq&lt;<span>float&#32;*&#32;<span>float[]</span></span>&gt;</span></code>
+                <code><span>seq&lt;<a href="/FsODE/reference/fsode-solpoint.html">SolPoint</a>&gt;</span></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -337,7 +415,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '10163', 10163)" onmouseover="showTip(event, '10163', 10163)">
+              <code onmouseout="hideTip(event, '10164', 10164)" onmouseover="showTip(event, '10164', 10164)">
                 <p>
                   <a id="OdeInt">
                     <a href="#OdeInt">
@@ -346,7 +424,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="10163">
+              <div class="fsdocs-tip" id="10164">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.OdeInt</span></code>
@@ -382,7 +460,7 @@
                   <br/>
                   <span>
                     Returns: 
-                    <code><span>seq&lt;<span>float&#32;*&#32;float</span>&gt;</span></code>
+                    <code><span>seq&lt;<a href="/FsODE/reference/fsode-solpoint.html">SolPoint</a>&gt;</span></code>
                   </span>
                   <br/>
                 </div>
@@ -401,6 +479,8 @@
               </div>
               <p class="fsdocs-summary">
                 
+ Simulates the model and gets a sequence of solution points
+
               </p>
             </div>
             <dl class="fsdocs-params">
@@ -434,9 +514,195 @@
                 <span class="fsdocs-return-name">
                   Returns: 
                 </span>
-                <code><span>seq&lt;<span>float&#32;*&#32;float</span>&gt;</span></code>
+                <code><span>seq&lt;<a href="/FsODE/reference/fsode-solpoint.html">SolPoint</a>&gt;</span></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '10165', 10165)" onmouseover="showTip(event, '10165', 10165)">
+                <p>
+                  <a id="RelativeErrorTolerance">
+                    <a href="#RelativeErrorTolerance">
+                      <code><span>this.RelativeErrorTolerance</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="10165">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.RelativeErrorTolerance</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        error
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FsODE.OdeContext.RelativeErrorTolerance`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FsODE.OdeContext.RelativeErrorTolerance\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+ Sets the relative tolerance for all y-values
+
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  error
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '10166', 10166)" onmouseover="showTip(event, '10166', 10166)">
+                <p>
+                  <a id="SetInitialStepSize">
+                    <a href="#SetInitialStepSize">
+                      <code><span>this.SetInitialStepSize</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="10166">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetInitialStepSize</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        stepSize
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FsODE.OdeContext.SetInitialStepSize`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FsODE.OdeContext.SetInitialStepSize\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+ Sets the initial step size to use the automatic step size control
+
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  stepSize
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '10167', 10167)" onmouseover="showTip(event, '10167', 10167)">
+                <p>
+                  <a id="SetStepSize">
+                    <a href="#SetStepSize">
+                      <code><span>this.SetStepSize</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="10167">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.SetStepSize</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        stepSize
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FsODE.OdeContext.SetStepSize`')">
+                <img src="/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FsODE.OdeContext.SetStepSize\'/>')">
+                <img src="/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <p class="fsdocs-summary">
+                
+ Sets the step size (no automatic step size control)
+
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  stepSize
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
             </dl>
           </td>
         </tr>
