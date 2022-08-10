@@ -12,6 +12,8 @@
     <None Include="Playground.fsx" />
   </ItemGroup>
 
+
+
   <ItemGroup>
     <ProjectReference Include="..\AltaxoCore\AltaxoCore\Altaxo\Core\AltaxoCore.Redist.csproj" />
   </ItemGroup>

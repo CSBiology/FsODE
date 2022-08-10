@@ -17,7 +17,7 @@
 //    along with this program; if not, write to the Free Software
 //    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 //
-//    FsODE is derivtive work bilt on top of a subset of Altaxo (https://github.com/Altaxo/Altaxo):
+//    FsODE is derivative work bilt on top of a subset of Altaxo (https://github.com/Altaxo/Altaxo):
 //
 //    Altaxo:  a data processing and data plotting program
 //    Copyright (C) 2002-2021 Dr. Dirk Lellinger

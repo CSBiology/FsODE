@@ -10,6 +10,22 @@
     <nullable>enable</nullable>
     <NoWarn>1701;1702;1573;1591</NoWarn>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\COPYING" Pack="true" PackagePath="LICENSE"/>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <Authors>Kevin Schneider, open source contributors</Authors>
+    <Description>Altaxo is a data processing and data plotting program. This is a redistribution of it's core classes via nuget under GPL3.</Description>
+    <Summary>Altaxo is a data processing and data plotting program. This is a redistribution of it's core classes via nuget under GPL3.</Summary>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageProjectUrl>altaxo.github.io/altaxo/</PackageProjectUrl>
+    <PackageTags>data-analysis csharp</PackageTags>
+    <RepositoryUrl>https://github.com/Altaxo/Altaxo</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net48' ">
     <NoWarn>
       1701;1702;1591;
