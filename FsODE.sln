@@ -23,7 +23,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{B6B3
 		.config\dotnet-tools.json = .config\dotnet-tools.json
 		LICENSE = LICENSE
 		README.md = README.md
-		RELEASE_NOTES.md = RELEASE_NOTES.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{3782110F-B58B-46B4-959A-972151B59453}"

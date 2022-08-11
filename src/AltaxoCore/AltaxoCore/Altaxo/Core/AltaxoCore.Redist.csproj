@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <Authors>Kevin Schneider, open source contributors</Authors>
+    <Authors>Dr. Dirk Lellinger</Authors>
     <Description>Altaxo is a data processing and data plotting program. This is a redistribution of it's core classes via nuget under GPL3.</Description>
     <Summary>Altaxo is a data processing and data plotting program. This is a redistribution of it's core classes via nuget under GPL3.</Summary>
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>

@@ -7,13 +7,20 @@ open Fake.IO.Globbing.Operators
 
 open ProjectInfo
 
-let setPrereleaseTag = BuildTask.create "SetPrereleaseTag" [] {
-    printfn "Please enter pre-release package suffix"
-    let suffix = System.Console.ReadLine()
-    prereleaseSuffix <- suffix
-    prereleaseTag <- (sprintf "%s-%s" release.NugetVersion suffix)
-    isPrerelease <- true
-}
+/// Buildtask for setting a prerelease tag (also sets the mutable isPrerelease to true, and the PackagePrereleaseTag of all project infos accordingly.)
+let setPrereleaseTag =
+    BuildTask.create "SetPrereleaseTag" [] {
+        printfn "Please enter pre-release package suffix"
+        let suffix = System.Console.ReadLine()
+        prereleaseSuffix <- suffix
+        isPrerelease <- true
+        projects
+        |> List.iter (fun p ->
+            p.PackagePrereleaseTag <- (sprintf "%s-%s" p.PackageVersionTag suffix)
+        )
+        // 
+        prereleaseTag <- (sprintf "%s-%s" FsODEProject.PackageVersionTag suffix)
+    }
 
 let clean = BuildTask.create "Clean" [] {
     !! "src/**/bin"
@@ -24,7 +31,35 @@ let clean = BuildTask.create "Clean" [] {
     |> Shell.cleanDirs 
 }
 
+/// builds the solution file (dotnet build solution.sln)
+let buildSolution =
+    BuildTask.create "BuildSolution" [ clean ] { solutionFile |> DotNet.build id }
+
+/// builds the individual project files (dotnet build project.*proj)
+///
+/// The following MSBuild params are set for each project accordingly to the respective ProjectInfo:
+///
+/// - AssemblyVersion
+///
+/// - AssemblyInformationalVersion
 let build = BuildTask.create "Build" [clean] {
-    solutionFile
-    |> DotNet.build id
+    projects
+    |> List.iter (fun pInfo ->
+        let proj = pInfo.ProjFile
+        proj
+        |> DotNet.build (fun p ->
+            let msBuildParams =
+                {p.MSBuildParams with 
+                    Properties = ([
+                        "AssemblyVersion", pInfo.AssemblyVersion
+                        "InformationalVersion", pInfo.AssemblyInformationalVersion
+                    ])
+                }
+            {
+                p with 
+                    MSBuildParams = msBuildParams
+            }
+            |> DotNet.Options.withCustomParams (Some "--no-dependencies")
+        )
+    )
 }
