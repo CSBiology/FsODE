@@ -13,10 +13,21 @@
     <None Include="Playground.fsx" />
   </ItemGroup>
 
-
+  <PropertyGroup>
+    <Authors>Timo Mühlhaus, Kevin Schneider, open source contributors</Authors>
+    <Description>Ordinary Differential Equation (ODE) Models in F#</Description>
+    <Summary>Ordinary Differential Equation (ODE) Models in F#</Summary>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageProjectUrl>https://csbiology.github.io/FsODE/</PackageProjectUrl>
+    <PackageTags>ode ode-models differential-equations fsharp</PackageTags>
+    <RepositoryUrl>https://github.com/CSBiology/FsODE</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <FsDocsLicenseLink>https://github.com/CSBiology/FsODE/blob/main/COPYING</FsDocsLicenseLink>
+    <FsDocsReleaseNotesLink>https://github.com/CSBiology/FsODE/blob/main/src/FsODE/RELEASE_NOTES.md</FsDocsReleaseNotesLink>
+  </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AltaxoCore\AltaxoCore\Altaxo\Core\AltaxoCore.Redist.csproj" />
+    <PackageReference Include="AltaxoCore.Redist" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
