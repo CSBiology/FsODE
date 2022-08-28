@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Stochastic.fs" />
     <None Include="RELEASE_NOTES.md" />
     <None Include="OdeExamples.ipynb" />
     <Compile Include="OdeCommon.fs" />
@@ -28,6 +29,7 @@
 
   <ItemGroup>
     <PackageReference Include="AltaxoCore.Redist" Version="1.0.0" />
+	<PackageReference Include="FSharp.Stats" Version="0.4.7" />
   </ItemGroup>
 
 </Project>
