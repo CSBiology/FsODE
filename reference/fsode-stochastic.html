@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stochastic (FsODE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Timo Mühlhaus, Kevin Schneider, open source contributors">
+    <link rel="shortcut icon" type="image/x-icon" href="https://csbiology.github.io/FsODE//img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="https://csbiology.github.io/FsODE/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="https://csbiology.github.io/FsODE/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="https://csbiology.github.io/FsODE/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+    
+</head> 
+
+<body>
+    <div class="columns is-fullheight m-0">
+        <div id="fsdocs-menu" class="column is-2 is-paddingless">
+            <aside class="menu">
+                <div class="container is-paddingless is-marginless has-background-dark">
+                    <a href="https://csbiology.github.io/FsODE/">
+                        <figure class="image is-128x128 container">
+                            <img src="https://csbiology.github.io/FsODE/img/logo.png">
+                        </figure>
+                    </a>
+                    <h2 class="title has-text-centered has-text-white">FsODE</h2>
+                    <h5 class="has-text-centered has-text-white pb-4">Documentation for 0.0.1</h5>
+                </div>
+                <div class="content">
+                    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+                    <div id="header">
+                        <div class="searchbox" id="fsdocs-searchbox">
+                            <label for="search-by">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <input data-search-input="" id="search-by" type="search" placeholder="Search..." class="input"/>
+                            <span data-search-clear="">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SEARCH BOX: this adds support for the search box -->
+                    <ul class="navbar-nav">
+                        <li class="nav-header">Links</li>
+                        <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="https://github.com/CSBiology/FsODE/blob/main/COPYING">License (MIT)</a></li>
+                        <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="https://github.com/CSBiology/FsODE/blob/main/src/FsODE/RELEASE_NOTES.md">Release Notes</a></li>
+                        <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="https://github.com/CSBiology/FsODE/">Source Repository</a></li>
+                        <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="https://csbiology.github.io/FsODE/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="column is-10 is-paddingless">
+            <div class="section pt-4">
+                <div class="container" id="fsdocs-content">
+                    <div>
+  <h2>
+    Stochastic Module
+  </h2>
+  <dl class="fsdocs-metadata">
+    <dt>
+      Namespace: 
+      <a href="https://csbiology.github.io/FsODE/reference/fsode.html">
+        FsODE
+      </a>
+    </dt>
+    <dt>
+      Assembly: FsODE.dll
+    </dt>
+  </dl>
+  <div class="fsdocs-xmldoc">
+    <div>
+      <p class="fsdocs-summary">
+        
+      </p>
+    </div>
+  </div>
+  <div>
+    <h3>
+      Functions and values
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Function or value
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1', 1)" onmouseover="showTip(event, '1', 1)">
+                <p>
+                  <a id="gillespieDraw">
+                    <a href="#gillespieDraw">
+                      <code><span>gillespieDraw&#32;<span>propensityFunc&#32;propensities&#32;population&#32;t&#32;beta_m&#32;beta_p&#32;gamma</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>gillespieDraw&#32;<span>propensityFunc&#32;propensities&#32;population&#32;t&#32;beta_m&#32;beta_p&#32;gamma</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        propensityFunc
+                      </b>
+                      :
+                      <code><span><span>float[]</span>&#32;->&#32;'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e&#32;->&#32;unit</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        propensities
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        population
+                      </b>
+                      :
+                      <code>'a</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        t
+                      </b>
+                      :
+                      <code>'b</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        beta_m
+                      </b>
+                      :
+                      <code>'c</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        beta_p
+                      </b>
+                      :
+                      <code>'d</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        gamma
+                      </b>
+                      :
+                      <code>'e</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int&#32;*&#32;float</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:FsODE.Stochastic.gillespieDraw``5```')">
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FsODE.Stochastic.gillespieDraw``5\'/>')">
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <a href="https://github.com/CSBiology/FsODE/tree/master/src/FsODE/Stochastic.fs#L58-58" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://csbiology.github.io/FsODE/content/img/github.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+ Draws a reaction and the time it took to do that reaction.
+ 
+ Parameters
+
+ ----------
+
+ propensity_func : function
+     Function with call signature propensityFunc(population, t, *args)
+     used for computing propensities. This function must return
+     an array of propensities.
+ propensities : float array
+     Propensities for each reaction as an array.
+ population : ndarray
+     Current population of particles
+ t : float
+     Value of the current time.
+ beta_m beta_p gamma : float float float
+     Arguments to be passed to `propensityFunc`.
+ 
+ Returns
+
+ -------
+
+ rxn : int
+     Index of reaction that occured.
+ time : float
+     Time it took for the reaction to occur.
+
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  propensityFunc
+                </span>
+                :
+                <code><span><span>float[]</span>&#32;->&#32;'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e&#32;->&#32;unit</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  propensities
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  population
+                </span>
+                :
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  t
+                </span>
+                :
+                <code>'b</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta_m
+                </span>
+                :
+                <code>'c</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta_p
+                </span>
+                :
+                <code>'d</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  gamma
+                </span>
+                :
+                <code>'e</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int&#32;*&#32;float</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '2', 2)" onmouseover="showTip(event, '2', 2)">
+                <p>
+                  <a id="gillespieSSA">
+                    <a href="#gillespieSSA">
+                      <code><span>gillespieSSA&#32;<span>propensityFunc&#32;update&#32;<span>(<span>arg3,&#32;arg4</span>)</span>&#32;timePoints&#32;beta_m&#32;beta_p&#32;gamma</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>gillespieSSA&#32;<span>propensityFunc&#32;update&#32;<span>(<span>arg3,&#32;arg4</span>)</span>&#32;timePoints&#32;beta_m&#32;beta_p&#32;gamma</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        propensityFunc
+                      </b>
+                      :
+                      <code><span><span>float[]</span>&#32;->&#32;<span>float&#32;*&#32;float</span>&#32;->&#32;float&#32;->&#32;'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;unit</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        update
+                      </b>
+                      :
+                      <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg2
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg3
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        timePoints
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        beta_m
+                      </b>
+                      :
+                      <code>'a</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        beta_p
+                      </b>
+                      :
+                      <code>'b</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        gamma
+                      </b>
+                      :
+                      <code>'c</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>float[]</span>&#32;*&#32;<span>float[]</span></span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:FsODE.Stochastic.gillespieSSA``3```')">
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FsODE.Stochastic.gillespieSSA``3\'/>')">
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <a href="https://github.com/CSBiology/FsODE/tree/master/src/FsODE/Stochastic.fs#L99-99" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://csbiology.github.io/FsODE/content/img/github.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+ Uses the Gillespie stochastic simulation algorithm to sample
+ from probability distribution of particle counts over time.
+ 
+ Parameters
+
+ ----------
+
+ propensityFunc : function
+     Function of the form f(params, t, population) that takes the current
+     population of particle counts and return an array of propensities
+     for each reaction.
+ update : (float*float)[]
+     Entry i, j gives the change in particle counts of species j
+     for chemical reaction i.
+ population0 : float*float
+     Array of initial populations of all chemical species.
+ time_points : float[]
+     Array of points in time for which to sample the probability
+     distribution.
+ beta_m beta_p gamma : float float float
+     Arguments to be passed to `propensityFunc`.
+ 
+ Returns
+
+ -------
+
+ sample : ndarray, shape (num_time_points, num_chemical_species)
+     Entry i, j is the count of chemical species j at time
+     time_points[i].
+
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  propensityFunc
+                </span>
+                :
+                <code><span><span>float[]</span>&#32;->&#32;<span>float&#32;*&#32;float</span>&#32;->&#32;float&#32;->&#32;'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;unit</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  update
+                </span>
+                :
+                <code><span><span>(<span>float&#32;*&#32;float</span>)</span>[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg2
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg3
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  timePoints
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta_m
+                </span>
+                :
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  beta_p
+                </span>
+                :
+                <code>'b</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  gamma
+                </span>
+                :
+                <code>'c</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span><span>float[]</span>&#32;*&#32;<span>float[]</span></span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '3', 3)" onmouseover="showTip(event, '3', 3)">
+                <p>
+                  <a id="sampleDiscrete">
+                    <a href="#sampleDiscrete">
+                      <code><span>sampleDiscrete&#32;<span>probs</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>sampleDiscrete&#32;<span>probs</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        probs
+                      </b>
+                      :
+                      <code><span>float[]</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>int</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FsODE.Stochastic.sampleDiscrete`')">
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FsODE.Stochastic.sampleDiscrete\'/>')">
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <a href="https://github.com/CSBiology/FsODE/tree/master/src/FsODE/Stochastic.fs#L22-22" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://csbiology.github.io/FsODE/content/img/github.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+ Randomly sample an index with probability given by probs.
+
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  probs
+                </span>
+                :
+                <code><span>float[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4', 4)" onmouseover="showTip(event, '4', 4)">
+                <p>
+                  <a id="simulateCoinflips">
+                    <a href="#simulateCoinflips">
+                      <code><span>simulateCoinflips&#32;<span>n&#32;p&#32;size</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>simulateCoinflips&#32;<span>n&#32;p&#32;size</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        n
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        p
+                      </b>
+                      :
+                      <code>float</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        size
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>int[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FsODE.Stochastic.simulateCoinflips`')">
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-md.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FsODE.Stochastic.simulateCoinflips\'/>')">
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-xml.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <a href="https://github.com/CSBiology/FsODE/tree/master/src/FsODE/Stochastic.fs#L8-8" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://csbiology.github.io/FsODE/content/img/github.png" class="normal"/>
+                <img src="https://csbiology.github.io/FsODE/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+ Simulate size sets of n coin flips with prob. p of heads
+
+              </p>
+            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  n
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  p
+                </span>
+                :
+                <code>float</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  size
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><span>int[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <script type="text/javascript">var fsdocs_search_baseurl = 'https://csbiology.github.io/FsODE/'</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+    <script type="text/javascript" src="https://csbiology.github.io/FsODE/content/fsdocs-search.js"></script>
+    <!-- END SEARCH BOX: this adds support for the search box -->
+</body>
+
+</html>
