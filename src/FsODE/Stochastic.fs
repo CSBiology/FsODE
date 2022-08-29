@@ -2,6 +2,8 @@ namespace FsODE
 
 module Stochastic =
 
+    open FSharp.Stats
+
     /// Simulate size sets of n coin flips with prob. p of heads
     let simulateCoinflips n p size =
         let rnd = new System.Random()
@@ -58,7 +60,7 @@ module Stochastic =
         propensityFunc propensities population t beta_m beta_p gamma
         // sum of propensities
         let  propsSum = propensities |> Array.sum
-        let time = (FSharp.Stats.Distributions.Continuous.exponential propsSum).Sample()
+        let time = (Distributions.Continuous.Exponential.Init propsSum).Sample()
         // compute discrete probabilities of each reaction
         let rxnProbs = propensities |> Array.map (fun p -> p / propsSum)
         // draw reaction from this distribution
